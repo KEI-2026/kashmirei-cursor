@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/hero.css";
-import heroImage from "../../assets/images/hero-home.jpg";
+import heroImage from "../../assets/Images/hero-home.jpg";
 import { Link } from "react-router-dom";
 
 

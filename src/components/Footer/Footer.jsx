@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/footer.css";
-import logo from "../../assets/images/logo.png"; // use your local logo if available
+import logo from "../../assets/Images/logo.png"; // use your local logo if available
 
 const FOOTER_QUICK_LINKS = [
   { href: "/", label: "Home" },

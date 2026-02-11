@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/mission.css";
-import missionImage from "../../assets/images/about-home.jpg";
+import missionImage from "../../assets/Images/about-home.jpg";
 
 const MissionSection = () => {
   return (
