@@ -1,0 +1,145 @@
+/* =========================
+   MISSION SECTION
+========================= */
+
+.section-mission {
+    padding: 140px 0;
+    background: #f6f7f8;
+  }
+  
+  .mission-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  /* =========================
+     LEFT SIDE
+  ========================= */
+  
+  .mission-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #48BEDA;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .mission-left h2 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .mission-left p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 500px;
+  }
+  
+  .mission-image img {
+    width: 100%;
+    max-width: 520px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  
+  /* =========================
+     RIGHT SIDE
+  ========================= */
+  
+  .mission-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+  }
+  
+  .mission-item {
+    position: relative;
+    padding-left: 70px;
+  }
+  
+  .mission-number {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 80px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .mission-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .mission-content p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.7;
+  }
+  
+  .mission-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #48BEDA;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .mission-content h4,
+  .mission-content p {
+    margin-left: 38px;
+  }
+  
+  /* =========================
+     BUTTON
+  ========================= */
+  
+  .mission-button {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background: #48BEDA;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    width: fit-content;
+    transition: 0.3s ease;
+  }
+  
+  .mission-button:hover {
+    background: #3aa7c3;
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  
+  @media (max-width: 992px) {
+    .mission-container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  
+    .mission-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  

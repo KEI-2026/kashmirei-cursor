@@ -1,0 +1,77 @@
+/* ===============================
+   WHAT WE DO - PROGRAMS
+================================= */
+
+.section-wwd-programs {
+    padding: 120px 0;
+    background: #f8f9fb;
+  }
+  
+  /* Container */
+  .wwd-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Grid */
+  .wwd-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  /* Card */
+  .wwd-program-card {
+    background: #ffffff;
+    padding: 45px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+  }
+  
+  .wwd-program-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* Icon */
+  .wwd-program-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .wwd-program-icon img {
+    width: 70px;
+    height: auto;
+    display: block;
+  }
+  
+  
+  /* Text */
+  .wwd-program-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .wwd-program-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .wwd-program-card strong {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .wwd-programs-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

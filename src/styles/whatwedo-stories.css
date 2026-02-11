@@ -1,0 +1,93 @@
+/* ===============================
+   WHAT WE DO - STORIES
+================================= */
+
+.section-wwd-stories {
+    padding: 120px 0;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  /* Shared container */
+  .wwd-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Header */
+  .wwd-stories-header {
+    margin-bottom: 60px;
+  }
+  
+  .wwd-stories-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #48BEDA;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .section-wwd-stories h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  /* Grid */
+  .wwd-stories-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  /* Card */
+  .wwd-story-card {
+    background: #f8f9fb;
+    padding: 45px 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+  }
+  
+  .wwd-story-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* Avatar */
+  .wwd-story-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  /* Text */
+  .wwd-story-card p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .wwd-story-card h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .wwd-story-card span {
+    font-size: 13px;
+    color: #48BEDA;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .wwd-stories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

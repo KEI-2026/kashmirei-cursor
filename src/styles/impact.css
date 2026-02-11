@@ -1,0 +1,133 @@
+/* =========================
+   IMPACT STORIES SECTION
+========================= */
+
+.section-impact {
+    padding: 180px 0;
+    background: #0f1b24;   /* Deep premium navy tone */
+    color: #fff;
+  }
+  
+  .impact-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.75)
+    );
+  }
+  
+  .impact-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  
+  .impact-header {
+    margin-bottom: 70px;
+    max-width: 600px;
+  }
+  
+  .impact-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #48BEDA;
+    font-weight: 600;
+  }
+  
+  .impact-header h2 {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 15px 0 20px;
+  }
+  
+  .impact-header p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ddd;
+  }
+  
+  /* =========================
+     CARDS
+  ========================= */
+  
+  .impact-card {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 16px;
+    position: relative;
+  }
+  
+  .impact-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .impact-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .impact-card span {
+    font-size: 13px;
+    color: #48BEDA;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .impact-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ccc;
+  }
+  
+  /* =========================
+     PAGINATION
+  ========================= */
+  
+/* =========================
+   PAGINATION
+========================= */
+
+.impact-swiper {
+    padding-bottom: 80px;   /* Creates space below cards */
+  }
+  
+  .section-impact .swiper-pagination {
+    position: relative !important;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .section-impact .swiper-pagination-bullet {
+    width: 55px;
+    height: 6px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.3);
+    opacity: 1;
+    margin: 0 8px !important;
+    transition: 0.3s ease;
+  }
+  
+  .section-impact .swiper-pagination-bullet-active {
+    background: #48BEDA;
+  }
+  
+  
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 6px;
+    border-radius: 20px;
+    background: #777;
+    opacity: 1;
+    margin: 0 6px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #48BEDA;
+  }
+  
