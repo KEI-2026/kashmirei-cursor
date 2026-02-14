@@ -5,6 +5,8 @@ import StatsSection from "../StatsSection/StatsSection";
 import ProgramsSection from "../ProgramsSection/ProgramsSection";
 import MissionSection from "../MissionSection/MissionSection";
 import ImpactSection from "../ImpactSection/ImpactSection";
+import OurMissionSection from "../OurMissionSection/OurMissionSection";
+
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
       <ProgramsSection />
       <MissionSection />
       <ImpactSection />
+      <OurMissionSection />
     </>
   );
 };
