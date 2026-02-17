@@ -6,12 +6,14 @@ import ProgramsSection from "../ProgramsSection/ProgramsSection";
 import MissionSection from "../MissionSection/MissionSection";
 import ImpactSection from "../ImpactSection/ImpactSection";
 import OurMissionSection from "../OurMissionSection/OurMissionSection";
+import AnnouncementSection from "../AnnouncementSection/AnnouncementSection";
 
 
 const Home = () => {
   return (
     <>
       <HeroSection />
+      <AnnouncementSection />
       <StatsSection />
       <ProgramsSection />
       <MissionSection />
