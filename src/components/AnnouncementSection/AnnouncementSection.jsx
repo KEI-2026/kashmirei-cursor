@@ -3,29 +3,53 @@ import "../../styles/announcement.css";
 
 const PASSWORD = "KEI@2026";
 
-const AnnouncementSection = () => {
-  const defaultContent = `
-    <strong>Project Update</strong> – New features added. &nbsp;&nbsp; • &nbsp;&nbsp;
-    <strong>Meeting Reminder</strong> – Weekly sync at 10 AM.
-  `;
+/* Replace with your real sheet ID */
+const SHEET_ID = "1pkRPOAK3yRGemROpSIOAFQOozKZWQDM-ZiR24RNhKkc";
 
-  const [content, setContent] = useState(defaultContent);
+/* GVIZ endpoint for public sheet JSON */
+const SHEET_JSON_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
+
+const EDIT_LINK =
+  "https://docs.google.com/spreadsheets/d/1pkRPOAK3yRGemROpSIOAFQOozKZWQDM-ZiR24RNhKkc/edit";
+
+const AnnouncementSection = () => {
+  const [content, setContent] = useState("Loading announcements...");
   const [clickCount, setClickCount] = useState(0);
   const [showLogin, setShowLogin] = useState(false);
-  const [showEditor, setShowEditor] = useState(false);
   const [passwordInput, setPasswordInput] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [editorContent, setEditorContent] = useState("");
 
-  // Load saved content
   useEffect(() => {
-    const saved = localStorage.getItem("announcementContent");
-    if (saved) {
-      setContent(saved);
-    }
+    fetch(SHEET_JSON_URL)
+      .then((res) => res.text())
+      .then((data) => {
+        // Extract valid JSON from Google’s wrapper
+        const jsonMatch = data.match(
+          /google\.visualization\.Query\.setResponse\((.*)\);/
+        );
+
+        if (!jsonMatch) {
+          throw new Error("Invalid sheet response format");
+        }
+
+        const json = JSON.parse(jsonMatch[1]);
+        const rows = json.table.rows;
+
+        if (rows.length > 0 && rows[0].c[0]?.v) {
+          setContent(rows[0].c[0].v);
+        } else {
+          setContent("No announcements available.");
+        }
+      })
+      .catch((err) => {
+        console.error("Error loading announcements:", err);
+        setContent("Unable to load announcements.");
+      });
   }, []);
 
-  // Hidden 4-click trigger
+  /* =========================
+     SECRET 4-CLICK LOGIN
+  ========================= */
   const handleSecretClick = () => {
     const newCount = clickCount + 1;
     setClickCount(newCount);
@@ -36,26 +60,16 @@ const AnnouncementSection = () => {
     }
   };
 
-  // Login handler
   const handleLogin = () => {
     if (passwordInput === PASSWORD) {
       setShowLogin(false);
-      setShowEditor(true);
-      setEditorContent(content);
+      window.open(EDIT_LINK, "_blank");
       setPasswordInput("");
     } else {
       alert("Incorrect password");
     }
   };
 
-  // Save content
-  const handleSave = () => {
-    localStorage.setItem("announcementContent", editorContent);
-    setContent(editorContent);
-    setShowEditor(false);
-  };
-
-  // Trigger login on Enter key
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleLogin();
@@ -64,11 +78,8 @@ const AnnouncementSection = () => {
 
   return (
     <>
-      {/* ANNOUNCEMENT MARQUEE */}
-      <section
-        className="section-announcement"
-        onClick={handleSecretClick}
-      >
+      {/* ANNOUNCEMENT BAR */}
+      <section className="section-announcement" onClick={handleSecretClick}>
         <div className="announcement-track">
           <div
             className="announcement-item"
@@ -105,27 +116,6 @@ const AnnouncementSection = () => {
             </div>
 
             <button onClick={handleLogin}>Login</button>
-          </div>
-        </div>
-      )}
-
-      {/* EDITOR MODAL */}
-      {showEditor && (
-        <div className="announcement-modal">
-          <div className="announcement-modal-box large">
-            <h3>Edit Announcement (HTML allowed)</h3>
-
-            <textarea
-              value={editorContent}
-              onChange={(e) => setEditorContent(e.target.value)}
-            />
-
-            <div className="editor-buttons">
-              <button onClick={handleSave}>Save</button>
-              <button onClick={() => setShowEditor(false)}>
-                Cancel
-              </button>
-            </div>
           </div>
         </div>
       )}
