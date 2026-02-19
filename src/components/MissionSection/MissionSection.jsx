@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/mission.css";
+import "../../styles/Home/mission.css";
 import missionImage from "../../assets/Images/mission.jpg";
 
 const MissionSection = () => {

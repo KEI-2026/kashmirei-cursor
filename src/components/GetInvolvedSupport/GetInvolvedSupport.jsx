@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/getinvolved-support.css";
+import "../../styles/Get-Involved/getinvolved-support.css";
 
 import supportImage from "../../assets/Images/about-home.jpg";
 

@@ -1,0 +1,190 @@
+/* =====================================
+   OUR MISSION SECTION
+===================================== */
+
+.section-our-mission {
+  position: relative;
+  padding: 120px 0;                /* reduced for compact look */
+  background: #f6f7f8;
+  overflow: hidden;
+}
+
+/* =====================================
+   BIG FADED BACKGROUND TEXT
+===================================== */
+
+.ourmission-bg-text {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 140px;                /* larger like screenshot */
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.025);     /* softer */
+  letter-spacing: 2px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.ourmission-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+/* =====================================
+   LEFT CONTENT
+===================================== */
+
+.ourmission-content {
+  width: 52%;
+}
+
+/* Small label */
+
+.ourmission-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #48BEDA;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+  text-transform: none;
+}
+
+/* Main Heading */
+
+.ourmission-content h2 {
+  font-size: 50px;                 /* slightly larger */
+  font-weight: 800;
+  margin-bottom: 22px;
+  line-height: 1.1;
+  color: #000;
+}
+
+/* Subheading */
+
+.ourmission-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+/* Quote */
+
+.ourmission-quote {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Donor */
+
+.ourmission-donor {
+  font-size: 14px;
+  margin-bottom: 28px;
+  color: #000;
+}
+
+/* Why KEI Matters */
+
+.ourmission-content h4 {
+  font-family: "Roboto", Sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #050505;
+}
+
+.ourmission-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 26px;            /* tighter */
+  max-width: 520px;
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.ourmission-btn {
+  display: inline-block;
+  background: #48BEDA;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.ourmission-btn:hover {
+  background: #2ea3c2;
+}
+
+/* =====================================
+   RIGHT IMAGE
+===================================== */
+
+.ourmission-image {
+  width: 48%;
+}
+
+.ourmission-image img {
+  width: 100%;
+  height: 380px;                   /* reduced to match screenshot */
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.06);
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+  .ourmission-container {
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 30px;
+  }
+
+  .ourmission-content,
+  .ourmission-image {
+    width: 100%;
+  }
+
+  .ourmission-bg-text {
+    font-size: 90px;
+    left: 20px;
+    top: 20px;
+  }
+
+  .ourmission-content h2 {
+    font-family: "Franklin Gothic Demi", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #050505;
+  }
+
+  .ourmission-image img {
+    height: auto;
+  }
+}

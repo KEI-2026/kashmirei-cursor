@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 // Global Styles
 import "./styles/base.css";
-import "./styles/header.css";
-import "./styles/footer.css";
+import "./styles/Header/header.css";
+import "./styles/Footer/footer.css";
 
 // Layout Components
 import SkipLink from "./components/SkipLink";

@@ -5,7 +5,7 @@
 .section-wwd-hero {
     position: relative;
     height: 420px;
-    background: url("../assets/Images/about-home.jpg") center/cover no-repeat;
+    background: url("../../assets/Images/about-home.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

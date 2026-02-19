@@ -1,18 +1,18 @@
-.section-ss-hero {
+.gi-hero {
     position: relative;
-    padding: 180px 0 160px;
+    padding: 160px 0 140px;
+    background: url("../../assets/Images/about-home.jpg") center/cover no-repeat;
     text-align: center;
-    background: url("../assets/Images/about-home.jpg") center/cover no-repeat;
   }
   
-  .section-ss-hero::after {
+  .gi-hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0.88);
   }
   
-  .section-ss-hero .container {
+  .gi-hero .container {
     position: relative;
     z-index: 2;
     max-width: 1000px;
@@ -20,26 +20,26 @@
     padding: 0 40px;
   }
   
-  .section-ss-hero h1 {
-    font-size: 56px;
+  .gi-hero h1 {
+    font-size: 54px;
     font-weight: 800;
     line-height: 1.2;
   }
   
-  .section-ss-hero h1 span {
+  .gi-hero h1 span {
     color: #48BEDA;
   }
   
-  .ss-subtitle {
-    font-size: 18px;
+  .gi-sub {
     margin-top: 25px;
+    font-size: 20px;
     color: #333;
   }
   
-  .ss-description {
-    margin-top: 20px;
+  .gi-small {
+    margin-top: 18px;
     font-size: 15px;
     color: #555;
-    line-height: 1.7;
+    line-height: 1.8;
   }
   

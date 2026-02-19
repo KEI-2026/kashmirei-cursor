@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/whatwedo-stories.css";
+import "../../styles/What-We-Do/whatwedo-stories.css";
 
 import mehak from "../../assets/Images/mehak.png";
 import anayat from "../../assets/Images/anayat.png";

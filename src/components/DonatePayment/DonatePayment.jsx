@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/donate-payment.css";
+import "../../styles/Donate/donate-payment.css";
 
 const DonatePayment = () => {
   return (

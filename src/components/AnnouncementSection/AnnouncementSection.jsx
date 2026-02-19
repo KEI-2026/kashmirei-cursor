@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/announcement.css";
+import "../../styles/Announcement/announcement.css";
 
 const PASSWORD = "KEI@2026";
 

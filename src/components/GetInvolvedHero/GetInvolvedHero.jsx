@@ -1,4 +1,4 @@
-import "../../styles/getinvolved-hero.css";
+import "../../styles/Get-Involved/getinvolved-hero.css";
 
 const GetInvolvedHero = () => {
   return (

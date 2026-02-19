@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/donate-hero.css";
+import "../../styles/Donate/donate-hero.css";
 
 const DonateHero = () => {
   return (

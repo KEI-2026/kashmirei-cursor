@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/whatwedo-programs.css";
+import "../../styles/What-We-Do/whatwedo-programs.css";
 
 import scholarship from "../../assets/Images/scholarshipp.webp";
 import mentorship from "../../assets/Images/mentorshipp.webp";

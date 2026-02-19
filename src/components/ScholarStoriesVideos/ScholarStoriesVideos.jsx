@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/scholar-videos.css";
+import "../../styles/Scholar-Page/scholar-videos.css";
 
 import Fiza from "../../assets/Images/Fiza.jpg";
 import umerabdullah from "../../assets/Images/umerabdullah.jpg";

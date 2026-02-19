@@ -9,11 +9,12 @@
   max-width: 92%;
   margin: auto;
   display: flex;
-  gap: 120px; /* more space between left & right */
+  gap: 120px;
   align-items: flex-start;
 }
 
-/* LEFT SIDE */
+/* ================= LEFT SIDE ================= */
+
 .mission-left {
   flex: 1;
 }
@@ -43,88 +44,92 @@
 
 .mission-image-wrapper img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   display: block;
 }
 
-/* RIGHT SIDE */
+/* ================= RIGHT SIDE (MATCH SCREENSHOT 2) ================= */
 
-/* RIGHT SIDE */
 .mission-right {
   flex: 1;
   position: relative;
   padding-top: 0;
+  margin-top: 60px;
 }
 
-/* tighter spacing between items */
+/* Compact spacing */
 .mission-item {
   position: relative;
-  margin-bottom: 10px;   /* reduced more */
+  margin-bottom: 45px;  /* tighter like screenshot */
 }
 
+/* Softer large background numbers */
 .mission-number {
   position: absolute;
-  left: 0px;   /* move inside like original */
-  top: -64px;
+  left: -5px;
+  top: -55px;
   font-size: 110px;
   font-weight: 700;
-  color: rgba(12, 11, 11, 0.035);
-  z-index: 0;
+  color: rgba(0, 0, 0, 0.025);  /* softer */
   line-height: 1;
+  z-index: 0;
   pointer-events: none;
-  margin-bottom: 100px;
 }
 
-
+/* Content wrapper */
 .mission-content {
   display: flex;
   align-items: flex-start;
-  gap: 10px;   /* tighter */
+  gap: 14px;
   position: relative;
   z-index: 2;
 }
 
+/* Check icon */
 .mission-check {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   background: #2ea3b0;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 600;
   flex-shrink: 0;
+  margin-top: 4px;
 }
 
+/* Title styling (Franklin Gothic look) */
 .mission-text h4 {
-  margin-bottom: 10px;
-  font-family: "Franklin Gothic Demi", Sans-serif;
-  font-size: 25px;
+  margin-bottom: 6px;
+  font-family: "Franklin Gothic Demi", "Franklin Gothic Medium", Arial, sans-serif;
+  font-size: 22px;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  color: #050505;
+  letter-spacing: 0.3px;
+  color: #000;
 }
 
+/* Description */
 .mission-text p {
   font-size: 13px;
   color: #666;
   margin: 0;
-  line-height: 1.4;
-  white-space: nowrap;  /* force single line */
+  line-height: 1.5;
+  white-space: nowrap;  /* single line like screenshot */
 }
 
-/* ONLY Donate wraps into 2 lines */
+/* Only first item wraps */
 .mission-item:first-child .mission-text p {
   white-space: normal;
-  max-width: 420px;  /* increased width to prevent 3 lines */
+  max-width: 420px;
 }
 
-/* compact button */
+/* Button */
 .mission-btn {
-  margin-top: 5px;   /* almost no gap */
-  padding: 8px 22px;
+  margin-top: 10px;
+  padding: 10px 24px;
   background: #2ea3b0;
   color: white;
   border: none;
@@ -139,8 +144,8 @@
   background: #238d99;
 }
 
+/* ================= RESPONSIVE ================= */
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
   .mission-container {
     flex-direction: column;
@@ -148,11 +153,15 @@
   }
 
   .mission-item {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .mission-number {
-    font-size: 90px;
-    left: 10px;
+    font-size: 85px;
+    top: -45px;
+  }
+
+  .mission-text p {
+    white-space: normal;
   }
 }

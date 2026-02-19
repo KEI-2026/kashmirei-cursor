@@ -1,4 +1,4 @@
-import "../../styles/donate-info.css";
+import "../../styles/Donate/donate-info.css";
 
 const DonateInfo = () => {
   return (

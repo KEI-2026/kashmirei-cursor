@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/scholar-grid.css";
+import "../../styles/Scholar-Page/scholar-grid.css";
 
 import mehak from "../../assets/Images/mehak.png";
 import anayat from "../../assets/Images/anayat.png";

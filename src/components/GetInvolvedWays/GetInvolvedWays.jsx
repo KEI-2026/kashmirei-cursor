@@ -1,4 +1,4 @@
-import "../../styles/getinvolved-ways.css";
+import "../../styles/Get-Involved/getinvolved-ways.css";
 
 import donateIcon from "../../assets/Images/donate-icon.webp";
 import mentorIcon from "../../assets/Images/mentorshipp.webp";
