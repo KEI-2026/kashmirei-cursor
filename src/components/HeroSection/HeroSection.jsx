@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Home/hero.css";
 import heroImage1 from "../../assets/Images/hero-home-seerat.jpg";
 import heroImage2 from "../../assets/Images/cover-2.jpg";
-import heroImage3 from "../../assets/Images/cover-3.jpg";
+import heroImage3 from "../../assets/Images/Cover3.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard } from "swiper/modules";
