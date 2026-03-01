@@ -24,7 +24,7 @@ const HeroSection = () => {
         <SwiperSlide>
           <div
             className="hero-slide-bg"
-            style={{ backgroundImage: `url(${heroImage1})` }}
+            style={{ backgroundImage: `url(${heroImage1})`, backgroundPosition: "left top" }}
           >
             <div className="hero-overlay" />
             <div className="hero-slide-content">
