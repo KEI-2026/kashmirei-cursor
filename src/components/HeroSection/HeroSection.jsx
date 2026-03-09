@@ -1,8 +1,8 @@
 import React from "react";
 import "../../styles/Home/hero.css";
 import heroImage1 from "../../assets/Images/hero-home-seerat.jpg";
-import heroImage2 from "../../assets/Images/cover-2.jpg";
-import heroImage3 from "../../assets/Images/Cover3.jpg";
+import heroImage2 from "../../assets/Images/cover-2nd.png";
+import heroImage3 from "../../assets/Images/Group-Photo-CMI.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard } from "swiper/modules";
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <SwiperSlide>
           <div
             className="hero-slide-bg"
-            style={{ backgroundImage: `url(${heroImage2})`, backgroundPosition: "left top" }}
+            style={{ backgroundImage: `url(${heroImage2})` }}
           >
             <div className="hero-overlay" />
             <div className="hero-slide-content">
@@ -67,8 +67,7 @@ const HeroSection = () => {
             className="hero-slide-bg"
             style={{ backgroundImage: `
               linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-              url(${heroImage3})
-            `, backgroundPosition: "left top" }}
+              url(${heroImage3})`, backgroundPosition: "left center" }}
           >
             <div className="hero-overlay" />
             <div className="hero-slide-content">
