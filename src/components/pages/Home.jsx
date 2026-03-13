@@ -4,6 +4,7 @@ import HeroSection from "../HeroSection/HeroSection";
 import StatsSection from "../StatsSection/StatsSection";
 import ProgramsSection from "../ProgramsSection/ProgramsSection";
 import MissionSection from "../MissionSection/MissionSection";
+import ValueWeDeliver from "../ValueWeDeliver/ValueWeDeliver";
 import ImpactSection from "../ImpactSection/ImpactSection";
 import OurMissionSection from "../OurMissionSection/OurMissionSection";
 import AnnouncementSection from "../AnnouncementSection/AnnouncementSection";
@@ -14,6 +15,7 @@ const Home = () => {
     <>
       <HeroSection />
       <AnnouncementSection />
+      <ValueWeDeliver />
       <StatsSection />
       <ProgramsSection />
       <MissionSection />
