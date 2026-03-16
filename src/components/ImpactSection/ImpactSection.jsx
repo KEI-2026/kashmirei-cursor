@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import mehak from "../../assets/Images/mehak.png";
-import kaira from "../../assets/Images/kaira.png";
+import karia from "../../assets/Images/karia.png";
 import anayat from "../../assets/Images/anayat.png";
 
 const ImpactSection = () => {
@@ -67,7 +67,7 @@ const ImpactSection = () => {
             <div className="impact-card">
               <div className="quote-icon">”</div>
               <div className="impact-user">
-                <img src={kaira} alt="Kaira Scholar" />
+                <img src={karia} alt="Kaira Scholar" />
                 <div>
                   <h4>Kaira</h4>
                   <span>Leadership Scholar</span>

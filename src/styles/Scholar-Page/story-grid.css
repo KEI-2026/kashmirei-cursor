@@ -1,0 +1,45 @@
+.story-archive {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+  }
+  
+  .year-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* GRID */
+  
+  .story-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+  
+  /* CARD */
+  
+  .story-card {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+  
+  /* IMAGE */
+  
+  .story-card img {
+    width: 100%;
+    height: auto;        /* keep natural ratio */
+    max-height: 200px;   /* prevent huge banners */
+    object-fit: contain; /* show full image */
+    border-radius: 6px;
+    background: #f5f5f5;
+  }
+  
+  /* NAME */
+  
+  .story-name {
+    margin-top: 10px;
+    font-size: 14px;
+  }

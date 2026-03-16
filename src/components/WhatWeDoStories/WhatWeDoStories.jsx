@@ -3,7 +3,7 @@ import "../../styles/What-We-Do/whatwedo-stories.css";
 
 import mehak from "../../assets/Images/mehak.png";
 import anayat from "../../assets/Images/anayat.png";
-import kaira from "../../assets/Images/kaira.png";
+import karia from "../../assets/Images/karia.png";
 
 const WhatWeDoStories = () => {
   return (
@@ -34,7 +34,7 @@ const WhatWeDoStories = () => {
           </div>
 
           <div className="wwd-story-card">
-            <img src={kaira} alt="Aijaz Maqbool" />
+            <img src={karia} alt="Aijaz Maqbool" />
             <p>“The Graduate Abroad Program made my journey to a joint PhD at IITM-Deakin seamless—from university selection to applications.”</p>
             <h4>Aijaz Maqbool</h4>
             <span>Global PhD Scholar</span>
@@ -59,7 +59,7 @@ const WhatWeDoStories = () => {
           </div>
 
           <div className="wwd-story-card">
-            <img src={kaira} alt="Aijaz Maqbool" />
+            <img src={karia} alt="Aijaz Maqbool" />
             <p>“KEI didn’t just help me study; they helped me dream.”</p>
             <h4>Aijaz Maqbool</h4>
             <span>Global PhD Scholar</span>

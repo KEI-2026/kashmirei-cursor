@@ -3,7 +3,7 @@ import "../../styles/Scholar-Page/scholar-grid.css";
 
 import mehak from "../../assets/Images/mehak.png";
 import anayat from "../../assets/Images/anayat.png";
-import kaira from "../../assets/Images/kaira.png";
+import karia from "../../assets/Images/karia.png";
 
 const ScholarStoriesGrid = () => {
   return (
@@ -30,7 +30,7 @@ const ScholarStoriesGrid = () => {
 
           {/* Card 3 */}
           <div className="ss-card">
-            <img src={kaira} alt="Kaira" />
+            <img src={karia} alt="Kaira" />
             <p>“The Graduate Abroad Program…”</p>
             <h4>Aijaz Maqbool</h4>
             <span>Global PhD Scholar</span>
@@ -52,7 +52,7 @@ const ScholarStoriesGrid = () => {
           </div>
 
           <div className="ss-card">
-            <img src={kaira} alt="Farhat" />
+            <img src={karia} alt="Farhat" />
             <p>“KEI didn’t just help me study…”</p>
             <h4>Farhat Shabir</h4>
             <span>Science Student Turned Career Explorer</span>

@@ -19,13 +19,15 @@ import Donate from "./components/pages/Donate";
 import GetInvolved from "./components/pages/GetInvolved";
 import ScholarStories from "./components/pages/ScholarStories";
 
+// Blog Page
+import Blog from "./components/ScholarStorySection/Blog";
+
 const App = () => {
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <SkipLink />
       <Header />
-      
 
       <main id="main-content">
         <Routes>
@@ -33,7 +35,10 @@ const App = () => {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/get-involved" element={<GetInvolved />} />
-          <Route path="/scholar-stories" element={<ScholarStories />} /> {/* ✅ NEW */}
+          <Route path="/scholar-stories" element={<ScholarStories />} />
+
+          {/* Blog route for individual stories */}
+          <Route path="/blog/:slug" element={<Blog />} />
         </Routes>
       </main>
 
