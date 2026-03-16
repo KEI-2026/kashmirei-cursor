@@ -12,6 +12,22 @@ const ScholarStoriesGrid = () => {
     ? scholarStories
     : scholarStories.slice(0, 9);
 
+  const toggleStories = () => {
+    setShowAll(!showAll);
+
+    if (showAll) {
+      setTimeout(() => {
+        const section = document.getElementById("scholar-stories-grid");
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <section id="scholar-stories-grid" className="section-ss-grid">
       <div className="container">
@@ -40,9 +56,10 @@ const ScholarStoriesGrid = () => {
                 <Link
                   to={`/blog/${story.slug}`}
                   className="ss-read-more"
-                  onClick={() =>
-                    sessionStorage.setItem("scrollToScholarGrid", "true")
-                  }
+                  onClick={() => {
+                    sessionStorage.setItem("scrollToScholarGrid", "true");
+                    sessionStorage.setItem("clickedStoryId", story.id);
+                  }}
                 >
                   Read More →
                 </Link>
@@ -56,14 +73,14 @@ const ScholarStoriesGrid = () => {
 
         <div className="ss-buttons">
 
-          {!showAll && (
-            <button
-              className="btn-primary"
-              onClick={() => setShowAll(true)}
-            >
-              READ MORE SCHOLAR STORIES
-            </button>
-          )}
+          <button
+            className="btn-primary"
+            onClick={toggleStories}
+          >
+            {showAll
+              ? "SHOW LESS STORIES"
+              : "EXPLORE MORE SCHOLAR STORIES"}
+          </button>
 
           <button className="btn-outline">
             SUPPORT A SCHOLAR'S JOURNEY
