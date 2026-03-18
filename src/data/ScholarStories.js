@@ -32,7 +32,7 @@ import Murtaza from "../assets/Images/Murtaza.webp";
 import murtazathumb from "../assets/Thumbnails/murtazathumb.png";
 
 import Akhter from "../assets/Images/Akhter.webp";
-import akhterthumb from "../assets/Thumbnails/Akhterthumb.png";
+import akhterthumb from "../assets/Thumbnails/akhterthumb.png";
 
 import Adleen from "../assets/Images/Adleen.webp";
 import adleenthumb from "../assets/Thumbnails/adleenthumb.png";
