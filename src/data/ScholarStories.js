@@ -26,16 +26,16 @@ import Idrees from "../assets/Images/Idrees.webp";
 import idreesthumb from "../assets/Thumbnails/idreesthumb.png";
 
 import Fiza from "../assets/Images/Fiza.jpg";
-import fizathumb from "../assets/Thumbnails/Fizathumb.png";
+import fizathumb from "../assets/Thumbnails/fizathumb.png";
 
 import Murtaza from "../assets/Images/Murtaza.webp";
-import murtazathumb from "../assets/Thumbnails/Murtazathumb.png";
+import murtazathumb from "../assets/Thumbnails/murtazathumb.png";
 
 import Akhter from "../assets/Images/Akhter.webp";
 import akhterthumb from "../assets/Thumbnails/Akhterthumb.png";
 
 import Adleen from "../assets/Images/Adleen.webp";
-import adleenthumb from "../assets/Thumbnails/Adleenthumb.png";
+import adleenthumb from "../assets/Thumbnails/adleenthumb.png";
 
 import Tabinda from "../assets/Images/Tabinda.webp";
 import tabindathumb from "../assets/Thumbnails/tabindathumb.png";
