@@ -1,63 +1,68 @@
 import Gousia from "../assets/Images/Gousia.webp";
-import GousiaThumb from "../assets/Thumbnails/GousiaThumb.webp";
+import gousiathumb from "../assets/Thumbnails/gousiathumb.png";
 
 import Snobar from "../assets/Images/Snobar.webp";
-import SnoberThumb from "../assets/Thumbnails/SnoberThumb.webp";
+import snoberthumb from "../assets/Thumbnails/snoberthumb.png";
 
 import Irfan from "../assets/Images/Irfan.webp";
-import IrfanThumb from "../assets/Thumbnails/IrfanThumb.webp";
+import irfanthumb from "../assets/Thumbnails/irfanthumb.png";
 
 import Azhar from "../assets/Images/Azhar.webp";
-import AzharThumb from "../assets/Thumbnails/AzharThumb.webp";
+import azharthumb from "../assets/Thumbnails/azharthumb.png";
 
 import Saba from "../assets/Images/Saba.webp";
-import SabaThumb from "../assets/Thumbnails/SabaThumb.webp";
+import sabathumb from "../assets/Thumbnails/sabathumb.png";
 
 import Nadeem from "../assets/Images/Nadeem.webp";
-import NadeemThumb from "../assets/Thumbnails/NadeemThumb.webp";
+import nadeemthumb from "../assets/Thumbnails/nadeemthumb.png";
 
 import Shabdhar from "../assets/Images/Shabdhar.webp";
-// import Saba from "../assets/Thumbnails/Saba.webp";
+import shabdharthumb from "../assets/Thumbnails/shabdharthumb.png";
 
 import umerabdullah from "../assets/Images/umerabdullah.jpg";
-import UmerThumb from "../assets/Thumbnails/UmerThumb.webp";
+import umerthumb from "../assets/Thumbnails/umerthumb.png";
 
 import Idrees from "../assets/Images/Idrees.webp";
-import IdreesThumb from "../assets/Thumbnails/IdreesThumb.webp";
+import idreesthumb from "../assets/Thumbnails/idreesthumb.png";
 
 import Fiza from "../assets/Images/Fiza.jpg";
-import FizaThumb from "../assets/Thumbnails/FizaThumb.webp";
+import fizathumb from "../assets/Thumbnails/Fizathumb.png";
 
 import Murtaza from "../assets/Images/Murtaza.webp";
-import MurtazaThumb from "../assets/Thumbnails/MurtazaThumb.webp";
+import murtazathumb from "../assets/Thumbnails/Murtazathumb.png";
 
 import Akhter from "../assets/Images/Akhter.webp";
-import AkhterThumb from "../assets/Thumbnails/AkhterThumb.webp";
+import akhterthumb from "../assets/Thumbnails/Akhterthumb.png";
 
 import Adleen from "../assets/Images/Adleen.webp";
-import AdleenThumb from "../assets/Thumbnails/AdleenThumb2.webp";
+import adleenthumb from "../assets/Thumbnails/Adleenthumb.png";
 
 import Tabinda from "../assets/Images/Tabinda.webp";
-import TabindaThumb from "../assets/Thumbnails/TabindaThumb.webp";
+import tabindathumb from "../assets/Thumbnails/tabindathumb.png";
 
 import Anayat from "../assets/Images/Anayat_yousuf.webp";
-import AnayatThumb from "../assets/Thumbnails/AnayatThumb.webp";
+import anayatthumb from "../assets/Thumbnails/anayatthumb.png";
 
 import Mehak from "../assets/Images/mahak.jpg";
-import MehakThumb from "../assets/Thumbnails/MehakThumb.webp";
+import mehak from "../assets/Images/mehak.png";
 
 import Karia from "../assets/Images/Karia.webp";
-import KariaThumb from "../assets/Thumbnails/KariaThumb.webp";
+import kariathumb from "../assets/Thumbnails/kariathumb.png";
 
 import Tabish from "../assets/Images/Tabish.webp";
-import TabishThumb from "../assets/Thumbnails/TabishThumb.webp";
+import tabishthumb from "../assets/Thumbnails/tabishthumb.png";
 
 import Snober from "../assets/Images/Snober_mehraj.webp";
-import SnoberThumb2 from "../assets/Thumbnails/SnoberThumb2.webp";
+import snober2thumb from "../assets/Thumbnails/snober2thumb.png";
 
 import Owais from "../assets/Images/Owais.webp";
-import OwaisThumb from "../assets/Thumbnails/OwaisThumb.webp";
+import owaisthumb from "../assets/Thumbnails/owaisthumb.png";
 
+import Jehangir from "../assets/Images/Jehangir.webp";
+import jehangirthumb from "../assets/Thumbnails/jehangirthumb.png";
+
+import Umair from "../assets/Images/umair.webp";
+import umairthumb from "../assets/Thumbnails/umairthumb.png";
 
 
 
@@ -70,7 +75,7 @@ const scholarStories = [
     name: "Gousia Hassan",
     year: 2024,
     slug: "gousia-hassan",   // used in URL
-    thumbnail: GousiaThumb,  // used in grid
+    thumbnail: gousiathumb,  // used in grid
     title: "My journey with KEI: Gousia Hassan",
     date: "March 17, 2025",
     image: Gousia,
@@ -92,7 +97,7 @@ const scholarStories = [
     name: "Snobar Mehraj",
     year: 2024,
     slug: "snober-mehraj",   // used in URL
-    thumbnail: SnoberThumb,  // used in grid
+    thumbnail: snoberthumb,  // used in grid
     title: "Snobar and KEI: Journey Unfolds!",
     date: "March 16, 2025",
     image: Snobar,
@@ -113,10 +118,10 @@ const scholarStories = [
 
   {
     id: 3,
-    name: "Irfan",
+    name: "Irfan Shafi",
     year: 2024,    
     slug: "irfan-shafi",   // used in URL
-    thumbnail: IrfanThumb,  // used in grid
+    thumbnail: irfanthumb,  // used in grid
     title: "Irfan Shafi's Journey with KEI",
     date: "March 1, 2025",
     image: Irfan,
@@ -133,10 +138,10 @@ const scholarStories = [
 
   {
     id: 4,
-    name: "Azhar",
+    name: "Azhar Ul Haq",
     year: 2024,    
     slug: "azhar-bhat",   // used in URL
-    thumbnail: AzharThumb,  // used in grid
+    thumbnail: azharthumb,  // used in grid
     title: "Azhar's Story with KEI",
     date: "April 09, 2024",
     image: Azhar,
@@ -154,7 +159,7 @@ const scholarStories = [
     name: "Saba Ahad",
     year: 2024,    
     slug: "saba-ahad",   // used in URL
-    thumbnail: SabaThumb,  // used in grid
+    thumbnail: sabathumb,  // used in grid
     title: "Saba Ahad's Story with KEI",
     date: "April 08, 2024",
     image: Saba,
@@ -172,7 +177,7 @@ const scholarStories = [
     name: "Nadeem Fayaz",
     year: 2024,    
     slug: "nadeem-fayaz",   // used in URL
-    thumbnail: NadeemThumb,  // used in grid
+    thumbnail: nadeemthumb,  // used in grid
     title: "Nadeem's Story with KEI",
     date: "April 06, 2024",
     image: Nadeem,
@@ -186,7 +191,7 @@ const scholarStories = [
     name: "Sabdhar Bashir",
     year: 2024,    
     slug: "sabhdhar-bashir",   // used in URL
-    thumbnail: SnoberThumb,  // used in grid
+    thumbnail: shabdharthumb,  // used in grid
     title: "Shabdhar's Story with KEI",
     date: "March 20, 2025",
     image: Shabdhar,
@@ -206,7 +211,7 @@ const scholarStories = [
     name: "Umer Abdullah",
     year: 2024,    
     slug: "umer-abdullah",   // used in URL
-    thumbnail: UmerThumb,  // used in grid
+    thumbnail: umerthumb,  // used in grid
     title: "Umer Abdullah's Journey with KEI",
     date: "April 03, 2024",
     image: umerabdullah,
@@ -224,7 +229,7 @@ const scholarStories = [
     name: "Idrees Ashraf",
     year: 2024,    
     slug: "idrees-Ashraf",   // used in URL
-    thumbnail: IdreesThumb,  // used in grid
+    thumbnail: idreesthumb,  // used in grid
     title: "Idree's Journey with KEI",
     date: "March 02, 2024",
     image: Idrees,
@@ -246,7 +251,7 @@ const scholarStories = [
     name: "Fiza Jan",
     year: 2024,    
     slug: "fiza-jan",   // used in URL
-    thumbnail: FizaThumb,  // used in grid
+    thumbnail: fizathumb,  // used in grid
     title: "Fiza Jan's Journey with KEI",
     date: "April 01, 2024",
     image: Fiza,
@@ -269,7 +274,7 @@ const scholarStories = [
     name: "Murtaza Ahmad",
     year: 2024,    
     slug: "murtaza-ahmad",   // used in URL
-    thumbnail: MurtazaThumb,  // used in grid
+    thumbnail: murtazathumb,  // used in grid
     title: "Murtaza's Journey with KEI",
     date: "March 31, 2024",
     image: Murtaza,
@@ -285,7 +290,7 @@ const scholarStories = [
     name: "Akhter Ali",
     year: 2024,    
     slug: "akhter-ali",   // used in URL
-    thumbnail: AkhterThumb,  // used in grid
+    thumbnail: akhterthumb,  // used in grid
     title: "Akhter's Journey with KEI",
     date: "March 29, 2024",
     image: Akhter,
@@ -300,7 +305,7 @@ const scholarStories = [
     name: "Adleen Nazir",
     year: 2024,    
     slug: "adleen-nazir",   // used in URL
-    thumbnail: AdleenThumb,  // used in grid
+    thumbnail: adleenthumb,  // used in grid
     title: "Adleen's Journey with KEI",
     date: "March 28, 2024",
     image: Adleen,
@@ -318,7 +323,7 @@ const scholarStories = [
     name: "Tabinda Manzoor",
     year: 2024,    
     slug: "tabinda-manzoor",   // used in URL
-    thumbnail: TabindaThumb,  // used in grid
+    thumbnail: tabindathumb,  // used in grid
     title: "Tabinda's Journey with KEI",
     date: "March 27, 2024",
     image: Tabinda,
@@ -342,7 +347,7 @@ const scholarStories = [
     name: "Anayat Yousuf",
     year: 2024,    
     slug: "anayat-yousuf",   // used in URL
-    thumbnail: AnayatThumb,  // used in grid
+    thumbnail: anayatthumb,  // used in grid
     title: "From Kashmir to Germany! A short story by our scholar Anayat",
     date: "March 28, 2024",
     image: Anayat,
@@ -357,9 +362,9 @@ const scholarStories = [
 
         "The countless experiences in KEI gave me a unique birds-eye view of the educational happenings in and outside the classroom. The enthusiasm & joy KEI has for teaching, supporting and mentoring creates a fantastic atmosphere for learning and helped me bag a 60 lakh scholarship in UWC RBC GERMANY. UWC scholarship isn't only a feather in my cap, KEI has helped me with various achievements like All India Rank 136 in NEST-JUNIOR 2019, a Medal of Distinction for achieving Zonal rank 19 in National Science Olympiad 2020-21 or Silver medalist in Goprep talent search Examination.",
 
-        "Besides academics, KEI has remained with me in various projects like 'Utilisation of waste paper and preservation of Handicrafts on 26th NSC'.",
+        "Besides academics, KEI has remained with me in various projects like 'Utilisation of waste paper and preservation of Handicrafts on 26th NSC.",
 
-        "Thanks, KEI Once again"
+        "Thanks, KEI Once again",
 
 
     ]
@@ -370,7 +375,7 @@ const scholarStories = [
     name: "Mehak Fayaz",
     year: 2024,    
     slug: "mehak-fayaz",   // used in URL
-    thumbnail: MehakThumb,  // used in grid
+    thumbnail: mehak,  // used in grid
     title: "Mehak's Journey with KEI",
     date: "March 25, 2024",
     image: Mehak,
@@ -386,7 +391,7 @@ const scholarStories = [
     name: "Karia Zainab",
     year: 2024,    
     slug: "karia-zainab",   // used in URL
-    thumbnail: KariaThumb,  // used in grid
+    thumbnail: kariathumb,  // used in grid
     title: "Karia Zainab's Jouney with KEI",
     date: "March 23, 2024",
     image: Karia,
@@ -408,7 +413,7 @@ const scholarStories = [
     name: "Tabish Nabi",
     year: 2024,    
     slug: "tabish-nabi",   // used in URL
-    thumbnail: TabishThumb,  // used in grid
+    thumbnail: tabishthumb,  // used in grid
     title: "Tabish's Journey with KEI",
     date: "March 23, 2024",
     image: Tabish,
@@ -435,7 +440,7 @@ const scholarStories = [
     name: "Snober Mehraj",
     year: 2024,    
     slug: "snober-mehraj2",   // used in URL
-    thumbnail: SnoberThumb2,  // used in grid
+    thumbnail: snober2thumb,  // used in grid
     title: "Snober's Jouney with KEI",
     date: "March 20, 2024",
     image: Snober,
@@ -459,7 +464,7 @@ const scholarStories = [
     name: "Owais Amin",
     year: 2024,    
     slug: "owais-amin",   // used in URL
-    thumbnail: OwaisThumb,  // used in grid
+    thumbnail: owaisthumb,  // used in grid
     title: "Owais Amin's Journey with KEI",
     date: "March 18, 2024",
     image: Owais,
@@ -487,7 +492,51 @@ const scholarStories = [
 
     ]
 
-    }
+    },
+
+    {
+        id: 21,
+        name: "Jehangir Yousuf",
+        year: 2024,    
+        slug: "jehangir-yousuf",   // used in URL
+        thumbnail: jehangirthumb,  // used in grid
+        title: "Jehangir Yousuf's Journey in Medicine",
+        date: "March 15, 2024",
+        image: Jehangir,
+        paragraphs:[
+            "Myself Jehangir Yousuf. I am from Narbal, Budgam. I scored 677 out of 720 in NEET UG 2023. I also scored 492 out of 500 in the 12th class board examination.",
+    
+            "Talking about my journey regarding NEET, it was not the thing I planned yesterday & fulfilled today. It took a lot of dedication, determination & hard work to achieve such a feat. This journey is only smooth for some. It has a lot of hardships in it. The one who becomes habitual to these hardships & faces them happily makes this journey successful.",
+    
+            "In my journey with NEET, I would like to give credit to Kashmir Education Initiative (KEI) who stayed with me during each & every moment of my preparation. They provided me with a mentor who guided me throughout my journey. Also, the sessions with them regarding all the development of children like communication skills, how to overcome stress, how to make study effective & productive, etc. were quite helpful in my journey. I am very thankful to KEI for giving me things.",        
+    
+        ]
+    
+        },
+
+        {
+            id: 22,
+            name: "Umair Bashir",
+            year: 2024,    
+            slug: "umair-bashir",   // used in URL
+            thumbnail: umairthumb,  // used in grid
+            title: "A TECH CHAMP - KEI SCHOLAR",
+            date: "Feb 28, 2024",
+            image: Umair,
+            paragraphs:[
+                "I am Umair Bashir, an alumnus of Kashmir Education Initiative. I started in 2014 as a KEI scholar and then went on to become a volunteer. At first, I thought that KEI was only an organization that provided scholarships, but then I attended workshops and educational programs. These sessions opened my mind and broadened my vision. The financial aid not only helped me cover my tuition fees but also allowed me to focus more on my studies.",
+
+                "Even with busy lives, it can be hard to find time to volunteer. However, the benefits of volunteering have been enormous for me, my family, and my community. It has helped me to reduce stress, make friends, connect with the community, and learn new skills. Giving to others helps us to protect our mental and physical health. Volunteering has also allowed me to gain experience and meet people in my field. Even if I am not planning on changing careers, volunteering also allowed me to practice important skills used in the workplace, such as teamwork, communication, problem-solving, project planning, task management, and organization.",
+
+                "In 2018, I was introduced to the Student Advisory Board (SAB) as a member. After gaining more experience, I was assigned as the Social Media Lead. In this role, I have been able to connect our scholars with KEI through the SAB social media pages. This was the beginning of my learning new skills. I also joined the A2STEM initiative as a member and learned about courses such as graphics design and robotics. During the pandemic, with the internet easily accessible, I continued to learn more about these courses. Today I can multitask programs such as photo editing and video processing thanks to my experience with the Kashmir Education Initiative.",
+
+                "One of the most rewarding aspects of my experience with KEI has been the opportunity to give back to my community. Through volunteering and participating in various initiatives, I have been able to make a positive impact on the lives of others and contribute to the development of my community. It has been a truly fulfilling and enriching experience, and I am grateful for the opportunity to be a part of KEI.",
+
+                "I was also selected for the GAP, Graduate Abroad Program, which has allowed me to connect with people from all over the world. They have provided me with their expertise and ideas on how to navigate studying abroad in my field of engineering. I have been assigned a mentor who helps me with my research on universities, and we have bi-weekly meetings to discuss my progress on applications. The program has opened doors for me by introducing me to helpful people and is allowing me to develop my professional life and skills. I am currently applying to multiple universities in different countries, and I am confident that I will receive an acceptance from one of them. The next four to five months will be crucial for my future as they will shape the direction of my career."
+        
+            ]
+        
+            }
 
 ];
 

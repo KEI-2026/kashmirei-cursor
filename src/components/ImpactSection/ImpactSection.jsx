@@ -8,8 +8,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import mehak from "../../assets/Images/mehak.png";
-import karia from "../../assets/Images/karia.png";
-import anayat from "../../assets/Images/anayat.png";
+import karia from "../../assets/Images/kariathumb.png";
+import anayat from "../../assets/Images/anayatthumb.png";
 
 const ImpactSection = () => {
   return (

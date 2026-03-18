@@ -2,8 +2,8 @@ import React from "react";
 import "../../styles/What-We-Do/whatwedo-stories.css";
 
 import mehak from "../../assets/Images/mehak.png";
-import anayat from "../../assets/Images/anayat.png";
-import karia from "../../assets/Images/karia.png";
+import anayatthumb from "../../assets/Images/anayatthumb.png";
+import karia from "../../assets/Images/kariathumb.png";
 
 const WhatWeDoStories = () => {
   return (
@@ -27,7 +27,7 @@ const WhatWeDoStories = () => {
           </div>
 
           <div className="wwd-story-card">
-            <img src={anayat} alt="Farhat Shabir" />
+            <img src={anayatthumb} alt="Farhat Shabir" />
             <p>“Mindler was a game-changer! AI-guided insights helped me find the right career path I never imagined.”</p>
             <h4>Farhat Shabir</h4>
             <span>Science Student Turned Career Explorer</span>
@@ -52,7 +52,7 @@ const WhatWeDoStories = () => {
           </div>
 
           <div className="wwd-story-card">
-            <img src={anayat} alt="Farhat Shabir" />
+            <img src={anayatthumb} alt="Farhat Shabir" />
             <p>“Thanks to the Gooru Navigator Program, I didn’t need extra tuition—KEI gave me everything I needed to succeed.”</p>
             <h4>Farhat Shabir</h4>
             <span>Science Student Turned Career Explorer</span>

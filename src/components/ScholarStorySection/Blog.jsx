@@ -1,11 +1,12 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import scholarStories from "../../data/ScholarStories";
 import "../../styles/Scholar-Page/story-section.css";
 
 const Blog = () => {
 
   const { slug } = useParams();
+  const navigate = useNavigate();
 
   const story = scholarStories.find(
     s => s.slug === slug
@@ -15,21 +16,29 @@ const Blog = () => {
     return <div>Story not found</div>;
   }
 
+  const handleBackClick = () => {
+    navigate(-1); // 🔥 go back one step
+  };
+
   return (
     <section className="story-section">
 
       <div className="story-container">
 
         {/* Back button */}
-        <Link
-          to="/scholar-stories"
+        <button
           className="back-button"
-          onClick={() =>
-            sessionStorage.setItem("scrollToScholarGrid", "true")
-          }
+          onClick={handleBackClick}
         >
           ← Back to Scholar Stories
-        </Link>
+        </button>
+
+
+        {/* Back button */} 
+        {/* <button className="back-button" 
+        onClick={handleBackClick} > 
+          ← Back to Scholar Stories 
+          </button> */}
 
         <div className="story-date">{story.date}</div>
 

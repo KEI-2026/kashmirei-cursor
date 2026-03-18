@@ -10,6 +10,11 @@ const ScholarStorySection = () => {
   // Sort newest year first
   years.sort((a, b) => b - a);
 
+  const handleClick = (storyId) => {
+    sessionStorage.setItem("scrollToScholarGrid", "true");
+    sessionStorage.setItem("clickedStoryId", storyId);
+  };
+
   return (
     <section id="scholar-stories-grid" className="story-archive">
 
@@ -34,12 +39,10 @@ const ScholarStorySection = () => {
                   <Link
                     key={story.id}
                     id={`story-card-${story.id}`}
+                    data-story-id={story.id}
                     to={`/blog/${story.slug}`}
                     className="story-card"
-                    onClick={() => {
-                      sessionStorage.setItem("scrollToScholarGrid", "true");
-                      sessionStorage.setItem("clickedStoryId", story.id);
-                    }}
+                    onClick={() => handleClick(story.id)}
                   >
 
                     <div className="story-thumb">
