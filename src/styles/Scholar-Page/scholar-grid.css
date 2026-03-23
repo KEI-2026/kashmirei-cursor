@@ -8,7 +8,7 @@
 }
 
 .section-ss-grid .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -19,9 +19,9 @@
 
 .ss-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px 40px;
-  margin-top: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+  margin-top: 50px;
 }
 
 /* =====================================
@@ -31,19 +31,24 @@
 .ss-card {
   position: relative;
   background: #f8f9fb;
-  padding: 60px 35px 35px;
-  border-radius: 14px;
+  padding: 75px 42px 40px;
+  border-radius: 18px;
+  min-height: 320px;
 
   border: 1px solid #e9eaee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 
   text-align: center;
   transition: 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .ss-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07);
 }
 
 /* =====================================
@@ -51,17 +56,17 @@
 ===================================== */
 
 .ss-card img {
-  width: 72px;
-  height: 72px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
   object-fit: cover;
 
   position: absolute;
-  top: -36px;
+  top: -43px;
   left: 50%;
   transform: translateX(-50%);
 
-  border: 6px solid #ffffff;
+  border: 4px solid #ffffff;
   background: #ffffff;
 }
 
@@ -70,11 +75,11 @@
 ===================================== */
 
 .ss-card p {
-  font-size: 13.5px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.8;
   font-style: italic;
   color: #444;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 /* =====================================
@@ -82,20 +87,10 @@
 ===================================== */
 
 .ss-card h4 {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   color: #111;
-}
-
-/* =====================================
-   DESIGNATION
-===================================== */
-
-.ss-card span {
-  font-size: 12px;
-  color: #48BEDA;
-  font-weight: 500;
 }
 
 /* =====================================
@@ -104,8 +99,8 @@
 
 .ss-read-more {
   display: inline-block;
-  margin-top: 12px;
-  font-size: 12px;
+  margin-top: auto;
+  font-size: 13px;
   font-weight: 600;
   color: #48BEDA;
   text-decoration: none;
@@ -189,9 +184,60 @@
 ===================================== */
 
 @media (max-width: 992px) {
+  .section-ss-grid .container {
+    padding: 0 30px;
+  }
+
+  .ss-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 24px;
+  }
+
+  .ss-card {
+    padding: 70px 28px 36px;
+    min-height: 300px;
+  }
+
+  .ss-card p {
+    font-size: 14px;
+  }
+
+  .ss-card h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-ss-grid {
+    padding: 100px 0;
+  }
+
+  .section-ss-grid .container {
+    padding: 0 20px;
+  }
 
   .ss-grid {
     grid-template-columns: 1fr;
+    gap: 50px;
   }
 
+  .ss-card {
+    min-height: auto;
+    padding: 68px 24px 32px;
+  }
+
+  .ss-card img {
+    width: 76px;
+    height: 76px;
+    top: -38px;
+  }
+
+  .ss-card p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .ss-card h4 {
+    font-size: 15px;
+  }
 }

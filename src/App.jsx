@@ -22,6 +22,9 @@ import ScholarStories from "./components/pages/ScholarStories";
 // Blog Page
 import Blog from "./components/ScholarStorySection/Blog";
 
+// Videoplayer Page
+import ScholarVideoPlayer from "./components/ScholarStorySection/ScholarVideoPlayer";
+
 const App = () => {
   return (
     <>
@@ -39,6 +42,9 @@ const App = () => {
 
           {/* Blog route for individual stories */}
           <Route path="/blog/:slug" element={<Blog />} />
+
+          {/* Video route for stories */}
+          <Route path="/scholar-video/:slug" element={<ScholarVideoPlayer />} />
         </Routes>
       </main>
 

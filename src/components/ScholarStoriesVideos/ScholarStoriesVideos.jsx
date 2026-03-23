@@ -1,47 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../styles/Scholar-Page/scholar-videos.css";
-
-import Fiza from "../../assets/Images/Fiza.jpg";
-import umerabdullah from "../../assets/Images/umerabdullah.jpg";
-import mahak from "../../assets/Images/mahak.jpg";
+import scholarVideos from "../../data/ScholarVideos";
 
 const ScholarStoriesVideos = () => {
-  return (
-    <section className="section-ss-videos">
-      <div className="container">
+  const [showAll, setShowAll] = useState(false);
 
+  const videosToShow = showAll
+    ? scholarVideos
+    : scholarVideos.slice(0, 3);
+
+  const toggleVideos = () => {
+    setShowAll(!showAll);
+
+    if (showAll) {
+      setTimeout(() => {
+        const section = document.getElementById("scholar-videos-section");
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 100);
+    }
+  };
+
+  return (
+    <section id="scholar-videos-section" className="section-ss-videos">
+      <div className="container">
         <span className="ss-label">KEI ALUMNI SUCCESS</span>
-        <h2>KEI didn’t just help me study; <br /> they helped me dream.</h2>
+        <h2>
+          KEI didn’t just help me study; <br />
+          they helped me dream.
+        </h2>
 
         <div className="ss-video-grid">
+          {videosToShow.map((story) => (
+            <Link
+              key={story.id}
+              to={`/scholar-video/${story.slug}`}
+              className="ss-video-card"
+            >
+              <div className="ss-video-thumb-wrap">
+                <img
+                  src={story.thumbnail}
+                  alt={story.name}
+                  className="ss-video-thumbnail"
+                />
+              </div>
 
-          <div className="ss-video-card">
-            <img src={Fiza} alt="Fiza" />
-            <div className="play-btn">▶</div>
-            <h4>Fiza Jan’s Journey with KEI</h4>
-            <p>Pursuing BSc in Anesthesia</p>
-          </div>
+              <div className="ss-video-info">
+                <img
+                  src={story.image}
+                  alt={story.name}
+                  className="ss-video-avatar"
+                />
 
-          <div className="ss-video-card">
-            <img src={umerabdullah} alt="Umer" />
-            <div className="play-btn">▶</div>
-            <h4>Umer Abdullah’s Journey</h4>
-            <p>Aspiring Chartered Accountant</p>
-          </div>
-
-          <div className="ss-video-card">
-            <img src={mahak} alt="Mehak" />
-            <div className="play-btn">▶</div>
-            <h4>Mehak’s Journey with KEI</h4>
-            <p>Pursuing Medicine</p>
-          </div>
-
+                <div className="ss-video-text">
+                  <h4>{story.name}</h4>
+                  <p>{story.subtitle}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
 
-        <button className="btn-primary ss-bottom-btn">
-          EXPLORE MORE SCHOLAR STORIES
-        </button>
-
+        {scholarVideos.length > 3 && (
+          <button className="btn-primary ss-bottom-btn" onClick={toggleVideos}>
+            {showAll
+              ? "SHOW LESS VIDEOS"
+              : "EXPLORE MORE SCHOLAR VIDEOS"}
+          </button>
+        )}
       </div>
     </section>
   );

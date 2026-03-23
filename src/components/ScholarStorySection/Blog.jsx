@@ -25,13 +25,7 @@ const Blog = () => {
 
       <div className="story-container">
 
-        {/* Back button */}
-        <button
-          className="back-button"
-          onClick={handleBackClick}
-        >
-          ← Back to Scholar Stories
-        </button>
+        
 
 
         {/* Back button */} 
@@ -55,6 +49,14 @@ const Blog = () => {
           ))}
 
         </div>
+
+        {/* Back button */}
+        <button
+          className="back-button"
+          onClick={handleBackClick}
+        >
+          ← Back to Scholar Stories
+        </button>
 
       </div>
 

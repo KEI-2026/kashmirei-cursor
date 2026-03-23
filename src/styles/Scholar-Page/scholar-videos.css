@@ -1,164 +1,189 @@
 /* =========================================
-   SCHOLAR VIDEOS – TYPOGRAPHY MATCH
+   SCHOLAR VIDEOS
 ========================================= */
 
 .section-ss-videos {
-    padding: 160px 0 140px;
-    background: #ffffff;
-    text-align: center;
-  }
-  
-  .section-ss-videos .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-  
-  /* =========================================
-     LABEL (Roboto 500)
-  ========================================= */
-  
-  .ss-label {
-    font-family: "Roboto", sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #48BEDA;
-    margin-bottom: 14px;
-    display: block;
-  }
-  
-  /* =========================================
-     MAIN HEADING (Franklin Gothic Demi)
-  ========================================= */
-  
-  .section-ss-videos h2 {
-    font-family: "Franklin Gothic Demi", sans-serif;
-    font-size: 48px;
-    font-weight: 400; /* Demi handles weight visually */
-    line-height: 1.15;
-    margin: 0 0 70px;
-    color: #111;
-    letter-spacing: -0.4px;
-  }
-  
-  /* =========================================
-     GRID
-  ========================================= */
-  
+  padding: 160px 0 140px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.section-ss-videos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* LABEL */
+
+.ss-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #48BEDA;
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* HEADING */
+
+.section-ss-videos h2 {
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 70px;
+  color: #111;
+  letter-spacing: -0.4px;
+}
+
+/* GRID */
+
+.ss-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  align-items: start;
+}
+
+/* CARD */
+
+.ss-video-card {
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: inherit;
+}
+
+.ss-video-card:hover {
+  transform: translateY(-4px);
+}
+
+/* TOP THUMBNAIL */
+
+.ss-video-thumb-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #eee;
+}
+
+.ss-video-thumbnail {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+/* BOTTOM INFO */
+
+.ss-video-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.ss-video-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.ss-video-text {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.ss-video-text h4 {
+  margin: 0 0 6px;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.4;
+}
+
+.ss-video-text p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* BUTTON */
+
+.ss-bottom-btn {
+  margin-top: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
   .ss-video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
-  
-  /* =========================================
-     CARD
-  ========================================= */
-  
-  .ss-video-card {
-    position: relative;
-    text-align: center;
+
+  .section-ss-videos h2 {
+    font-size: 34px;
   }
-  
-  /* Thumbnail */
-  .ss-video-card img {
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
+
+  .ss-video-thumbnail {
+    height: 200px;
   }
-  
-  /* =========================================
-     PLAY BUTTON
-  ========================================= */
-  
-  .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #48BEDA;
-    color: #ffffff;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    box-shadow: 0 8px 25px rgba(72, 190, 218, 0.35);
-    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .section-ss-videos {
+    padding: 100px 0 90px;
   }
-  
-  /* =========================================
-     VIDEO TITLE (Franklin Gothic Demi)
-  ========================================= */
-  
-  .ss-video-card h4 {
-    margin-top: 22px;
-    font-family: "Franklin Gothic Demi", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #48BEDA;
-    letter-spacing: 0.2px;
+
+  .section-ss-videos .container {
+    padding: 0 20px;
   }
-  
-  /* =========================================
-     VIDEO SUBTEXT (Roboto 400)
-  ========================================= */
-  
-  .ss-video-card p {
-    margin-top: 6px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: #666;
+
+  .section-ss-videos h2 {
+    font-size: 28px;
   }
-  
-  /* =========================================
-     BUTTON
-  ========================================= */
-  
+
+  .ss-video-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ss-video-thumbnail {
+    height: 210px;
+  }
+
+  .ss-video-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ss-video-text h4 {
+    font-size: 15px;
+  }
+
+  .ss-video-text p {
+    font-size: 12px;
+  }
+
   .ss-bottom-btn {
-    margin-top: 70px;
+    width: 100%;
+    min-width: unset;
   }
-  
-  .ss-bottom-btn a {
-    display: inline-block;
-    background: #48BEDA;
-    color: #ffffff;
-    padding: 12px 28px;
-    border-radius: 6px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
-  
-  .ss-bottom-btn a:hover {
-    background: #3aa9c4;
-  }
-  
-  /* =========================================
-     RESPONSIVE
-  ========================================= */
-  
-  @media (max-width: 992px) {
-    .ss-video-grid {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-  
-    .section-ss-videos h2 {
-      font-size: 34px;
-    }
-  
-    .ss-video-card img {
-      height: 260px;
-    }
-  }
-  
+}
