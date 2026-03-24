@@ -1,6 +1,6 @@
-import GetInvolvedHero from "../GetInvolvedHero/GetInvolvedHero";
-import GetInvolvedWays from "../GetInvolvedWays/GetInvolvedWays";
-import GetInvolvedSupport from "../GetInvolvedSupport/GetInvolvedSupport";
+import GetInvolvedHero from "../GetInvolvedPart/GetInvolvedHero/GetInvolvedHero";
+import GetInvolvedWays from "../GetInvolvedPart/GetInvolvedWays/GetInvolvedWays";
+import GetInvolvedSupport from "../GetInvolvedPart/GetInvolvedSupport/GetInvolvedSupport";
 
 const GetInvolved = () => {
   return (

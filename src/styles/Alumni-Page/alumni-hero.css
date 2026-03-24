@@ -1,0 +1,134 @@
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.section-ss-hero {
+  position: relative;
+  padding: 140px 0 80px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+/* Container */
+
+.section-ss-hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Heading */
+
+.section-ss-hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.section-ss-hero h1 span {
+  color: #48BEDA;
+}
+
+/* Subtitle */
+
+.ss-subtitle {
+  font-size: 18px;
+  margin-top: 16px;
+  color: #333;
+}
+
+/* Description */
+
+.ss-description {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =====================================
+   TABLET (≤ 992px)
+===================================== */
+
+@media (max-width: 992px) {
+  .section-ss-hero {
+    padding: 75px 0 60px;
+    margin-top: 70px;
+  }
+
+  .section-ss-hero h1 {
+    font-size: 40px;
+  }
+
+  .ss-subtitle {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+
+  .ss-description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .section-ss-hero .container {
+    padding: 0 30px;
+  }
+}
+
+/* =====================================
+   MOBILE (≤ 768px)
+===================================== */
+
+@media (max-width: 768px) {
+  .section-ss-hero {
+    padding: 60px 0 50px;
+    margin-top: 60px;
+  }
+
+  .section-ss-hero h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .ss-subtitle {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .ss-description {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-top: 10px;
+  }
+
+  .section-ss-hero .container {
+    padding: 0 20px;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE (≤ 480px)
+===================================== */
+
+@media (max-width: 480px) {
+  .section-ss-hero {
+    padding: 50px 0 40px;
+    margin-top: 50px;
+  }
+
+  .section-ss-hero h1 {
+    font-size: 24px;
+  }
+
+  .ss-subtitle {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .ss-description {
+    font-size: 12.5px;
+    margin-top: 8px;
+  }
+}

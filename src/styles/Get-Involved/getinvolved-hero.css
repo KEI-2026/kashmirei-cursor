@@ -4,14 +4,24 @@
 
 .gi-hero {
   position: relative;
-  padding: 160px 0 140px;
-  background-color: #e2e4e9;
+  padding: 190px 0 165px;
+  margin-top: 60px;
   text-align: center;
+  background-image: url("../../assets/Images/I-am.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  overflow: hidden;
 }
 
-/* Remove overlay */
+/* Transparent overlay */
 .gi-hero::after {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  z-index: 1;
 }
 
 /* Container */
@@ -30,6 +40,7 @@
   font-size: 54px;
   font-weight: 800;
   line-height: 1.2;
+  color: #111;
 }
 
 .gi-hero h1 span {
@@ -58,10 +69,11 @@
 ===================================== */
 
 @media (max-width: 992px) {
-
   .gi-hero {
-    padding: 120px 0 100px;
-    margin-top: 70px; /* spacing below navbar */
+    padding: 145px 0 120px;
+    margin-top: 70px;
+    background-size: contain;
+    background-position: center center;
   }
 
   .gi-hero .container {
@@ -81,7 +93,6 @@
     font-size: 14px;
     line-height: 1.7;
   }
-
 }
 
 /* =====================================
@@ -89,10 +100,11 @@
 ===================================== */
 
 @media (max-width: 768px) {
-
   .gi-hero {
-    padding: 90px 0 80px;
+    padding: 110px 0 90px;
     margin-top: 60px;
+    background-size: contain;
+    background-position: center center;
   }
 
   .gi-hero .container {
@@ -113,7 +125,6 @@
     font-size: 13px;
     line-height: 1.6;
   }
-
 }
 
 /* =====================================
@@ -121,10 +132,10 @@
 ===================================== */
 
 @media (max-width: 480px) {
-
   .gi-hero {
-    padding: 70px 0 60px;
+    padding: 85px 0 70px;
     margin-top: 50px;
+    background-size: contain;
   }
 
   .gi-hero h1 {
@@ -138,5 +149,4 @@
   .gi-small {
     font-size: 12.5px;
   }
-
 }

@@ -18,12 +18,14 @@ import WhatWeDo from "./components/pages/WhatWeDo";
 import Donate from "./components/pages/Donate";
 import GetInvolved from "./components/pages/GetInvolved";
 import ScholarStories from "./components/pages/ScholarStories";
+import ImpactByNumbers from "./components/pages/ImpactByNumbers";
+import AlumniStories from "./components/pages/AlumniStories";
 
 // Blog Page
-import Blog from "./components/ScholarStorySection/Blog";
+import Blog from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/Blog";
 
-// Videoplayer Page
-import ScholarVideoPlayer from "./components/ScholarStorySection/ScholarVideoPlayer";
+// Video Player Page
+import ScholarVideoPlayer from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/ScholarVideoPlayer";
 
 const App = () => {
   return (
@@ -38,12 +40,16 @@ const App = () => {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/get-involved" element={<GetInvolved />} />
-          <Route path="/scholar-stories" element={<ScholarStories />} />
 
-          {/* Blog route for individual stories */}
+          {/* Our Impact dropdown pages */}
+          <Route path="/impact-by-numbers" element={<ImpactByNumbers />} />
+          <Route path="/scholar-stories" element={<ScholarStories />} />
+          <Route path="/alumni-stories" element={<AlumniStories />} />
+
+          {/* Blog route for individual scholar stories */}
           <Route path="/blog/:slug" element={<Blog />} />
 
-          {/* Video route for stories */}
+          {/* Video route for scholar/alumni videos */}
           <Route path="/scholar-video/:slug" element={<ScholarVideoPlayer />} />
         </Routes>
       </main>

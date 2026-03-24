@@ -1,6 +1,6 @@
-import WhatWeDoHero from "../WhatWeDoHero/WhatWeDoHero";
-import WhatWeDoPrograms from "../WhatWeDoPrograms/WhatWeDoPrograms";
-import WhatWeDoStories from "../WhatWeDoStories/WhatWeDoStories";
+import WhatWeDoHero from "../WhatWeDoPart/WhatWeDoHero/WhatWeDoHero";
+import WhatWeDoPrograms from "../WhatWeDoPart/WhatWeDoPrograms/WhatWeDoPrograms";
+import WhatWeDoStories from "../WhatWeDoPart/WhatWeDoStories/WhatWeDoStories";
 
 
 

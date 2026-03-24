@@ -6,6 +6,7 @@ import logo from "../../assets/Images/logo.png";
 const FOOTER_QUICK_LINKS = [
   { path: "/", label: "Home" },
   { path: "/get-involved", label: "About Us" }, // needs correct page
+  { path: "/scholar-stories", label: "Events" },
   { path: "/what-we-do", label: "What We Do" },
   { path: "/scholar-stories", label: "Scholar Stories" },
   { path: "/donate", label: "Media" }, // needs correct page
