@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import scholarVideos from "../../../data/ScholarVideos";
-import "../../../styles/Scholar-Page/scholar-video-player.css";
+import alumniVideos from "../../../../data/AlumniVideos";
+import "../../../../styles/Alumni-Page/alumni-video-player.css";
 
-const ScholarVideoPlayer = () => {
+const AlumniVideoPlayer = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const videoRef = useRef(null);
 
-  const videoStory = scholarVideos.find((item) => item.slug === slug);
+  const videoStory = alumniVideos.find((item) => item.slug === slug);
 
   const handleFullscreen = () => {
     const video = videoRef.current;
@@ -171,4 +171,4 @@ const ScholarVideoPlayer = () => {
   );
 };
 
-export default ScholarVideoPlayer;
+export default AlumniVideoPlayer;

@@ -1,0 +1,115 @@
+.gi-page {
+  padding: 140px 0;
+  background: #f5f6f8;
+}
+
+.gi-page .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.gi-page h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.gi-page p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 8px 16px;
+  background: #48BEDA;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Inter", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #3aa7c3;
+}
+
+/* ======================================
+   Responsive for Tablets (≤ 992px)
+====================================== */
+@media (max-width: 992px) {
+  .gi-page {
+    padding: 120px 0;
+  }
+
+  .gi-page .container {
+    padding: 0 30px;
+  }
+
+  .gi-page h1 {
+    font-size: 36px;
+  }
+
+  .gi-page p {
+    font-size: 15px;
+  }
+
+  .back-button {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+/* ======================================
+   Responsive for Mobile (≤ 768px)
+====================================== */
+@media (max-width: 768px) {
+  .gi-page {
+    padding: 100px 0;
+  }
+
+  .gi-page .container {
+    padding: 0 20px;
+  }
+
+  .gi-page h1 {
+    font-size: 30px;
+  }
+
+  .gi-page p {
+    font-size: 14px;
+  }
+
+  .back-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+/* ======================================
+   Responsive for Extra Small (≤ 480px)
+====================================== */
+@media (max-width: 480px) {
+  .gi-page {
+    padding: 80px 0;
+  }
+
+  .gi-page h1 {
+    font-size: 26px;
+  }
+
+  .gi-page p {
+    font-size: 13px;
+  }
+
+  .back-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

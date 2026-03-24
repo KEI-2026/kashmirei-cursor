@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../../../styles/Alumni-Page/alumni-grid.css";
-
 import alumniStories from "../../../../data/AlumniStories";
 
 const AlumniStoriesGrid = () => {
   const [showAll, setShowAll] = useState(false);
 
+  // ✅ Sort by year DESC (2025 first)
+  const sortedStories = [...alumniStories].sort(
+    (a, b) => (b.year || 0) - (a.year || 0)
+  );
+
   const storiesToShow = showAll
-    ? alumniStories
-    : alumniStories.slice(0, 10);
+    ? sortedStories
+    : sortedStories.slice(0, 9);
 
   const toggleStories = () => {
     setShowAll(!showAll);

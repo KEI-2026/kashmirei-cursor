@@ -37,7 +37,7 @@ const AlumniStoriesVideos = () => {
           {videosToShow.map((story) => (
             <Link
               key={story.id}
-              to={`/scholar-video/${story.slug}`}
+              to={`/alumni-video/${story.slug}`}
               className="ss-video-card"
             >
               <h4 className="ss-video-name">{story.name}</h4>

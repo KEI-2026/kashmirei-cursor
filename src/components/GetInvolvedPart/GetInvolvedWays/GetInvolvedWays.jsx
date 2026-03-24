@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../../styles/Get-Involved/getinvolved-ways.css";
 
 import donateIcon from "../../../assets/Images/donate-icon.webp";
@@ -21,28 +22,28 @@ const GetInvolvedWays = () => {
             <img src={donateIcon} alt="Donate" />
             <h3>Donate Today</h3>
             <p>Every contribution creates a ripple effect of opportunity.</p>
-            <a href="/donate">DONATE NOW</a>
+            <Link to="/donate">DONATE NOW</Link>
           </div>
 
           <div className="gi-card">
             <img src={mentorIcon} alt="Mentor" />
             <h3>Mentor</h3>
             <p>Guide a scholar’s journey and be part of their transformation.</p>
-            <a href="#">BECOME A MENTOR</a>
+            <Link to="/become-a-mentor">BECOME A MENTOR</Link>
           </div>
 
           <div className="gi-card">
             <img src={volunteerIcon} alt="Volunteer" />
             <h3>Volunteer</h3>
             <p>Join hands with us in operations, training, or outreach.</p>
-            <a href="#">VOLUNTEER WITH US</a>
+            <Link to="/volunteer-with-us">VOLUNTEER WITH US</Link>
           </div>
 
           <div className="gi-card">
             <img src={sponsorIcon} alt="Sponsor" />
             <h3>Sponsor a Scholar</h3>
             <p>Fund a specific initiative like career workshops or digital learning.</p>
-            <a href="#">SPONSOR A PROGRAM</a>
+            <Link to="/sponsor-a-scholar">SPONSOR A PROGRAM</Link>
           </div>
 
         </div>
