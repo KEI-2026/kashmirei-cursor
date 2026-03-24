@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../styles/Alumni-Page/Alumni-hero.css";
+import "../../../../styles/Alumni-Page/alumni-hero.css";
 
 const AlumniStoriesHero = () => {
   return (
