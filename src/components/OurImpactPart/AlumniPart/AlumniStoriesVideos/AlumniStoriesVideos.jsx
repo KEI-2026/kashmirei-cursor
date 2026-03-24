@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../../../styles/alumni-Page/alumni-videos.css";
+import "../../../../styles/Alumni-Page/alumni-videos.css";
 import alumniVideos from "../../../../data/AlumniVideos";
 
 const AlumniStoriesVideos = () => {
