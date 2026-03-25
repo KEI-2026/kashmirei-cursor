@@ -240,9 +240,11 @@
 
   .ss-preview {
     font-size: 13px;
+
     line-height: 1.7;
     -webkit-line-clamp: 6; /* fewer lines for mobile */
     max-height: calc(1.7em * 6);
+    
   }
 
   .ss-card h4 {
