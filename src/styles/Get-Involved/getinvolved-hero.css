@@ -4,40 +4,43 @@
 
 .gi-hero {
   position: relative;
-  margin-top: 60px;
+  margin: 60px auto 20px auto;
+
+  width: 90%;
+  max-width: 1100px;
+
   overflow: hidden;
-
-  transform: scale(0.9);
-  transform-origin: top center;
-
-  margin-bottom: -60px;
 }
-/* Swiper container */
+
+/* Swiper */
 .gi-swiper {
   width: 100%;
 }
 
-/* Slide background */
+/* Slide wrapper */
 .gi-slide {
   width: 100%;
 
-  /* 🔥 Increased height */
-  min-height: 920px;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* ✅ Controls overall section height */
+  max-height: 500px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: relative;
+  overflow: hidden;
 }
 
-/* ❌ REMOVE OVERLAY (no gray effect) */
-.gi-overlay {
-  display: none;
+/* 🔥 IMAGE (KEY PART) */
+.gi-image {
+  width: 100%;
+  height: auto;
+
+  /* ✅ Keeps full image visible */
+  object-fit: contain;
+
+  /* ✅ Prevents oversized images */
+  max-height: 500px;
 }
 
 /* =====================================
@@ -45,53 +48,39 @@
 ===================================== */
 
 .gi-swiper .swiper-pagination {
-  position: absolute !important;
-  bottom: 25px !important;
-  text-align: center;
+  bottom: 10px !important;
 }
 
 .gi-swiper .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  opacity: 1;
-  margin: 0 6px !important;
-  transition: 0.3s ease;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
 }
 
 .gi-swiper .swiper-pagination-bullet-active {
   background: #48BEDA;
-  transform: scale(1.2);
 }
 
 /* =====================================
    RESPONSIVE
 ===================================== */
 
-@media (max-width: 992px) {
-  .gi-slide {
-    min-height: 600px; /* slightly reduced but still tall */
-  }
-}
-
 @media (max-width: 768px) {
   .gi-slide {
-    min-height: 450px;
+    max-height: 350px;
   }
 
-  .gi-swiper .swiper-pagination {
-    bottom: 15px !important;
+  .gi-image {
+    max-height: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .gi-slide {
-    min-height: 360px;
+    max-height: 260px;
   }
 
-  .gi-swiper .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+  .gi-image {
+    max-height: 260px;
   }
 }

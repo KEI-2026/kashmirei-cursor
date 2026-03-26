@@ -49,7 +49,7 @@ const GetInvolvedWays = () => {
         </div>
 
         <blockquote className="gi-quote">
-          “Supporting KEI is like investing in the future of humanity—and it’s the best investment I’ve made.”
+          “Supporting KEI is like investing in the future of humanity.”
           <span>– KEI Supporter</span>
         </blockquote>
 

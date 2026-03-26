@@ -6,14 +6,20 @@ import { Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// images
-import giImage1 from "../../../assets/Images/I-am.jpg";
-import giImage2 from "../../../assets/Images/experiential-learning.webp";
-import giImage3 from "../../../assets/Images/career-counselling.webp";
+// ✅ NEW IMAGES
+import giImage10 from "../../../assets/Images/I-am.jpg";
+import giImage1 from "../../../assets/Images/getinvolved1.png";
+import giImage2 from "../../../assets/Images/getinvolved2.png";
+import giImage3 from "../../../assets/Images/getinvolved3.png";
+import giImage4 from "../../../assets/Images/getinvolved4.png";
+import giImage5 from "../../../assets/Images/getinvolved5.png";
+import giImage6 from "../../../assets/Images/getinvolved6.png";
+import giImage7 from "../../../assets/Images/getinvolved7.png";
+import giImage8 from "../../../assets/Images/getinvolved8.png";
+import giImage9 from "../../../assets/Images/getinvolved9.png";
 
 const GetInvolvedHero = () => {
   return (
-    // ✅ tabIndex added so section can receive keyboard focus if needed
     <section className="gi-hero" tabIndex={0}>
 
       <Swiper
@@ -21,45 +27,36 @@ const GetInvolvedHero = () => {
         loop={true}
         pagination={{ clickable: true }}
 
-        /* ✅ FIXED KEYBOARD SETTINGS */
         keyboard={{
           enabled: true,
-          onlyInViewport: false, // 🔥 KEY FIX (global keyboard control)
+          onlyInViewport: false,
           pageUpDown: false,
         }}
 
-        /* ✅ SMOOTH TRANSITION */
         speed={800}
-
         slidesPerView={1}
         spaceBetween={0}
-
         className="gi-swiper"
       >
 
-        {/* Slide 1 */}
-        <SwiperSlide>
-          <div
-            className="gi-slide"
-            style={{ backgroundImage: `url(${giImage1})` }}
-          />
-        </SwiperSlide>
-
-        {/* Slide 2 */}
-        <SwiperSlide>
-          <div
-            className="gi-slide"
-            style={{ backgroundImage: `url(${giImage2})` }}
-          />
-        </SwiperSlide>
-
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div
-            className="gi-slide"
-            style={{ backgroundImage: `url(${giImage3})` }}
-          />
-        </SwiperSlide>
+        {[
+          giImage10, 
+          giImage1,
+          giImage2,
+          giImage3,
+          giImage4,
+          giImage5,
+          giImage6,
+          giImage7,
+          giImage8,
+          giImage9
+        ].map((img, index) => (
+          <SwiperSlide key={index}>
+  <div className="gi-slide">
+    <img src={img} alt={`slide-${index}`} className="gi-image" />
+  </div>
+</SwiperSlide>
+        ))}
 
       </Swiper>
 
