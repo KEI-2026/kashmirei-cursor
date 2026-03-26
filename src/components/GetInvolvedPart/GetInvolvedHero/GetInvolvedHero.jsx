@@ -7,16 +7,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // ✅ NEW IMAGES
-import giImage10 from "../../../assets/Images/I-am.jpg";
-import giImage1 from "../../../assets/Images/getinvolved1.png";
-import giImage2 from "../../../assets/Images/getinvolved2.png";
-import giImage3 from "../../../assets/Images/getinvolved3.png";
-import giImage4 from "../../../assets/Images/getinvolved4.png";
-import giImage5 from "../../../assets/Images/getinvolved5.png";
-import giImage6 from "../../../assets/Images/getinvolved6.png";
-import giImage7 from "../../../assets/Images/getinvolved7.png";
-import giImage8 from "../../../assets/Images/getinvolved8.png";
-import giImage9 from "../../../assets/Images/getinvolved9.png";
+import giImage1 from "../../../assets/Images/I-am.jpg";
+import giImage2 from "../../../assets/Images/getinvolved1.png";
+import giImage3 from "../../../assets/Images/getinvolved2.png";
+import giImage4 from "../../../assets/Images/getinvolved3.png";
+import giImage5 from "../../../assets/Images/getinvolved4.png";
+import giImage6 from "../../../assets/Images/getinvolved5.png";
+import giImage7 from "../../../assets/Images/getinvolved6.png";
+import giImage8 from "../../../assets/Images/getinvolved7.png";
+import giImage9 from "../../../assets/Images/getinvolved8.png";
+// import giImage10 from "../../../assets/Images/getinvolved9.png";
 
 const GetInvolvedHero = () => {
   return (
@@ -40,8 +40,7 @@ const GetInvolvedHero = () => {
       >
 
         {[
-          giImage10, 
-          giImage1,
+          giImage1, 
           giImage2,
           giImage3,
           giImage4,
