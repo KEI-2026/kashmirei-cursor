@@ -38,23 +38,20 @@
 
 .gi-slide {
   width: 100%;
-  height: 600px; /* ✅ fixed height = stable layout */
+  height: 600px;
 
   overflow: hidden;
   position: relative;
 }
 
 /* =====================================
-   IMAGE (KEY CHANGE)
+   IMAGE
 ===================================== */
 
 .gi-image {
   width: 100%;
   height: 100%;
-
-  /* 🔥 THIS REMOVES ALL LINES */
   object-fit: cover;
-
   display: block;
 }
 
@@ -78,6 +75,50 @@
 }
 
 /* =====================================
+   NAVIGATION ARROWS (RECTANGLE STYLE)
+===================================== */
+
+.gi-swiper .swiper-button-next,
+.gi-swiper .swiper-button-prev {
+  color: #fff;
+  background: rgba(155, 155, 155, 0.5);
+
+  width: 30px;
+  height: 40px;
+
+  border-radius: 6px; /* rectangle */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Hover */
+.gi-swiper .swiper-button-next:hover,
+.gi-swiper .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Arrow icon */
+.gi-swiper .swiper-button-next::after,
+.gi-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Position */
+.gi-swiper .swiper-button-prev {
+  left: 10px;
+}
+
+.gi-swiper .swiper-button-next {
+  right: 10px;
+}
+
+/* =====================================
    RESPONSIVE
 ===================================== */
 
@@ -89,6 +130,12 @@
   .gi-slide {
     height: 320px;
   }
+
+  .gi-swiper .swiper-button-next,
+  .gi-swiper .swiper-button-prev {
+    width: 40px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -99,5 +146,11 @@
   .gi-swiper .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
+  }
+
+  .gi-swiper .swiper-button-next,
+  .gi-swiper .swiper-button-prev {
+    width: 34px;
+    height: 44px;
   }
 }
