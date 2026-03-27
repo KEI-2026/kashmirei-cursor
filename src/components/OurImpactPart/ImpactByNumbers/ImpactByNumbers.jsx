@@ -94,7 +94,7 @@ const ImpactSection = () => {
       desc: "Receiving structured academic and emotional support.",
     },
     {
-      number: "$1.4K",
+      number: "$1.2K",
       label: "Average Annual Income",
       desc: "Supporting students from economically challenged backgrounds.",
     },
@@ -113,12 +113,17 @@ const ImpactSection = () => {
       label: "Male–Female Ratio",
       desc: "Ensuring inclusive and balanced representation.",
     },
+    {
+      number: "$1.8K",
+      label: "Spent Per Scholar",
+      desc: "Digital access, mentoring, 21ᵗʰ century skills, AI career guidance, etc.",
+    },
   ];
 
   const alumniStats = [
     {
-      number: "200",
-      label: "Scholars Graduated",
+      number: "2200+",
+      label: "High School Program Graduated",
       desc: "Successfully transitioned into higher education paths.",
     },
     {
@@ -189,7 +194,7 @@ const ImpactSection = () => {
       {/* ALUMNI */}
       <section className="profile-section alumni-section">
         <div className="impact-container">
-          <h2 className="profile-title">2025 Alumni Profile</h2>
+          <h2 className="profile-title">2008 - 2022 Alumni Profile</h2>
 
           <div className="profile-grid">
             {alumniStats.map((item, index) => (
