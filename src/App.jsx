@@ -19,7 +19,7 @@ import Donate from "./components/pages/Donate";
 import GetInvolved from "./components/pages/GetInvolved";
 import ScholarStories from "./components/pages/ScholarStories";
 import ImpactByNumbers from "./components/pages/ImpactByNumbers";
-import AlumniStories from "./components/pages/AlumniStories";
+import AlumniVideos from "./components/pages/AlumniVideos";
 
 // Get Involved Pages
 import BecomeMentor from "./components/pages/GetInvolvedWays_Pages/BecomeMentor";
@@ -71,7 +71,7 @@ const App = () => {
 
           <Route path="/impact-by-numbers" element={<ImpactByNumbers />} />
           <Route path="/scholar-stories" element={<ScholarStories />} />
-          <Route path="/alumni-stories" element={<AlumniStories />} />
+          <Route path="/alumni-videos" element={<AlumniVideos />} />
 
           <Route path="/blog/:slug" element={<Blog />} />
 

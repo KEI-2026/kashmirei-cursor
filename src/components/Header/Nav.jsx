@@ -11,7 +11,7 @@ const NAV_LINKS = [
     dropdown: [
       { path: "/impact-by-numbers", label: "Impact by numbers" },
       { path: "/scholar-stories", label: "Scholar Stories" },
-      { path: "/alumni-stories", label: "Alumni Stories" },
+      { path: "/alumni-videos", label: "Alumni Videos" },
     ],
   },
   { path: "/get-involved", label: "Get Involved" },

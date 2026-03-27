@@ -6,7 +6,12 @@ import alumniVideos from "../../../../data/AlumniVideos";
 const AlumniStoriesVideos = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const videosToShow = showAll ? alumniVideos : alumniVideos.slice(0, 3);
+  const ITEMS_PER_ROW = 3;
+  const DEFAULT_ROWS = 5;
+
+  const videosToShow = showAll
+    ? alumniVideos
+    : alumniVideos.slice(0, ITEMS_PER_ROW * DEFAULT_ROWS);
 
   const toggleVideos = () => {
     setShowAll(!showAll);
@@ -40,8 +45,21 @@ const AlumniStoriesVideos = () => {
               to={`/alumni-video/${story.slug}`}
               className="ss-video-card"
             >
-              <h4 className="ss-video-name">{story.name}</h4>
+              {/* TOP: Profile + Text */}
+              <div className="ss-video-top">
+                <img
+                  src={story.image}
+                  alt={story.name}
+                  className="ss-video-avatar"
+                />
 
+                <div className="ss-video-text">
+                  <h4 className="ss-video-name">{story.name}</h4>
+                  <p className="ss-video-subtitle">{story.subtitle}</p>
+                </div>
+              </div>
+
+              {/* THUMBNAIL BELOW */}
               <div className="ss-video-thumb-wrap">
                 <img
                   src={story.thumbnail}
@@ -49,22 +67,13 @@ const AlumniStoriesVideos = () => {
                   className="ss-video-thumbnail"
                 />
               </div>
-
-              <div className="ss-video-bottom">
-                <img
-                  src={story.image}
-                  alt={story.name}
-                  className="ss-video-avatar"
-                />
-                <p className="ss-video-subtitle">{story.subtitle}</p>
-              </div>
             </Link>
           ))}
         </div>
 
-        {alumniVideos.length > 3 && (
+        {alumniVideos.length > ITEMS_PER_ROW * DEFAULT_ROWS && (
           <button className="btn-primary ss-bottom-btn" onClick={toggleVideos}>
-            {showAll ? "SHOW LESS VIDEOS" : "EXPLORE MORE AlUMNI VIDEOS"}
+            {showAll ? "SHOW LESS VIDEOS" : "SHOW MORE ALUMNI VIDEOS"}
           </button>
         )}
       </div>
