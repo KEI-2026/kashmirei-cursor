@@ -43,7 +43,7 @@ const GetInvolvedWays = () => {
             <img src={sponsorIcon} alt="Sponsor" />
             <h3>Sponsor a Scholar</h3>
             <p>Fund a specific initiative like career workshops or digital learning.</p>
-            <Link to="/sponsor-a-scholar">SPONSOR A PROGRAM</Link>
+            <Link to="/sponsor-a-scholar">SPONSOR A SCHOLAR</Link>
           </div>
 
         </div>
