@@ -6,7 +6,6 @@ import gousiathumb from "../assets/Thumbnails/gousia-thumb.webp";
 import irfanthumb from "../assets/Thumbnails/irfan-thumbnail.webp";
 import umithumb from "../assets/Thumbnails/umi-lubab-thumbnail.jpeg";
 import adleenthumb from "../assets/Thumbnails/adleen-thumbnail.webp";
-// import vardathumb from "../assets/Thumbnails/vardathumb.jpeg";
 import uzmaMujtabathumb from "../assets/Thumbnails/uzma-mujtabathumb.jpeg";
 import mustaqeemthumb from "../assets/Thumbnails/mustaqeemthumb.jpeg";
 import asifthumb from "../assets/Thumbnails/asifthumb.jpeg";
@@ -34,7 +33,6 @@ import asifprofile from "../assets/Profile/asifprofile.png";
 import seeratprofile from "../assets/Profile/seeratprofile.png";
 import uroojprofile from "../assets/Profile/uroojprofile.png";
 import uzmamujtabaprofile from "../assets/Profile/uzma-mujtabaprofile.png";
-// import vardaprofile from "../assets/Profile/vardaprofile.png";
 import baeedaprofile from "../assets/Profile/baeedaprofile.png";
 import uzmaprofile from "../assets/Profile/uzmaprofile.png";
 
