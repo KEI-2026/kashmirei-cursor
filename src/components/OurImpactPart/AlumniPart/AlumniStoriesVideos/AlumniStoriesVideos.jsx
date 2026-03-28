@@ -45,7 +45,6 @@ const AlumniStoriesVideos = () => {
               to={`/alumni-video/${story.slug}`}
               className="ss-video-card"
             >
-              {/* TOP: Profile + Text */}
               <div className="ss-video-top">
                 <img
                   src={story.image}
@@ -59,7 +58,6 @@ const AlumniStoriesVideos = () => {
                 </div>
               </div>
 
-              {/* THUMBNAIL BELOW */}
               <div className="ss-video-thumb-wrap">
                 <img
                   src={story.thumbnail}

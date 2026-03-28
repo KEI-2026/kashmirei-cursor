@@ -1,5 +1,5 @@
 /* =========================================
-   SCHOLAR VIDEO PLAYER PAGE
+   ALUMNI VIDEO PLAYER PAGE 
 ========================================= */
 
 .section-scholar-video-player {
@@ -14,7 +14,6 @@
 /* Main container */
 .section-scholar-video-player .container {
   max-width: 980px;
-  margin-top: 200px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -57,7 +56,7 @@
 }
 
 /* =========================================
-   VIDEO WRAPPER
+   VIDEO WRAPPER (UPDATED FOR IFRAME)
 ========================================= */
 
 .scholar-video-wrapper {
@@ -67,31 +66,20 @@
   background: #000;
   border-radius: 18px;
   overflow: hidden;
-  outline: none;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+
+  /* 🔥 KEY FIX */
+  aspect-ratio: 16 / 9;
+  position: relative;
 }
+
+/* IFRAME VIDEO */
 
 .scholar-video-element {
   width: 100%;
+  height: 100%;
+  border: none;
   display: block;
-  max-height: 440px;
-  background: #000;
-  outline: none;
-  object-fit: contain;
-}
-
-/* =========================================
-   FULLSCREEN FIX
-========================================= */
-
-.scholar-video-element:fullscreen,
-.scholar-video-element:-webkit-full-screen,
-.scholar-video-element:-ms-fullscreen {
-  width: 100vw;
-  height: 100vh;
-  max-height: none;
-  object-fit: contain;
-  background: #000;
 }
 
 /* =========================================
@@ -183,10 +171,6 @@
     max-width: 100%;
   }
 
-  .scholar-video-element {
-    max-height: 400px;
-  }
-
   .scholar-video-shortcuts {
     font-size: 12.5px;
     gap: 14px;
@@ -236,10 +220,6 @@
     border-radius: 14px;
   }
 
-  .scholar-video-element {
-    max-height: 280px;
-  }
-
   .scholar-video-shortcuts {
     margin-top: 14px;
     font-size: 11.5px;
@@ -274,10 +254,6 @@
 
   .scholar-video-header p {
     font-size: 12px;
-  }
-
-  .scholar-video-element {
-    max-height: 220px;
   }
 
   .scholar-video-shortcuts {

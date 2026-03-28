@@ -1,10 +1,12 @@
-// Thumbnail
+// Thumbnail 
+import ghazanfarthumb from "../assets/Thumbnails/ghazanfarthumb.png";
+import thumb from "../assets/Thumbnails/thumb.png";
 import snoberthumb from "../assets/Thumbnails/snober-thumbnail.webp";
 import gousiathumb from "../assets/Thumbnails/gousia-thumb.webp";
 import irfanthumb from "../assets/Thumbnails/irfan-thumbnail.webp";
 import umithumb from "../assets/Thumbnails/umi-lubab-thumbnail.jpeg";
 import adleenthumb from "../assets/Thumbnails/adleen-thumbnail.webp";
-import vardathumb from "../assets/Thumbnails/vardathumb.jpeg";
+// import vardathumb from "../assets/Thumbnails/vardathumb.jpeg";
 import uzmaMujtabathumb from "../assets/Thumbnails/uzma-mujtabathumb.jpeg";
 import mustaqeemthumb from "../assets/Thumbnails/mustaqeemthumb.jpeg";
 import asifthumb from "../assets/Thumbnails/asifthumb.jpeg";
@@ -16,8 +18,9 @@ import baeedathumb from "../assets/Thumbnails/baeedathumb.jpeg";
 import gurpreetthumb from "../assets/Thumbnails/gurpreetthumb.jpeg";
 import uzmathumb from "../assets/Thumbnails/uzmathumb.jpeg";
 
-
 // Profile picture
+import thumbprofile from "../assets/Profile/thumbprofile.png";
+import ghazanfarprofile from "../assets/Profile/ghazanfar.JPG";
 import snoberprofile from "../assets/Profile/snober-profile.png";
 import gousiaprofile from "../assets/Profile/gousia-profile.png";
 import irfanprofile from "../assets/Profile/irfan-profile.png";
@@ -31,143 +34,138 @@ import asifprofile from "../assets/Profile/asifprofile.png";
 import seeratprofile from "../assets/Profile/seeratprofile.png";
 import uroojprofile from "../assets/Profile/uroojprofile.png";
 import uzmamujtabaprofile from "../assets/Profile/uzma-mujtabaprofile.png";
-import vardaprofile from "../assets/Profile/vardaprofile.png";
+// import vardaprofile from "../assets/Profile/vardaprofile.png";
 import baeedaprofile from "../assets/Profile/baeedaprofile.png";
 import uzmaprofile from "../assets/Profile/uzmaprofile.png";
 
-
-
-
-// Videos
-import SnoberVideo from "../assets/Videos/Snober-video.mp4";
-import GousiaVideo from "../assets/Videos/Gousia-video.mp4";
-import IrfanShafiVideo from "../assets/Videos/IrfanShafi-video.mp4";
-import UmiLubabVideo from "../assets/Videos/UmiLubab-video.mp4";
-import AdleenVideo from "../assets/Videos/Adleen-video.mp4";
-import GurpreetVideo from "../assets/Videos/gurpreetvideo.mp4";
-import UzmaVideo from "../assets/Videos/uzmavideo.mp4";
-import BaeedaVideo from "../assets/Videos/baeedavideo.mp4";
-import AsiyaVideo from "../assets/Videos/asiyavideo.mp4";
-import VardaVideo from "../assets/Videos/vardavideo.mp4";
-import TwinVideo from "../assets/Videos/twinvideo.mp4";
-import MustaqeemVideo from "../assets/Videos/mustaqeem.mp4";
-import AsifVideo from "../assets/Videos/asifvideo.mp4";
-import SeeratVideo from "../assets/Videos/seeratvideo.mp4";
-import UroojVideo from "../assets/Videos/uroojvideo.mp4";
-import IshratVideo from "../assets/Videos/ishratvideo.mp4";
-
 const alumniVideos = [
+
   {
     id: 1,
+    slug: "fireside-talk",
+    name: "Fireside Talk",
+    subtitle: "KEI Alumnus Fireside Talk ",
+    thumbnail: thumb,
+    image: thumbprofile,
+    video: "https://www.youtube.com/embed/_l6Q6KQZlho?rel=0&modestbranding=1",
+  },
+  {
+    id: 2,
     slug: "snober-mehraj",
     name: "Snober Mehraj",
     subtitle: "Pursuing Research in Journalism",
     thumbnail: snoberthumb,
     image: snoberprofile,
-    video: SnoberVideo,
+    video: "https://www.youtube.com/embed/3oZkk9BhLO4?rel=0&modestbranding=1",
   },
   {
-    id: 2,
+    id: 3,
+    slug: "ghazanfar-rizvi",
+    name: "Ghazanfar Rizvi",
+    subtitle: "Ghazanfar's Peom for KEI",
+    thumbnail: ghazanfarthumb,
+    image: ghazanfarprofile,
+    video: "https://www.youtube.com/embed/zcXKYpC_Bp0?rel=0&modestbranding=1",
+  },
+  {
+    id: 4,
     slug: "gousia-hassan",
     name: "Gousia Hassan",
     subtitle: "Pursuing BSc Nursing",
     thumbnail: gousiathumb,
     image: gousiaprofile,
-    video: GousiaVideo,
+    video: "https://www.youtube.com/embed/Z6oMJgkmeSU?rel=0&modestbranding=1",
   },
   {
-    id: 3,
+    id: 5,
     slug: "irfan-shafi",
     name: "Irfan Shafi",
     subtitle: "Pursuing MBBS",
     thumbnail: irfanthumb,
     image: irfanprofile,
-    video: IrfanShafiVideo,
+    video: "https://www.youtube.com/embed/iUt4kjx2jnc?rel=0&modestbranding=1",
   },
   {
-    id: 4,
+    id: 6,
     slug: "umi-lubab",
     name: "Umi Lubab",
     subtitle: "Liberal Arts at Krea University",
     thumbnail: umithumb,
     image: umiprofile,
-    video: UmiLubabVideo,
+    video: "https://www.youtube.com/embed/g8ifiFyf3CI?rel=0&modestbranding=1",
   },
   {
-    id: 5,
+    id: 7,
     slug: "adleen-nazir",
     name: "Adleen Nazir",
     subtitle: "Pursuing BSc Anesthesia",
     thumbnail: adleenthumb,
     image: adleenprofile,
-    video: AdleenVideo,
+    video: "https://www.youtube.com/embed/WJ_ceEUPurY?rel=0&modestbranding=1",
   },
-
-  // New Entries
-
   {
-    id: 6,
+    id: 8,
     slug: "ishrat-gul",
     name: "Ishrat Gul",
     subtitle: "Completed MBBS",
     thumbnail: ishratthumb,
     image: ishratprofile,
-    video: IshratVideo,
+    video: "https://www.youtube.com/embed/4DKdTPtMMm4?rel=0&modestbranding=1",
   },
   {
-    id: 7,
+    id: 9,
     slug: "urooj-shafi",
     name: "Urooj Shafi",
     subtitle: "Practicing Doctor",
     thumbnail: uroojthumb,
     image: uroojprofile,
-    video: UroojVideo,
+    video: "https://www.youtube.com/embed/Gf_JUXNPQVg?rel=0&modestbranding=1",
   },
   {
-    id: 8,
+    id: 10,
     slug: "seerat-mushtaq",
     name: "Seerat Mushtaq",
     subtitle: "Practicing Doctor",
     thumbnail: seeratthumb,
     image: seeratprofile,
-    video: SeeratVideo,
+    video: "https://www.youtube.com/embed/NXGIlk7IaZg?rel=0&modestbranding=1",
   },
   {
-    id: 9,
+    id: 11,
     slug: "asif-ashraf",
     name: "Asif Ashraf",
     subtitle: "Practicing Doctor",
     thumbnail: asifthumb,
     image: asifprofile,
-    video: AsifVideo,
+    video: "https://www.youtube.com/embed/sL36LktAFDE?rel=0&modestbranding=1",
   },
   {
-    id: 10,
+    id: 12,
     slug: "mohammad-mustaqeem",
     name: "Mohammad Mustaqeem",
     subtitle: "Successful Enterpreneur",
     thumbnail: mustaqeemthumb,
     image: mustaqeemprofile,
-    video: MustaqeemVideo,
+    video: "https://www.youtube.com/embed/dK_fY9ruGbU?rel=0&modestbranding=1",
   },
   {
-    id: 11,
+    id: 13,
     slug: "uzma-mujtaba",
     name: "Uzma Mujtaba",
     subtitle: "Aspiring Nurses",
     thumbnail: uzmaMujtabathumb,
     image: uzmamujtabaprofile,
-    video: TwinVideo,
+    video: "https://www.youtube.com/embed/Tb5Nml33Xhg?rel=0&modestbranding=1",
   },
-  {
-    id: 12,
-    slug: "varda-aslam",
-    name: "Varda Aslam",
-    subtitle: "Practicing Medicine",
-    thumbnail: vardathumb,
-    image: vardaprofile,
-    video: VardaVideo,
-  },
+  // {
+  //   id: 12,
+  //   slug: "varda-aslam",
+  //   name: "Varda Aslam",
+  //   subtitle: "Practicing Medicine",
+  //   thumbnail: vardathumb,
+  //   image: vardaprofile,
+  //   video: "https://www.youtube.com/embed/VIDEO_ID_12?rel=0&modestbranding=1",
+  // },
   {
     id: 13,
     slug: "asiya-khursheed",
@@ -175,7 +173,7 @@ const alumniVideos = [
     subtitle: "Working Engineer ",
     thumbnail: asiyathumb,
     image: asiyaprofile,
-    video: AsiyaVideo,
+    video: "https://www.youtube.com/embed/GtqxMo5EYyw?rel=0&modestbranding=1",
   },
   {
     id: 14,
@@ -184,7 +182,7 @@ const alumniVideos = [
     subtitle: "Government Official",
     thumbnail: baeedathumb,
     image: baeedaprofile,
-    video: BaeedaVideo,
+    video: "https://www.youtube.com/embed/_D2kThVQlsU?rel=0&modestbranding=1",
   },
   {
     id: 15,
@@ -193,7 +191,7 @@ const alumniVideos = [
     subtitle: "Pursuing BPT",
     thumbnail: uzmathumb,
     image: uzmaprofile,
-    video: UzmaVideo,
+    video: "https://www.youtube.com/embed/0Q93oppZrYU?rel=0&modestbranding=1",
   },
   {
     id: 16,
@@ -202,7 +200,7 @@ const alumniVideos = [
     subtitle: "Batch 2012",
     thumbnail: gurpreetthumb,
     image: gurpreetprofile,
-    video: GurpreetVideo,
+    video: "https://www.youtube.com/embed/apVMO5FRCUI?rel=0&modestbranding=1",
   },
 ];
 
