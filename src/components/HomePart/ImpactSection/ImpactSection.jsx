@@ -1,124 +1,102 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/Home/impact.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Keyboard } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import mehak from "../../../assets/Images/mehak.png";
-import karia from "../../../assets/Images/kariathumb.png";
-import anayat from "../../../assets/Images/anayatthumb.png";
+import scholarStories from "../../../data/ScholarStories";
+import impactBg from "../../../assets/Images/impact-bg.jpg";
+import impactFrame from "../../../assets/Images/impact-frame.png";
 
 const ImpactSection = () => {
+  const stories = [...scholarStories].sort((a, b) => (b.year || 0) - (a.year || 0));
+
   return (
-    <section className="section-impact">
+    <section
+      className="section-impact-stories"
+      style={{ backgroundImage: `url(${impactBg})` }}
+    >
+      {/* Dark overlay over background image */}
+      <div className="impact-bg-overlay" />
 
-      <div className="impact-container">
-
-        {/* HEADER */}
-        <div className="impact-header">
+      <div className="impact-inner">
+        <div className="impact-header-wrap">
           <span className="impact-label">IMPACT STORIES</span>
           <h2>Real Stories of Transformation</h2>
           <p>
-            Our scholars’ journeys are a testament to the power of education
+            Our scholars' journeys are a testament to the power of education
             and mentorship. Here are some inspiring stories.
           </p>
         </div>
 
-        {/* SLIDER */}
-        <Swiper
-          modules={[Pagination, Keyboard]}
-          spaceBetween={30}
-          loop={true}
-          pagination={{ clickable: true }}
-          keyboard={{
-            enabled: true,
-            onlyInViewport: true,
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 1,   // ✅ tablet cleaner layout
-              spaceBetween: 25,
-            },
-            992: {
-              slidesPerView: 2,   // ✅ desktop
-              spaceBetween: 40,
-            },
-          }}
-          className="impact-swiper"
-        >
+        <div className="impact-swiper-wrap">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            slidesPerView="auto"
+            spaceBetween={20}
+            centeredSlides={true}
+            loop={true}
+            speed={700}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={{ clickable: true }}
+            allowTouchMove={true}
+            className="impact-swiper"
+          >
+            {stories.map((story) => {
+              const preview = story?.paragraphs?.[0] || "";
+              return (
+                <SwiperSlide key={story.id}>
+                  <div className="impact-card-wrap">
 
-          {/* CARD 1 */}
-          <SwiperSlide>
-            <div className="impact-card">
-              <div className="quote-icon">”</div>
+                    {/* Teal badge with frame icon — top right */}
+                    <div className="impact-card-badge">
+                      <img src={impactFrame} alt="" />
+                    </div>
 
-              <div className="impact-user">
-                <img src={mehak} alt="Mehak Fayaz" />
-                <div>
-                  <h4>Mehak Fayaz</h4>
-                  <span>Pursuing Medicine</span>
-                </div>
-              </div>
+                    {/* Avatar — top left, overlapping card */}
+                    <div className="impact-avatar">
+                      <img src={story.thumbnail} alt={story.name} />
+                    </div>
 
-              <p>
-                Coming from an underprivileged background, Mehak received
-                financial and mentoring support from KEI, enabling her to
-                pursue an MBBS degree and excel academically.
-              </p>
-            </div>
-          </SwiperSlide>
+                    <div className="impact-card-body">
+                      <p className="impact-card-quote">
+                        &ldquo;{preview}&rdquo;
+                      </p>
+                      <div className="impact-card-footer">
+                        <h4 className="impact-card-name">{story.name}</h4>
+                        <Link
+                          to={`/blog/${story.slug}`}
+                          className="impact-card-link"
+                          onClick={() => {
+                            sessionStorage.setItem("scrollToScholarGrid", "true");
+                            sessionStorage.setItem("clickedStoryId", story.id);
+                          }}
+                        >
+                          Read More →
+                        </Link>
+                      </div>
+                    </div>
 
-          {/* CARD 2 */}
-          <SwiperSlide>
-            <div className="impact-card">
-              <div className="quote-icon">”</div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
 
-              <div className="impact-user">
-                <img src={karia} alt="Kaira Scholar" />
-                <div>
-                  <h4>Kaira</h4>
-                  <span>Leadership Scholar</span>
-                </div>
-              </div>
-
-              <p>
-                Through KEI’s leadership workshops and mentorship programs,
-                Kaira developed the confidence and clarity to pursue her
-                long-term academic and professional aspirations.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          {/* CARD 3 */}
-          <SwiperSlide>
-            <div className="impact-card">
-              <div className="quote-icon">”</div>
-
-              <div className="impact-user">
-                <img src={anayat} alt="Anayat Scholar" />
-                <div>
-                  <h4>Anayat</h4>
-                  <span>Engineering Aspirant</span>
-                </div>
-              </div>
-
-              <p>
-                Azhar’s journey reflects resilience and determination.
-                With KEI’s scholarship and career guidance support, he is
-                now pursuing engineering with renewed purpose.
-              </p>
-            </div>
-          </SwiperSlide>
-
-        </Swiper>
-
+        <div className="impact-cta">
+          <Link to="/scholar-stories" className="impact-cta-btn">
+            EXPLORE ALL SCHOLAR STORIES
+          </Link>
+        </div>
       </div>
 
     </section>
