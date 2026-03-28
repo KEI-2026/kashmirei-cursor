@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Footer/footer.css";
-import logo from "../../assets/Images/logo.png";
+import logo from "../../assets/Images/KEI-new-logo/Logos-03.svg";
 
 const FOOTER_QUICK_LINKS = [
   { path: "/", label: "Home" },
@@ -29,6 +29,7 @@ const Footer = () => {
           <Link to="/">
             <img src={logo} alt="Kashmir Education Initiative Logo" />
           </Link>
+          <p>A registered 501(c)(3) tax-exempt charity in the United States (incorporated in Massachusetts).</p>
           <p>
             KEI does not accept funds raised at political events.
             All donations must come through official channels.

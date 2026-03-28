@@ -2,237 +2,284 @@
    IMPACT STORIES SECTION
 ========================= */
 
-.section-impact {
-  padding: 50px 0 40px;
-  background: #0f1b24;
-  color: #fff;
-}
-
-.impact-container {
+.section-impact-stories {
   position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 60px;
+  padding: 80px 0 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-/* HEADER */
-
-.impact-header {
-  margin-bottom: 70px;
-  max-width: 600px;
+/* Light overlay — image is already very dark */
+.impact-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
 }
 
-.impact-label {
-  font-size: 17px;
-  letter-spacing: 1px;
-  color: #48BEDA;
-  font-weight: 600;
-}
-
-.impact-header h2 {
-  font-size: 32px;
-  font-weight: 800;
-  margin: 15px 0 20px;
-  color: #fff;
-}
-
-.impact-header p {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.8;
-  color: #ddd;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.impact-card {
-  background: #2c2c2c;
-  padding: 30px;
-  border-radius: 16px;
+/* All content sits above overlay */
+.impact-inner {
   position: relative;
+  z-index: 1;
 }
 
-.impact-card img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  object-fit: cover;
-  border: 2px solid white;
-}
+/* ── HEADER ─────────────────────────── */
 
-.impact-card h4 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-.impact-card span {
-  font-size: 13px;
-  color: #48BEDA;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.impact-card p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #ccc;
-}
-
-/* =========================
-   PAGINATION
-========================= */
-
-.impact-swiper {
-  padding-bottom: 80px;
-}
-
-.section-impact .swiper-pagination {
-  position: relative !important;
-  margin-top: 50px;
+.impact-header-wrap {
+  max-width: 680px;
+  margin: 0 auto 70px;
+  padding: 0 30px;
   text-align: center;
 }
 
-.section-impact .swiper-pagination-bullet {
-  width: 55px;
-  height: 6px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.3);
+.impact-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #48BEDA;
+  text-transform: uppercase;
+}
+
+.impact-header-wrap h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 14px 0 18px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.impact-header-wrap p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── SWIPER WRAPPER ──────────────────── */
+
+.impact-swiper-wrap {
+  padding-top: 50px;
+  max-width: 560px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Fixed card width */
+.impact-swiper .swiper-slide {
+  width: 600px !important;
+}
+
+.impact-swiper {
+  padding-bottom: 60px !important;
+  overflow: visible !important;
+}
+
+/* ── SLIDE STATES — all equal, no transparency ── */
+
+.impact-swiper .swiper-slide {
+  transform: scale(1);
   opacity: 1;
-  margin: 0 8px !important;
-  transition: 0.3s ease;
+  pointer-events: auto;
 }
 
-.section-impact .swiper-pagination-bullet-active {
+/* ── CARD — rectangular, dark gray, matching kashmirei.com ── */
+
+.impact-card-wrap {
+  position: relative;
+  background: #454545;
+  border-radius: 0;
+  padding: 55px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* ── TEAL BADGE — top right corner ─── */
+
+.impact-card-badge {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 80px;
+  height: 80px;
   background: #48BEDA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/* =====================================
-   TABLET (≤ 992px)
-===================================== */
-
-@media (max-width: 992px) {
-
-  .section-impact {
-    padding: 40px 0 30px;
-  }
-
-  .impact-container {
-    padding: 0 40px;
-  }
-
-  .impact-header h2 {
-    font-size: 28px;
-  }
-
-  .impact-header p {
-    font-size: 14px;
-  }
-
-  .impact-card {
-    padding: 25px;
-  }
-
-  .impact-card h4 {
-    font-size: 16px;
-  }
-
-  .impact-card p {
-    font-size: 13.5px;
-  }
-
-  .impact-swiper {
-    padding-bottom: 70px;
-  }
-
-  .section-impact .swiper-pagination-bullet {
-    width: 40px;
-  }
-
+.impact-card-badge img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* makes icon white */
 }
 
+/* ── AVATAR — top left, overlaps card top */
+
+.impact-avatar {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+}
+
+.impact-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* ── CARD BODY ──────────────────────── */
+
+.impact-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.impact-card-quote {
+  font-size: 15.5px;
+  line-height: 1.8;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 20px;
+  flex: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Name + link — right aligned like kashmirei.com */
+.impact-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 14px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.impact-card-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #48BEDA;
+  margin: 0;
+}
+
+.impact-card-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.impact-card-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ── PAGINATION ──────────────────────── */
+
+.impact-swiper .swiper-pagination {
+  bottom: 8px;
+}
+
+.impact-swiper .swiper-pagination-bullet {
+  width: 60px;
+  height: 7px;
+  border-radius: 50px;
+  background: #E0E0E0;
+  opacity: 0.35;
+  margin: 0 5px !important;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.impact-swiper .swiper-pagination-bullet-active {
+  background: #48BEDA;
+  opacity: 1;
+}
+
+/* ── CTA BUTTON ──────────────────────── */
+
+.impact-cta {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.impact-cta-btn {
+  display: inline-block;
+  background: #48BEDA;
+  color: #ffffff;
+  padding: 13px 32px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.impact-cta-btn:hover {
+  background: #3aa9c4;
+}
 
 /* =====================================
-   MOBILE (≤ 768px)
+   TABLET (≤ 900px)
 ===================================== */
 
-@media (max-width: 768px) {
-
-  .section-impact {
-    padding: 36px 0 24px;
+@media (max-width: 900px) {
+  .section-impact-stories {
+    padding: 60px 0 80px;
   }
 
-  .impact-container {
-    padding: 0 20px;
+  .impact-header-wrap h2 {
+    font-size: 26px;
   }
 
-  .impact-header {
+  .impact-swiper .swiper-slide {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =====================================
+   MOBILE (≤ 600px)
+===================================== */
+
+@media (max-width: 600px) {
+  .section-impact-stories {
+    padding: 40px 0 70px;
+  }
+
+  .impact-header-wrap {
     margin-bottom: 50px;
   }
 
-  .impact-header h2 {
-    font-size: 24px;
-    line-height: 1.3;
+  .impact-header-wrap h2 {
+    font-size: 22px;
   }
 
-  .impact-header p {
-    font-size: 13px;
-    line-height: 1.6;
+  .impact-card-wrap {
+    padding: 65px 18px 24px;
   }
 
-  .impact-card {
-    padding: 20px;
+  .impact-card-quote {
+    font-size: 14px;
   }
-
-  .impact-card img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .impact-card h4 {
-    font-size: 15px;
-  }
-
-  .impact-card span {
-    font-size: 12px;
-  }
-
-  .impact-card p {
-    font-size: 13px;
-  }
-
-  .impact-swiper {
-    padding-bottom: 60px;
-  }
-
-  .section-impact .swiper-pagination-bullet {
-    width: 30px;
-    height: 5px;
-  }
-
-}
-
-
-/* =====================================
-   SMALL MOBILE (≤ 480px)
-===================================== */
-
-@media (max-width: 480px) {
-
-  .section-impact {
-    padding: 28px 0 20px;
-  }
-
-  .impact-header h2 {
-    font-size: 20px;
-  }
-
-  .impact-card p {
-    font-size: 12.5px;
-  }
-
 }
