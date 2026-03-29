@@ -1,0 +1,122 @@
+/* =========================
+   DONATE — COMPLIANCE
+========================= */
+
+.section-donate-compliance {
+  background: #0f1b24;
+  padding: 64px 40px;
+}
+
+.compliance-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* Divider */
+.compliance-divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Each column */
+.compliance-col {
+  flex: 1;
+}
+
+.compliance-icon {
+  display: block;
+  font-size: 20px;
+  color: #48BEDA;
+  margin-bottom: 12px;
+}
+
+.compliance-col h3 {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 14px;
+}
+
+.compliance-col p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 12px;
+}
+
+/* EIN badge */
+.compliance-ein {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(72, 190, 218, 0.12);
+  border: 1px solid rgba(72, 190, 218, 0.35);
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-top: 6px;
+}
+
+.ein-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #48BEDA;
+}
+
+.compliance-ein strong {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.compliance-contact {
+  margin-top: 4px !important;
+}
+
+.compliance-contact a {
+  color: #48BEDA;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.compliance-contact a:hover {
+  color: #ffffff;
+}
+
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .compliance-inner {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .compliance-divider {
+    width: 100%;
+    height: 1px;
+    align-self: auto;
+  }
+
+  .section-donate-compliance {
+    padding: 48px 24px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .section-donate-compliance {
+    padding: 40px 16px;
+  }
+
+  .compliance-col h3 {
+    font-size: 18px;
+  }
+}

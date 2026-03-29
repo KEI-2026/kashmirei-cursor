@@ -1,5 +1,6 @@
 /* ===============================
    WHAT WE DO - PROGRAMS
+   (legacy card classes preserved)
 ================================= */
 
 .section-wwd-programs {
@@ -7,47 +8,32 @@
   background: #fff;
 }
 
-/* Container */
 .wwd-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-/* Grid */
 .wwd-programs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
-/* ===============================
-   CARD
-================================= */
-
 .wwd-program-card {
   background: #ffffff;
   padding: 55px 35px;
   border-radius: 20px;
   text-align: center;
-
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.06),
-    0 20px 60px rgba(0, 0, 0, 0.08);
-
-  border: 1px solid rgba(0, 0, 0, 0.04);
-
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 20px 60px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.04);
   transition: all 0.35s ease;
 }
 
 .wwd-program-card:hover {
   transform: translateY(-10px);
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.08),
-    0 30px 70px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 30px 70px rgba(0,0,0,0.12);
 }
-
-/* ICON */
 
 .wwd-program-icon {
   display: flex;
@@ -60,8 +46,6 @@
   width: 75px;
   height: auto;
 }
-
-/* TEXT */
 
 .wwd-program-card h3 {
   font-size: 24px;
@@ -86,6 +70,270 @@
 }
 
 
+/* ============================================================
+   RAINBOW NAVIGATOR SECTION
+============================================================ */
+
+.wwd-rainbow-section {
+  background: #f4f8fb;
+  padding: 72px 40px 56px;
+  text-align: center;
+}
+
+.wwd-rainbow-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wwd-section-label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #48BEDA;
+  margin-bottom: 14px;
+}
+
+.wwd-rainbow-heading {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #0f1b24;
+  margin: 0 0 14px;
+}
+
+.wwd-rainbow-sub {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.85;
+  max-width: 640px;
+  margin: 0 auto 36px;
+}
+
+/* Image wrapper — allows absolutely positioned hotspots */
+.wwd-rainbow-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.wwd-rainbow-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* Transparent clickable regions over each program icon */
+.wwd-rainbow-hotspot {
+  position: absolute;
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  padding: 0;
+}
+
+.wwd-rainbow-hotspot:hover {
+  background: rgba(72, 190, 218, 0.15);
+  border-color: rgba(72, 190, 218, 0.5);
+}
+
+/* Pill navigation links — accessible + mobile-friendly */
+.wwd-rainbow-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.wwd-rainbow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 2px solid var(--pill-color, #48BEDA);
+  background: transparent;
+  color: var(--pill-color, #48BEDA);
+  font-family: "Roboto", sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+.wwd-rainbow-pill:hover {
+  background: var(--pill-color, #48BEDA);
+  color: #fff;
+  box-shadow: none;
+}
+
+.pill-num {
+  font-size: 10px;
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+
+/* ============================================================
+   PROGRAM DETAIL SECTIONS (alternating layout)
+============================================================ */
+
+.wwd-prog-section {
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.wwd-prog-section:nth-child(even) {
+  background: #f4f8fb;
+}
+
+.wwd-prog-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+/* Flip for even-index programs */
+.wwd-prog-flip .wwd-prog-container {
+  flex-direction: row-reverse;
+}
+
+/* ── Image column ── */
+
+.wwd-prog-image-col {
+  flex: 0 0 440px;
+}
+
+.wwd-prog-img-wrap {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.13);
+}
+
+.wwd-prog-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 4px solid var(--prog-color, #48BEDA);
+  border-radius: 10px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.wwd-prog-img-wrap img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Content column ── */
+
+.wwd-prog-content-col {
+  flex: 1;
+}
+
+.wwd-prog-number {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.10;
+  margin-bottom: -22px;
+}
+
+.wwd-prog-badge {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.wwd-prog-title {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f1b24;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.wwd-prog-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #48BEDA;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+.wwd-prog-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #444;
+  margin: 0 0 30px;
+}
+
+/* Stat chips */
+.wwd-prog-stats {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.wwd-prog-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 2px solid var(--stat-color, #48BEDA);
+  border-radius: 8px;
+  padding: 14px 20px;
+  min-width: 96px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.wwd-prog-section:nth-child(even) .wwd-prog-stat {
+  background: #ffffff;
+}
+
+.wwd-prog-stat strong {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--stat-color, #48BEDA);
+  line-height: 1.2;
+}
+
+.wwd-prog-stat span {
+  font-family: "Roboto", sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #666;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
 /* =====================================
    TABLET (≤ 992px)
 ===================================== */
@@ -101,7 +349,7 @@
   }
 
   .wwd-programs-grid {
-    grid-template-columns: repeat(2, 1fr);  /* ✅ 2 cards */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
@@ -109,22 +357,44 @@
     padding: 45px 25px;
   }
 
-  .wwd-program-card h3 {
-    font-size: 20px;
+  .wwd-program-card h3 { font-size: 20px; }
+  .wwd-program-card p  { font-size: 14px; }
+  .wwd-program-card strong { font-size: 14px; }
+  .wwd-program-icon img { width: 65px; }
+
+  /* Rainbow */
+  .wwd-rainbow-section {
+    padding: 56px 24px 44px;
   }
 
-  .wwd-program-card p {
-    font-size: 14px;
+  .wwd-rainbow-heading {
+    font-size: 26px;
   }
 
-  .wwd-program-card strong {
-    font-size: 14px;
+  /* Program sections */
+  .wwd-prog-section {
+    padding: 60px 24px;
   }
 
-  .wwd-program-icon img {
-    width: 65px;
+  .wwd-prog-container {
+    gap: 40px;
   }
 
+  .wwd-prog-image-col {
+    flex: 0 0 340px;
+  }
+
+  .wwd-prog-img-wrap img {
+    height: 260px;
+  }
+
+  .wwd-prog-title {
+    font-size: 22px;
+  }
+
+  .wwd-prog-number {
+    font-size: 54px;
+  }
 }
 
 
@@ -143,7 +413,7 @@
   }
 
   .wwd-programs-grid {
-    grid-template-columns: 1fr;   /* ✅ 1 card */
+    grid-template-columns: 1fr;
     gap: 25px;
   }
 
@@ -151,23 +421,43 @@
     padding: 40px 20px;
   }
 
-  .wwd-program-card h3 {
-    font-size: 18px;
+  .wwd-program-card h3 { font-size: 18px; }
+  .wwd-program-card p  { font-size: 13px; line-height: 1.6; }
+  .wwd-program-card strong { font-size: 13px; }
+  .wwd-program-icon img { width: 55px; }
+
+  /* Stack all program sections vertically */
+  .wwd-prog-container,
+  .wwd-prog-flip .wwd-prog-container {
+    flex-direction: column;
+    gap: 28px;
   }
 
-  .wwd-program-card p {
-    font-size: 13px;
-    line-height: 1.6;
+  .wwd-prog-image-col {
+    flex: none;
+    width: 100%;
   }
 
-  .wwd-program-card strong {
-    font-size: 13px;
+  .wwd-prog-img-wrap img {
+    height: 210px;
   }
 
-  .wwd-program-icon img {
-    width: 55px;
+  .wwd-prog-title {
+    font-size: 20px;
   }
 
+  .wwd-prog-desc {
+    font-size: 14.5px;
+  }
+
+  .wwd-rainbow-pills {
+    gap: 8px;
+  }
+
+  .wwd-rainbow-pill {
+    font-size: 11.5px;
+    padding: 6px 12px;
+  }
 }
 
 
@@ -181,12 +471,35 @@
     padding: 60px 0;
   }
 
-  .wwd-program-card h3 {
+  .wwd-program-card h3 { font-size: 16px; }
+  .wwd-program-card p  { font-size: 12.5px; }
+
+  .wwd-rainbow-section {
+    padding: 40px 16px 32px;
+  }
+
+  .wwd-rainbow-heading {
+    font-size: 22px;
+  }
+
+  .wwd-prog-section {
+    padding: 48px 16px;
+  }
+
+  .wwd-prog-title {
+    font-size: 18px;
+  }
+
+  .wwd-prog-stats {
+    gap: 10px;
+  }
+
+  .wwd-prog-stat {
+    padding: 12px 14px;
+    min-width: 84px;
+  }
+
+  .wwd-prog-stat strong {
     font-size: 16px;
   }
-
-  .wwd-program-card p {
-    font-size: 12.5px;
-  }
-
 }

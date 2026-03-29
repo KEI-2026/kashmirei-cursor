@@ -1,8 +1,8 @@
 import React from "react";
 import "../../../styles/Home/hero.css";
 import heroImage1 from "../../../assets/Images/hero-home-seerat.jpg";
-import heroImage2 from "../../../assets/Images/cover_image2.jpeg";
-import heroImage3 from "../../../assets/Images/girls-cover.jpeg";
+import heroImage2 from "../../../assets/Images/Hero-Home-2-twokids.jpeg";
+import heroImage3 from "../../../assets/Images/Hero-Home-3-schoolboys.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard } from "swiper/modules";
@@ -70,7 +70,8 @@ const HeroSection = () => {
                 linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
                 url(${heroImage3})
               `,
-              backgroundPosition: "center top"  // ✅ changed
+              backgroundSize: "cover",
+              backgroundPosition: "center center"
             }}
 
             

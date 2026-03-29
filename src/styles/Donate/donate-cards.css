@@ -1,0 +1,241 @@
+/* =========================
+   DONATE — METHOD CARDS
+========================= */
+
+.section-donate-methods {
+  background: #f4f8fb;
+  padding: 72px 40px 64px;
+  text-align: center;
+}
+
+.donate-methods-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Shared label (used across donate sections) */
+.donate-section-label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #48BEDA;
+  margin-bottom: 14px;
+}
+
+.donate-methods-heading {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #0f1b24;
+  margin: 0 0 14px;
+}
+
+.donate-methods-sub {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.85;
+  max-width: 620px;
+  margin: 0 auto 44px;
+}
+
+/* ── Cards Grid ── */
+
+.donate-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+/* ── Single card ── */
+
+.donate-method-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border-top: 4px solid var(--card-accent, #48BEDA);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-method-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.13);
+  transform: translateY(-4px);
+}
+
+.donate-method-card.is-open {
+  transform: none;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Card top section */
+.method-card-top {
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  flex: 1;
+}
+
+/* Icon */
+.method-svg-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+
+/* Title */
+.method-title {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f1b24;
+  margin: 0 0 10px;
+}
+
+/* Blurb */
+.method-blurb {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #555;
+  margin: 0 0 22px;
+  flex: 1;
+}
+
+/* Button */
+.method-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.method-btn:hover {
+  opacity: 0.88;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* ── Expanded panel ── */
+
+.method-card-expanded {
+  border-top: 1px solid #e8eef2;
+  background: #f9fbfc;
+  padding: 24px;
+  animation: slideDown 0.22s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.method-expanded {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expanded-instruction {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.expanded-detail-box {
+  background: #ffffff;
+  border: 1.5px solid #dce8ef;
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+
+.detail-label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 17px;
+  color: #0f1b24;
+  line-height: 1.5;
+}
+
+.expanded-note {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+  margin: 4px 0 0;
+  font-style: italic;
+}
+
+/* PayPal button inside expanded panel */
+.paypal-donate-btn {
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.paypal-donate-btn img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+/* ── Tablet (≤ 992px) ── */
+@media (max-width: 992px) {
+  .donate-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-donate-methods {
+    padding: 56px 24px 48px;
+  }
+
+  .donate-methods-heading {
+    font-size: 26px;
+  }
+}
+
+/* ── Mobile (≤ 640px) ── */
+@media (max-width: 640px) {
+  .donate-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-donate-methods {
+    padding: 48px 16px 40px;
+  }
+
+  .donate-methods-heading {
+    font-size: 22px;
+  }
+}

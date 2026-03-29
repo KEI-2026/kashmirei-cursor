@@ -1,35 +1,24 @@
 import React from "react";
 import "../../../styles/Donate/donate-hero.css";
+import heroBg from "../../../assets/Images/Donate-1-boys2.jpeg";
 
 const DonateHero = () => {
   return (
-    <section className="section-donate-hero">
-      <div className="container donate-hero-content">
-
-        <div className="donate-title-wrapper">
-          <h1 className="donate-title">
-            Donate
-          </h1>
-
-          {/* SVG Animated Circle */}
-          <svg
-            className="donate-circle"
-            viewBox="0 0 200 80"
-            preserveAspectRatio="none"
-          >
-            <ellipse
-              cx="100"
-              cy="40"
-              rx="95"
-              ry="30"
-            />
-          </svg>
-        </div>
-
+    <section
+      className="section-donate-hero"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      <div className="donate-hero-overlay" />
+      <div className="donate-hero-content">
+        <span className="donate-hero-label">MAKE A DIFFERENCE</span>
+        <h1>
+          Give Today,<br />
+          <span>Change Tomorrow.</span>
+        </h1>
         <p>
-          Conveniently donate using one of the secure options below
+          Your generosity fuels education and hope across Kashmir.
+          Join us in helping students reach their full potential.
         </p>
-
       </div>
     </section>
   );

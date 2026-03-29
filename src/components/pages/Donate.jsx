@@ -1,17 +1,18 @@
 import React from "react";
-
 import DonateHero from "../DonatePart/DonateHero/DonateHero";
-import DonateInfo from "../DonatePart/DonateInfo/DonateInfo";
-import DonatePayment from "../DonatePart/DonatePayment/DonatePayment";
+import DonateMethodCards from "../DonatePart/DonateMethodCards/DonateMethodCards";
 import DonateForm from "../DonatePart/DonateForm/DonateForm";
+import DonateCompliance from "../DonatePart/DonateCompliance/DonateCompliance";
+import DonateCallToAction from "../DonatePart/DonateCallToAction/DonateCallToAction";
 
 const Donate = () => {
   return (
     <>
       <DonateHero />
-      {/* <DonateInfo /> */}
+      <DonateMethodCards />
       <DonateForm />
-      <DonatePayment />
+      <DonateCompliance />
+      <DonateCallToAction />
     </>
   );
 };

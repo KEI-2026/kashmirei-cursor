@@ -1,64 +1,83 @@
-/* ================================
-   DONATE HERO
-================================ */
+/* =========================
+   DONATE — HERO
+========================= */
 
 .section-donate-hero {
-    padding: 120px 0 60px;
-    text-align: center;
-    background: #ffffff;
-  }
-  
-  .donate-hero-content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  /* Title Wrapper */
-  .donate-title-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 30px;
-  }
-  
-  /* Title */
-  .donate-title {
-    font-size: 48px;
-    font-weight: 800;
-    position: relative;
-    z-index: 2;
-  }
-  
-  /* SVG Circle */
-  .donate-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 220px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-  
-  /* Ellipse stroke animation */
-  .donate-circle ellipse {
-    fill: none;
-    stroke: #6cc04a; /* Green */
-    stroke-width: 4;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
-    animation: drawCircle 1.5s ease forwards;
-  }
-  
-  /* Animation */
-  @keyframes drawCircle {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  
-  /* Subtitle */
-  .section-donate-hero p {
-    font-size: 16px;
-    color: #666;
-  }
-  
+  position: relative;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.donate-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 20, 35, 0.68);
+  z-index: 0;
+}
+
+.donate-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: 0 30px;
+}
+
+.donate-hero-label {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #48BEDA;
+  margin-bottom: 18px;
+}
+
+.donate-hero-content h1 {
+  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.donate-hero-content h1 span {
+  color: #48BEDA;
+}
+
+.donate-hero-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .section-donate-hero { min-height: 380px; }
+  .donate-hero-content h1 { font-size: 38px; }
+  .donate-hero-content p  { font-size: 15px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-donate-hero { min-height: 320px; }
+  .donate-hero-content h1 { font-size: 28px; }
+  .donate-hero-content p  { font-size: 14px; }
+  .donate-hero-label { font-size: 13px; }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .section-donate-hero { min-height: 280px; }
+  .donate-hero-content h1 { font-size: 24px; }
+}

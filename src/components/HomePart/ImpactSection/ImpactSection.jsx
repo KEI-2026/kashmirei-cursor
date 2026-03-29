@@ -10,10 +10,9 @@ import "swiper/css/pagination";
 
 import scholarStories from "../../../data/ScholarStories";
 import impactBg from "../../../assets/Images/impact-bg.jpg";
-import impactFrame from "../../../assets/Images/impact-frame.png";
 
 const ImpactSection = () => {
-  const stories = [...scholarStories].sort((a, b) => (b.year || 0) - (a.year || 0));
+  const stories = [...scholarStories].sort((a, b) => (b.year || 0) - (a.year || 0)).slice(0, 5);
 
   return (
     <section
@@ -56,9 +55,11 @@ const ImpactSection = () => {
                 <SwiperSlide key={story.id}>
                   <div className="impact-card-wrap">
 
-                    {/* Teal badge with frame icon — top right */}
+                    {/* Teal badge — top right */}
                     <div className="impact-card-badge">
-                      <img src={impactFrame} alt="" />
+                      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                        <path d="M8 12C8 10.3 9.3 9 11 9h5c0 3.3-2 6-5 7v-4zm12 0C20 10.3 21.3 9 23 9h5c0 3.3-2 6-5 7v-4z" fill="white" opacity="0.9"/>
+                      </svg>
                     </div>
 
                     {/* Avatar — top left, overlapping card */}

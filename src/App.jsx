@@ -14,6 +14,9 @@ import Footer from "./components/Footer/Footer";
 
 // Pages
 import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Announcements from "./components/pages/Announcements";
+import Events from "./components/pages/Events";
 import WhatWeDo from "./components/pages/WhatWeDo";
 import Donate from "./components/pages/Donate";
 import GetInvolved from "./components/pages/GetInvolved";
@@ -50,6 +53,7 @@ const App = () => {
         <Routes>
 
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/get-involved" element={<GetInvolved />} />
@@ -68,6 +72,9 @@ const App = () => {
             path="/mentorship/:slug"
             element={<MentorshipStoryPage />}
           />
+
+          <Route path="/announcements" element={<Announcements />} />
+          <Route path="/events" element={<Events />} />
 
           <Route path="/impact-by-numbers" element={<ImpactByNumbers />} />
           <Route path="/scholar-stories" element={<ScholarStories />} />

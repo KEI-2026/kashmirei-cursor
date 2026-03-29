@@ -5,13 +5,21 @@ import logo from "../../assets/Images/logo.png";
 
 const NAV_LINKS = [
   { path: "/", label: "Home" },
+  { path: "/about", label: "About" },
   { path: "/what-we-do", label: "What We Do" },
   {
     label: "Our Impact",
     dropdown: [
-      { path: "/impact-by-numbers", label: "Impact by numbers" },
+      { path: "/impact-by-numbers", label: "Impact by Numbers" },
       { path: "/scholar-stories", label: "Scholar Stories" },
       { path: "/alumni-videos", label: "Alumni Videos" },
+    ],
+  },
+  {
+    label: "Events",
+    dropdown: [
+      { path: "/announcements", label: "Announcements" },
+      { path: "/events", label: "Events" },
     ],
   },
   { path: "/get-involved", label: "Get Involved" },
@@ -21,26 +29,32 @@ const NAV_LINKS = [
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [impactOpen, setImpactOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // stores the label of open dropdown
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close all menus on route change
+  useEffect(() => {
+    setOpenDropdown(null);
+    setMobileOpen(false);
+  }, [location.pathname]);
+
   const closeMenus = () => {
     setMobileOpen(false);
-    setImpactOpen(false);
+    setOpenDropdown(null);
   };
 
-  const isImpactActive = ["/impact-by-numbers", "/scholar-stories", "/alumni-stories"].includes(
-    location.pathname
-  );
+  const toggleDropdown = (label) => {
+    setOpenDropdown((prev) => (prev === label ? null : label));
+  };
+
+  const isDropdownActive = (dropdown) =>
+    dropdown.some((item) => item.path === location.pathname);
 
   return (
     <header
@@ -66,15 +80,15 @@ const Navbar = () => {
                   <>
                     <span
                       className={`nav-link-like dropdown-toggle ${
-                        isImpactActive ? "active-link" : ""
+                        isDropdownActive(item.dropdown) ? "active-link" : ""
                       }`}
-                      onClick={() => setImpactOpen(!impactOpen)}
+                      onClick={() => toggleDropdown(item.label)}
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
-                          setImpactOpen(!impactOpen);
+                          toggleDropdown(item.label);
                         }
                       }}
                     >
@@ -82,7 +96,9 @@ const Navbar = () => {
                     </span>
 
                     <ul
-                      className={`dropdown-menu ${impactOpen ? "show-dropdown" : ""}`}
+                      className={`dropdown-menu ${
+                        openDropdown === item.label ? "show-dropdown" : ""
+                      }`}
                     >
                       {item.dropdown.map((subItem) => (
                         <li key={subItem.path}>

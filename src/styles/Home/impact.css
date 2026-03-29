@@ -153,6 +153,8 @@
   font-style: italic;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 10px;
+  padding-right: 100px;
   flex: 1;
 
   display: -webkit-box;
