@@ -1,6 +1,7 @@
 /* ========== HEADER BASE ========== */
 
 .site-header {
+  font-family: "Franklin Gothic Medium", sans-serif;
   position: fixed;
   width: 100%;
   top: 0;
@@ -36,6 +37,7 @@
 /* ========== NAVIGATION ========== */
 
 .site-navigation ul.menu {
+  font-family: "Franklin Gothic Medium", sans-serif;
   list-style: none;
   display: flex;
   gap: 40px;
@@ -66,12 +68,12 @@
 /* Hover like normal nav links */
 .site-navigation ul.menu li a:hover,
 .nav-link-like:hover {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 /* Active link */
 .active-link {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 /* Active underline for normal links only */
@@ -82,7 +84,7 @@
   left: 0;
   width: 26px;
   height: 2px;
-  background: #48BEDA;
+  background: #47BFDA;
   border-radius: 2px;
 }
 
@@ -104,7 +106,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #48BEDA;
+  background: #47BFDA;
   border-radius: 2px;
   transition: width 0.3s ease;
 }
@@ -117,11 +119,12 @@
 
 .has-dropdown:hover .dropdown-toggle,
 .dropdown-toggle.active-link {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 /* one fixed arrow only */
 .dropdown-toggle::after {
+  font-family: "Franklin Gothic Medium", sans-serif;
   content: "▾";
   position: absolute;
   right: 0;
@@ -189,6 +192,7 @@
 }
 
 .dropdown-link {
+  font-family: "Franklin Gothic Medium", sans-serif;
   display: block;
   width: 100%;
   padding: 12px 18px;
@@ -201,11 +205,11 @@
 
 .dropdown-link:hover {
   background: #f5f7fa;
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 .dropdown-link.active-link {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 .dropdown-link.active-link::after {
@@ -225,7 +229,7 @@
 .hamburger {
   width: 25px;
   height: 2px;
-  background: #000;
+  background: #050505;
   position: relative;
   display: block;
 }
@@ -235,7 +239,7 @@
   content: "";
   width: 25px;
   height: 2px;
-  background: #000;
+  background: #050505;
   position: absolute;
   left: 0;
 }
@@ -282,6 +286,7 @@
 
   .mobile-open .site-navigation ul.menu li a,
   .mobile-open .nav-link-like {
+    font-family: "Franklin Gothic Medium", sans-serif;
     display: block;
     width: 100%;
     text-align: left;
@@ -314,7 +319,7 @@
     top: unset;
     left: unset;
     min-width: 100%;
-    background: #f8f9fb;
+    background: #F4F8FB;
     border-radius: 10px;
     box-shadow: none;
     padding: 10px 0 0;

@@ -1,16 +1,16 @@
-import commonThumb from "../assets/MentorMentee/sania.jpg";
+import commonThumb from "../assets/Images/MentorMentee/sania.jpg";
 
 /* Mentee Images */
-import mentee1 from "../assets/MentorMentee/sania.jpg";
-import mentee2 from "../assets/MentorMentee/huzaif.jpg";
-import mentee3 from "../assets/MentorMentee/umiya.jpg";
-import mentee4 from "../assets/MentorMentee/sumira.jpg";
+import mentee1 from "../assets/Images/MentorMentee/sania.jpg";
+import mentee2 from "../assets/Images/MentorMentee/huzaif.jpg";
+import mentee3 from "../assets/Images/MentorMentee/umiya.jpg";
+import mentee4 from "../assets/Images/MentorMentee/sumira.jpg";
 
 /* Mentor Images */
-import mentor1 from "../assets/MentorMentee/simrat.jpg";
-import mentor2 from "../assets/MentorMentee/hanan.jpg";
-import mentor3 from "../assets/MentorMentee/durdanah.jpg";
-import mentor4 from "../assets/MentorMentee/soniya.jpg";
+import mentor1 from "../assets/Images/MentorMentee/simrat.jpg";
+import mentor2 from "../assets/Images/MentorMentee/hanan.jpg";
+import mentor3 from "../assets/Images/MentorMentee/durdanah.jpg";
+import mentor4 from "../assets/Images/MentorMentee/soniya.jpg";
 
 const mentorshipStories = [
     {

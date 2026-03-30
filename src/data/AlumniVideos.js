@@ -1,42 +1,42 @@
 // Thumbnail 
-import ghazanfarthumb from "../assets/Thumbnails/ghazanfarthumb.png";
-import thumb from "../assets/Thumbnails/thumb.png";
-import snoberthumb from "../assets/Thumbnails/snober-thumbnail.webp";
-import gousiathumb from "../assets/Thumbnails/gousia-thumb.webp";
-import irfanthumb from "../assets/Thumbnails/irfan-thumbnail.webp";
-import umithumb from "../assets/Thumbnails/umi-lubab-thumbnail.jpeg";
-import adleenthumb from "../assets/Thumbnails/adleen-thumbnail.webp";
-import uzmaMujtabathumb from "../assets/Thumbnails/uzma-mujtabathumb.jpeg";
-import mustaqeemthumb from "../assets/Thumbnails/mustaqeemthumb.jpeg";
-import asifthumb from "../assets/Thumbnails/asifthumb.jpeg";
-import seeratthumb from "../assets/Thumbnails/seeratthumb.jpeg";
-import uroojthumb from "../assets/Thumbnails/uroojthumb.jpeg";
-import ishratthumb from "../assets/Thumbnails/ishratthumb.jpeg";
-import asiyathumb from "../assets/Thumbnails/asiyathumb.jpeg";
-import baeedathumb from "../assets/Thumbnails/baeedathumb.jpeg";
-import gurpreetthumb from "../assets/Thumbnails/gurpreetthumb.jpeg";
-import uzmathumb from "../assets/Thumbnails/uzmathumb.jpeg";
+import thumb from "../assets/Images/Thumbnails/thumb.png";
+import ghazanfarthumb from "../assets/Images/Thumbnails/ghazanfarthumb.png";
+import snoberthumb from "../assets/Images/Thumbnails/snober-thumbnail.webp";
+import gousiathumb from "../assets/Images/Thumbnails/gousia-thumb.webp";
+import irfanthumb from "../assets/Images/Thumbnails/irfan-thumbnail.webp";
+import umithumb from "../assets/Images/Thumbnails/umi-lubab-thumbnail.jpeg";
+import adleenthumb from "../assets/Images/Thumbnails/adleen-thumbnail.webp";
+import uzmaMujtabathumb from "../assets/Images/Thumbnails/uzma-mujtabathumb.jpeg";
+import mustaqeemthumb from "../assets/Images/Thumbnails/mustaqeemthumb.jpeg";
+import asifthumb from "../assets/Images/Thumbnails/asifthumb.jpeg";
+import seeratthumb from "../assets/Images/Thumbnails/seeratthumb.jpeg";
+import uroojthumb from "../assets/Images/Thumbnails/uroojthumb.jpeg";
+import ishratthumb from "../assets/Images/Thumbnails/ishratthumb.jpeg";
+import asiyathumb from "../assets/Images/Thumbnails/asiyathumb.jpeg";
+import baeedathumb from "../assets/Images/Thumbnails/baeedathumb.jpeg";
+import gurpreetthumb from "../assets/Images/Thumbnails/gurpreetthumb.jpeg";
+import uzmathumb from "../assets/Images/Thumbnails/uzmathumb.jpeg";
 
 
 // Profile picture
 
-import thumbprofile from "../assets/Profile/thumbprofile.png";
-import ghazanfarprofile from "../assets/Profile/ghazanfar.JPG";
-import snoberprofile from "../assets/Profile/snober-profile.png";
-import gousiaprofile from "../assets/Profile/gousia-profile.png";
-import irfanprofile from "../assets/Profile/irfan-profile.png";
-import umiprofile from "../assets/Profile/umi-profile.jpeg";
-import adleenprofile from "../assets/Profile/adleen-profile.png";
-import asiyaprofile from "../assets/Profile/asiyaprofile.png";
-import gurpreetprofile from "../assets/Profile/gurpreetprofile.png";
-import ishratprofile from "../assets/Profile/ishratprofile.png";
-import mustaqeemprofile from "../assets/Profile/mustaqeemprofile.png";
-import asifprofile from "../assets/Profile/asifprofile.png";
-import seeratprofile from "../assets/Profile/seeratprofile.png";
-import uroojprofile from "../assets/Profile/uroojprofile.png";
-import uzmamujtabaprofile from "../assets/Profile/uzma-mujtabaprofile.png";
-import baeedaprofile from "../assets/Profile/baeedaprofile.png";
-import uzmaprofile from "../assets/Profile/uzmaprofile.png";
+import thumbprofile from "../assets/Images/Profile/thumbprofile.png";
+import ghazanfarprofile from "../assets/Images/Profile/ghazanfar.JPG";
+import snoberprofile from "../assets/Images/Profile/snober-profile.png";
+import gousiaprofile from "../assets/Images/Profile/gousia-profile.png";
+import irfanprofile from "../assets/Images/Profile/irfan-profile.png";
+import umiprofile from "../assets/Images/Profile/umi-profile.jpeg";
+import adleenprofile from "../assets/Images/Profile/adleen-profile.png";
+import asiyaprofile from "../assets/Images/Profile/asiyaprofile.png";
+import gurpreetprofile from "../assets/Images/Profile/gurpreetprofile.png";
+import ishratprofile from "../assets/Images/Profile/ishratprofile.png";
+import mustaqeemprofile from "../assets/Images/Profile/mustaqeemprofile.png";
+import asifprofile from "../assets/Images/Profile/asifprofile.png";
+import seeratprofile from "../assets/Images/Profile/seeratprofile.png";
+import uroojprofile from "../assets/Images/Profile/uroojprofile.png";
+import uzmamujtabaprofile from "../assets/Images/Profile/uzma-mujtabaprofile.png";
+import baeedaprofile from "../assets/Images/Profile/baeedaprofile.png";
+import uzmaprofile from "../assets/Images/Profile/uzmaprofile.png";
 
 const alumniVideos = [
 

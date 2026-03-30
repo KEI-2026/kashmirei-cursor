@@ -108,7 +108,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  color: #48BEDA;
+  color: #47BFDA;
   text-decoration: none;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .ss-back-top button {
-  background: #48BEDA;
+  background: #47BFDA;
   color: white;
   padding: 10px 22px;
   border-radius: 6px;
@@ -153,7 +153,7 @@
 }
 
 .btn-primary {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   padding: 12px 26px;
   border-radius: 6px;
@@ -170,18 +170,18 @@
 
 .btn-outline {
   background: transparent;
-  color: #48BEDA;
+  color: #47BFDA;
   padding: 12px 26px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
-  border: 1.5px solid #48BEDA;
+  border: 1.5px solid #47BFDA;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .btn-outline:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 }
 

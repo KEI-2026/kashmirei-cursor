@@ -16,12 +16,12 @@
 /* Shared label (used across donate sections) */
 .donate-section-label {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 14px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .donate-methods-sub {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #555;
   line-height: 1.85;
@@ -56,7 +56,7 @@
 .donate-method-card {
   background: #ffffff;
   border-radius: 12px;
-  border-top: 4px solid var(--card-accent, #48BEDA);
+  border-top: 4px solid var(--card-accent, #47BFDA);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
@@ -104,7 +104,7 @@
 
 /* Blurb */
 .method-blurb {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   line-height: 1.75;
   color: #555;
@@ -119,7 +119,7 @@
   border-radius: 6px;
   border: none;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -154,7 +154,7 @@
 }
 
 .expanded-instruction {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #666;
@@ -172,7 +172,7 @@
 
 .detail-label {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -189,7 +189,7 @@
 }
 
 .expanded-note {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   color: #666;
   line-height: 1.7;

@@ -4,14 +4,16 @@ import "../../../styles/What-We-Do/whatwedo-programs.css";
 import rainbowImg from "../../../assets/Images/Value-deliver-rainbow picture.png";
 
 // Program images
-import imgHSP    from "../../../assets/Images/Copy-of-Solo-Pic-Kei-Exam.jpg";
-import imgCAP    from "../../../assets/Images/career-counselling.webp";
-import imgMentor from "../../../assets/Images/Male-mentor-pair_FAI8504.JPG";
-import imgEL     from "../../../assets/Images/experiential-learning.webp";
-import imgGooru  from "../../../assets/Images/Three-girls-with-devices-Copy-of-7E4A9580.JPG";
-import imgDSLE   from "../../../assets/Images/Young-girl-with-device-DSLE.jpg";
-import imgIBSP   from "../../../assets/Images/Scholar-Communication.JPG";
-import imgGAP    from "../../../assets/Images/Group-Photo-CMI.jpg";
+import imgHSP    from "../../../assets/Images/what-we-do-1.jpg";
+import imgCAP    from "../../../assets/Images/what-we-do-2.webp";
+import imgMentor from "../../../assets/Images/what-we-do-3.JPG";
+import imgEL     from "../../../assets/Images/what-we-do-4.webp";
+//need to change
+import imgGooru  from "../../../assets/Images/what-we-do-6.png";
+
+import imgDSLE   from "../../../assets/Images/what-we-do-6.jpg";
+import imgIBSP   from "../../../assets/Images/what-we-do-7.JPG";
+import imgGAP    from "../../../assets/Images/what-we-do-8.jpg";
 
 // ─── Data ───────────────────────────────────────────────────────────────────
 
@@ -34,7 +36,7 @@ const programs = [
   {
     id: "cap",
     number: "02",
-    color: "#48BEDA",
+    color: "#47BFDA",
     title: "Career Awareness Program",
     subtitle: "Opening windows to a world of possibilities",
     description:

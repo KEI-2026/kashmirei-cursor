@@ -55,12 +55,12 @@
 }
 
 .ourmission-label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -75,7 +75,7 @@
 }
 
 .ourmission-content h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #444;
@@ -105,7 +105,7 @@
 }
 
 .ourmission-content p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: #333;
@@ -137,7 +137,7 @@
 .ourmission-vm-item {
   flex: 1;
   background: #ffffff;
-  border-left: 4px solid #48BEDA;
+  border-left: 4px solid #47BFDA;
   border-radius: 8px;
   padding: 20px 24px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
@@ -149,7 +149,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 10px;
 }
 
@@ -164,7 +164,7 @@
 
 .ourmission-btn {
   display: inline-block;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #fff;
   padding: 12px 26px;
   border-radius: 6px;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/What-We-Do/whatwedo-hero.css";
-import heroBg from "../../../assets/Images/programs-image1.jpg";
+import heroBg from "../../../assets/Images/what-we-do-hero.jpg";
 
 const WhatWeDoHero = () => {
   return (

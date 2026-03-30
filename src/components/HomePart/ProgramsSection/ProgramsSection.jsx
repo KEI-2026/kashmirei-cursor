@@ -1,4 +1,5 @@
-import React from "react";
+// this whole page is commented out
+// import React from "react";
 import "../../../styles/Programs/programs.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,8 +8,8 @@ import { Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import image1 from "../../../assets/Images/Male-mentor-pair_FAI8504.JPG";
-import image2 from "../../../assets/Images/Scholar-Communication.JPG";
+import image1 from "../../../assets/Images/home-programs-1.JPG";
+import image2 from "../../../assets/Images/home-programs-2.JPG";
 import image3 from "../../../assets/Images/programs-image3.jpg";
 import image4 from "../../../assets/Images/Copy-of-Solo-Pic-Kei-Exam.jpg";
 

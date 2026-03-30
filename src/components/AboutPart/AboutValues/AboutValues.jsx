@@ -4,7 +4,7 @@ import "../../../styles/About/about.css";
 const values = [
   {
     num: "01",
-    color: "#48BEDA",
+    color: "#47BFDA",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20 4L6 10v10c0 8.3 6 16.1 14 18 8-1.9 14-9.7 14-18V10L20 4z"

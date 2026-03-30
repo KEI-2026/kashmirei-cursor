@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/Home/hero.css";
-import heroImage1 from "../../../assets/Images/hero-home-seerat.jpg";
+import heroImage1 from "../../../assets/Images/Hero-Home-1-seerat.jpg";
 import heroImage2 from "../../../assets/Images/Hero-Home-2-twokids.jpeg";
 import heroImage3 from "../../../assets/Images/Hero-Home-3-schoolboys.jpg";
 

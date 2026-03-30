@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "../../styles/Header/header.css";
-import logo from "../../assets/Images/logo.png";
+import logo from "../../assets/Images/KEI-new-logo/logo.png";
 
 const NAV_LINKS = [
   { path: "/", label: "Home" },

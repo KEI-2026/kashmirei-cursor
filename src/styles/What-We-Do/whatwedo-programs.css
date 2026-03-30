@@ -87,12 +87,12 @@
 
 .wwd-section-label {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 14px;
 }
 
@@ -160,10 +160,10 @@
   gap: 7px;
   padding: 7px 15px;
   border-radius: 30px;
-  border: 2px solid var(--pill-color, #48BEDA);
+  border: 2px solid var(--pill-color, #47BFDA);
   background: transparent;
-  color: var(--pill-color, #48BEDA);
-  font-family: "Roboto", sans-serif;
+  color: var(--pill-color, #47BFDA);
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12.5px;
   font-weight: 600;
   cursor: pointer;
@@ -173,7 +173,7 @@
 }
 
 .wwd-rainbow-pill:hover {
-  background: var(--pill-color, #48BEDA);
+  background: var(--pill-color, #47BFDA);
   color: #fff;
   box-shadow: none;
 }
@@ -222,13 +222,16 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.13);
+
+  /* ✅ Match 2500x1500 ratio */
+  aspect-ratio: 5 / 3;
 }
 
 .wwd-prog-img-wrap::after {
   content: "";
   position: absolute;
   inset: 0;
-  border: 4px solid var(--prog-color, #48BEDA);
+  border: 4px solid var(--prog-color, #47BFDA);
   border-radius: 10px;
   opacity: 0.45;
   pointer-events: none;
@@ -236,8 +239,8 @@
 
 .wwd-prog-img-wrap img {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  height: 100%;          /* ✅ fill container instead of fixed height */
+  object-fit: cover;     /* ✅ clean crop without distortion */
   display: block;
 }
 
@@ -274,17 +277,17 @@
 }
 
 .wwd-prog-subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #48BEDA;
+  color: #47BFDA;
   margin: 0 0 18px;
   text-transform: uppercase;
 }
 
 .wwd-prog-desc {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.85;
   color: #444;
@@ -303,7 +306,7 @@
   flex-direction: column;
   align-items: center;
   background: #fff;
-  border: 2px solid var(--stat-color, #48BEDA);
+  border: 2px solid var(--stat-color, #47BFDA);
   border-radius: 8px;
   padding: 14px 20px;
   min-width: 96px;
@@ -319,12 +322,12 @@
   font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
   font-size: 19px;
   font-weight: 700;
-  color: var(--stat-color, #48BEDA);
+  color: var(--stat-color, #47BFDA);
   line-height: 1.2;
 }
 
 .wwd-prog-stat span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 10.5px;
   font-weight: 600;
   color: #666;

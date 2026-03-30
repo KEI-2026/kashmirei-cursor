@@ -4,11 +4,15 @@
 
 .section-scholar-video-player {
   min-height: 100vh;
-  background: #f8f9fb;
+  background: #F4F8FB;;
   display: flex;
-  align-items: center;
+
+  /* ✅ Start from top instead of center */
+  align-items: flex-start;
   justify-content: center;
-  padding: 60px 0;
+
+  /* ✅ Controls vertical spacing */
+  padding: 100px 0 60px;
 }
 
 /* Main container */
@@ -19,44 +23,56 @@
   width: 100%;
 }
 
-/* Centered content block */
+/* Content block */
 .scholar-video-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: calc(100vh - 120px);
 }
 
 /* =========================================
-   HEADER
+   HEADER (FIXED PERFECT ALIGNMENT)
 ========================================= */
 
 .scholar-video-header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  align-items: center;        /* ✅ perfect horizontal alignment */
   text-align: center;
+
+  margin-top: 20px;
   margin-bottom: 24px;
 }
 
 .scholar-video-header img {
+  display: block;             /* ✅ removes inline gap */
   width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 14px;
+
+  margin-bottom: 12px;
 }
 
 .scholar-video-header h1 {
+
   font-size: 32px;
-  margin-bottom: 8px;
+  margin: 0;                  /* ✅ remove default spacing */
+  margin-bottom: 6px;
   color: #111;
 }
 
 .scholar-video-header p {
+  font-family: "Franklin Gothic Book", sans-serif;
+  margin: 0;                  /* ✅ remove default spacing */
   font-size: 15px;
   color: #666;
 }
 
 /* =========================================
-   VIDEO WRAPPER (UPDATED FOR IFRAME)
+   VIDEO WRAPPER
 ========================================= */
 
 .scholar-video-wrapper {
@@ -68,7 +84,6 @@
   overflow: hidden;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 
-  /* 🔥 KEY FIX */
   aspect-ratio: 16 / 9;
   position: relative;
 }
@@ -87,6 +102,7 @@
 ========================================= */
 
 .scholar-video-shortcuts {
+  font-family: "Franklin Gothic Book", sans-serif;
   margin-top: 18px;
   display: flex;
   justify-content: center;
@@ -105,12 +121,12 @@
   display: inline-block;
   margin: 24px auto 0;
   padding: 8px 16px;
-  background: #48BEDA;
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   font-size: 14px;
-  font-family: "Inter", Arial, sans-serif;
+  background: #47BFDA;
+  font-family: "Franklin Gothic Medium", sans-serif;
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
@@ -120,7 +136,7 @@
 .video-back-btn:focus,
 .video-back-btn:active {
   color: #ffffff;
-  background: #3aa7c3;
+  background: #2FA8C4;;
   text-decoration: none;
   outline: none;
 }
@@ -130,6 +146,8 @@
 ========================================= */
 
 .video-not-found {
+  font-family: "Franklin Gothic Book", sans-serif;
+  color: #050505;
   padding: 120px 20px;
   text-align: center;
   font-size: 18px;
@@ -141,8 +159,7 @@
 
 @media (max-width: 992px) {
   .section-scholar-video-player {
-    padding: 50px 0;
-    margin-top: 140px;
+    padding: 90px 0 50px;
   }
 
   .section-scholar-video-player .container {
@@ -151,7 +168,7 @@
   }
 
   .scholar-video-content {
-    min-height: calc(100vh - 100px);
+    min-height: auto;
   }
 
   .scholar-video-header img {
@@ -183,9 +200,7 @@
 
 @media (max-width: 768px) {
   .section-scholar-video-player {
-    padding: 40px 0;
-    align-items: center;
-    margin-top: 110px;
+    padding: 80px 0 40px;
   }
 
   .section-scholar-video-player .container {
@@ -197,13 +212,14 @@
   }
 
   .scholar-video-header {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
   .scholar-video-header img {
     width: 72px;
     height: 72px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .scholar-video-header h1 {
@@ -244,8 +260,7 @@
 
 @media (max-width: 480px) {
   .section-scholar-video-player {
-    padding: 32px 0;
-    margin-top: 90px;
+    padding: 70px 0 32px;
   }
 
   .scholar-video-header h1 {

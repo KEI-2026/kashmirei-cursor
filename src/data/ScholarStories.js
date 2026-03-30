@@ -1,68 +1,68 @@
-import Saqib from "../assets/Images/saqib.jpg";
-import saqibthumb from "../assets/Thumbnails/saqibthumb.jpg";
+import Saqib from "../assets/Images/AlumniScholarPics/saqib.jpg";
+import saqibthumb from "../assets/Images/Thumbnails/saqibthumb.jpg";
 
-import Ghazanfar from "../assets/Images/ghazanfar.JPG";
-import ghazanfarthumb from "../assets/Thumbnails/ghazanfarthumb.JPG";
+import Ghazanfar from "../assets/Images/AlumniScholarPics/ghazanfar.JPG";
+import ghazanfarthumb from "../assets/Images/Thumbnails/ghazanfarthumb.JPG";
 
-import amina from "../assets/Images/amina.JPG";
-import aminathumb from "../assets/Thumbnails/aminathumb.JPG";
+import amina from "../assets/Images/AlumniScholarPics/amina.JPG";
+import aminathumb from "../assets/Images/Thumbnails/aminathumb.JPG";
 
-import Azhar from "../assets/Images/Azhar.webp";
-import azharthumb from "../assets/Thumbnails/azharthumb.png";
+import Azhar from "../assets/Images/AlumniScholarPics/Azhar.webp";
+import azharthumb from "../assets/Images/Thumbnails/azharthumb.png";
 
-import Saba from "../assets/Images/Saba.webp";
-import sabathumb from "../assets/Thumbnails/sabathumb.png";
+import Saba from "../assets/Images/AlumniScholarPics/Saba.webp";
+import sabathumb from "../assets/Images/Thumbnails/sabathumb.png";
 
-import Nadeem from "../assets/Images/Nadeem.webp";
-import nadeemthumb from "../assets/Thumbnails/nadeemthumb.png";
+import Nadeem from "../assets/Images/AlumniScholarPics/Nadeem.webp";
+import nadeemthumb from "../assets/Images/Thumbnails/nadeemthumb.png";
 
-import Shabdhar from "../assets/Images/Shabdhar.webp";
-import shabdharthumb from "../assets/Thumbnails/shabdharthumb.png";
+import Shabdhar from "../assets/Images/AlumniScholarPics/Shabdhar.webp";
+import shabdharthumb from "../assets/Images/Thumbnails/shabdharthumb.png";
 
-import umerabdullah from "../assets/Images/umerabdullah.jpg";
-import umerthumb from "../assets/Thumbnails/umerthumb.png";
+import umerabdullah from "../assets/Images/AlumniScholarPics/umerabdullah.jpg";
+import umerthumb from "../assets/Images/Thumbnails/umerthumb.png";
 
-import Idrees from "../assets/Images/Idrees.webp";
-import idreesthumb from "../assets/Thumbnails/idreesthumb.png";
+import Idrees from "../assets/Images/AlumniScholarPics/Idrees.webp";
+import idreesthumb from "../assets/Images/Thumbnails/idreesthumb.png";
 
-import Fiza from "../assets/Images/Fiza.jpg";
-import fizathumb from "../assets/Thumbnails/fizathumb.png";
+import Fiza from "../assets/Images/AlumniScholarPics/Fiza.jpg";
+import fizathumb from "../assets/Images/Thumbnails/fizathumb.png";
 
-import Murtaza from "../assets/Images/Murtaza.webp";
-import murtazathumb from "../assets/Thumbnails/murtazathumb.png";
+import Murtaza from "../assets/Images/AlumniScholarPics/Murtaza.webp";
+import murtazathumb from "../assets/Images/Thumbnails/murtazathumb.png";
 
-import Akhter from "../assets/Images/Akhter.webp";
-import akhterthumb from "../assets/Thumbnails/akhterthumb.png";
+import Akhter from "../assets/Images/AlumniScholarPics/Akhter.webp";
+import akhterthumb from "../assets/Images/Thumbnails/akhterthumb.png";
 
-import Adleen from "../assets/Images/Adleen.webp";
-import adleenthumb from "../assets/Thumbnails/adleenthumb.png";
+import Adleen from "../assets/Images/AlumniScholarPics/Adleen.webp";
+import adleenthumb from "../assets/Images/Thumbnails/adleenthumb.png";
 
-// import Tabinda from "../assets/Images/Tabinda.webp";
-// import tabindathumb from "../assets/Thumbnails/tabindathumb.png";
+import Tabinda from "../assets/Images/AlumniScholarPics/Tabinda.webp";
+import tabindathumb from "../assets/Images/Thumbnails/tabindathumb.png";
 
-// import Anayat from "../assets/Images/Anayat_yousuf.webp";
-// import anayatthumb from "../assets/Thumbnails/anayatthumb.png";
+import Anayat from "../assets/Images/AlumniScholarPics/Anayat_yousuf.webp";
+import anayatthumb from "../assets/Images/Thumbnails/anayatthumb.png";
 
-// import Mehak from "../assets/Images/mahak.jpg";
-// import mehak from "../assets/Images/mehak.png";
+import Mehak from "../assets/Images/AlumniScholarPics/mahak.jpg";
+import mehak from "../assets/Images/AlumniScholarPics/mehak.png";
 
-// import Karia from "../assets/Images/Karia.webp";
-// import kariathumb from "../assets/Thumbnails/kariathumb.png";
+import Karia from "../assets/Images/AlumniScholarPics/Karia.webp";
+import kariathumb from "../assets/Images/Thumbnails/kariathumb.png";
 
-// import Tabish from "../assets/Images/Tabish.webp";
-// import tabishthumb from "../assets/Thumbnails/tabishthumb.png";
+import Tabish from "../assets/Images/AlumniScholarPics/Tabish.webp";
+import tabishthumb from "../assets/Images/Thumbnails/tabishthumb.png";
 
-// import Snober from "../assets/Images/Snober_mehraj.webp";
-// import snober2thumb from "../assets/Thumbnails/snober2thumb.png";
+import Snober from "../assets/Images/AlumniScholarPics/Snober_mehraj.webp";
+import snober2thumb from "../assets/Images/Thumbnails/snober2thumb.png";
 
-// import Owais from "../assets/Images/Owais.webp";
-// import owaisthumb from "../assets/Thumbnails/owaisthumb.png";
+import Owais from "../assets/Images/AlumniScholarPics/Owais.webp";
+import owaisthumb from "../assets/Images/Thumbnails/owaisthumb.png";
 
-// import Jehangir from "../assets/Images/Jehangir.webp";
-// import jehangirthumb from "../assets/Thumbnails/jehangirthumb.png";
+import Jehangir from "../assets/Images/AlumniScholarPics/Jehangir.webp";
+import jehangirthumb from "../assets/Images/Thumbnails/jehangirthumb.png";
 
-// import Umair from "../assets/Images/umair.webp";
-// import umairthumb from "../assets/Thumbnails/umairthumb.png";
+import Umair from "../assets/Images/AlumniScholarPics/umair.webp";
+import umairthumb from "../assets/Images/Thumbnails/umairthumb.png";
 
 
 
@@ -334,225 +334,225 @@ const scholarStories = [
     ]
   },
 
-//   {
-//     id: 14,
-//     name: "Tabinda Manzoor",
-//     year: 2024,    
-//     slug: "tabinda-manzoor",   // used in URL
-//     thumbnail: tabindathumb,  // used in grid
-//     title: "Tabinda's Journey with KEI",
-//     date: "March 27, 2024",
-//     image: Tabinda,
-//     paragraphs:[
-//         "I am Tabinda Manzoor, a scholar who embarked on a transformative journey with KEI starting from 2019. Currently, I am a law student (fresher) in University of Kashmir and actively engaged in honing my skills in leadership, teamwork and cognitive functioning. KEI has been instrumental in shaping my academic and personal growth, and I am excited to share my experiences and insights.",
+  {
+    id: 14,
+    name: "Tabinda Manzoor",
+    year: 2024,    
+    slug: "tabinda-manzoor",   // used in URL
+    thumbnail: tabindathumb,  // used in grid
+    title: "Tabinda's Journey with KEI",
+    date: "March 27, 2024",
+    image: Tabinda,
+    paragraphs:[
+        "I am Tabinda Manzoor, a scholar who embarked on a transformative journey with KEI starting from 2019. Currently, I am a law student (fresher) in University of Kashmir and actively engaged in honing my skills in leadership, teamwork and cognitive functioning. KEI has been instrumental in shaping my academic and personal growth, and I am excited to share my experiences and insights.",
         
-//         "As a scholar of the organisation KEI from grade 9, I had the privilege of participating in workshops that significantly enriched my skill set. KEI’s workshops were exceptional, providing comprehensive training in ναrious areas. The emphasis on leadership development was particularly impactful, as I learned effective strategies for leading teams and managing projects. Additionally, the focus on teamwork instilled in me the importance of collaboration and communication. The workshops also enhanced my cognitive functioning, teaching me how to think critically and solve problems creatively.",
+        "As a scholar of the organisation KEI from grade 9, I had the privilege of participating in workshops that significantly enriched my skill set. KEI’s workshops were exceptional, providing comprehensive training in ναrious areas. The emphasis on leadership development was particularly impactful, as I learned effective strategies for leading teams and managing projects. Additionally, the focus on teamwork instilled in me the importance of collaboration and communication. The workshops also enhanced my cognitive functioning, teaching me how to think critically and solve problems creatively.",
         
-//         "The scholarship I recieved from KEI not only provided me with invaluable skills but also offered crucial financial assistance for my academic pursuits. This support played a significant role in alleviating the financial burden of my education, allowing me to focus more on my studies and extracurricular activities. The scholarship helped cover tuition fees, book etc. The financial assistance provided by the scholarship was instrumental in my academic journey.",
+        "The scholarship I recieved from KEI not only provided me with invaluable skills but also offered crucial financial assistance for my academic pursuits. This support played a significant role in alleviating the financial burden of my education, allowing me to focus more on my studies and extracurricular activities. The scholarship helped cover tuition fees, book etc. The financial assistance provided by the scholarship was instrumental in my academic journey.",
 
-//         "My experience as a scholar also fostered productive interactions with other students through νarious collaborative and group activities. I learned the importance of effective communication, and teamwork. These interactions not only enhanced my social skills but also broadened my perspective by exposing me to different ideas and viewpoints. I developed the ability to work harmoniously with diverse groups of people which has proven invaluable in both academic and personal life. The environment there encouraged constructive engagement with peers",
+        "My experience as a scholar also fostered productive interactions with other students through νarious collaborative and group activities. I learned the importance of effective communication, and teamwork. These interactions not only enhanced my social skills but also broadened my perspective by exposing me to different ideas and viewpoints. I developed the ability to work harmoniously with diverse groups of people which has proven invaluable in both academic and personal life. The environment there encouraged constructive engagement with peers",
 
-//         "KEI is truly an exceptional organization that has a profound impact on it's scholars. Through its comprehensive workshops and scholarship programs, KEI equips students with essential life skills. The organization creates a supportive and nurturing environment for personal and academic growth.",
+        "KEI is truly an exceptional organization that has a profound impact on it's scholars. Through its comprehensive workshops and scholarship programs, KEI equips students with essential life skills. The organization creates a supportive and nurturing environment for personal and academic growth.",
 
-//         "Overall, KEI'S commitment to empowering students with the skills and resources they need to succeed is truly commendable, making it a standout organization in the educational landscape."
-//     ]
-// },
+        "Overall, KEI'S commitment to empowering students with the skills and resources they need to succeed is truly commendable, making it a standout organization in the educational landscape."
+    ]
+},
 
-// {
-//     id: 15,
-//     name: "Anayat Yousuf",
-//     year: 2024,    
-//     slug: "anayat-yousuf",   // used in URL
-//     thumbnail: anayatthumb,  // used in grid
-//     title: "From Kashmir to Germany! A short story by our scholar Anayat",
-//     date: "March 28, 2024",
-//     image: Anayat,
-//     paragraphs:[
-//         "I Anayat Yousuf thank Almighty Allah, my parents & Kashmir Education Initiative for supporting, teaching & mentoring me in this Journey from Kashmir to Germany. During career counseling workshops at KEI, I came to know about UWC. It is the podium where my talents/strengths were analyzed and I was given the utmost support to flourish my talent.  My transformative journey began at United World Colleges (UWC). Here, I experienced a holistic education that nurtured me intellectually, socially, emotionally, and ethically. Through rigorous academic programs, diverse extracurricular activities, and meaningful service opportunities, UWC molded me into a well-rounded individual prepared to impact society positively.",
+{
+    id: 15,
+    name: "Anayat Yousuf",
+    year: 2024,    
+    slug: "anayat-yousuf",   // used in URL
+    thumbnail: anayatthumb,  // used in grid
+    title: "From Kashmir to Germany! A short story by our scholar Anayat",
+    date: "March 28, 2024",
+    image: Anayat,
+    paragraphs:[
+        "I Anayat Yousuf thank Almighty Allah, my parents & Kashmir Education Initiative for supporting, teaching & mentoring me in this Journey from Kashmir to Germany. During career counseling workshops at KEI, I came to know about UWC. It is the podium where my talents/strengths were analyzed and I was given the utmost support to flourish my talent.  My transformative journey began at United World Colleges (UWC). Here, I experienced a holistic education that nurtured me intellectually, socially, emotionally, and ethically. Through rigorous academic programs, diverse extracurricular activities, and meaningful service opportunities, UWC molded me into a well-rounded individual prepared to impact society positively.",
         
-//         "Crucially, this transformation was fueled by the awareness instilled in me by the KEI  Career Counseling programs, a core activity of the Kashmir Education  Initiative. Through KEI's dedicated efforts to empower scholars, I gained a deeper understanding of global issues, cultural appreciation, and a sense of responsibility toward creating positive change in the world.",
+        "Crucially, this transformation was fueled by the awareness instilled in me by the KEI  Career Counseling programs, a core activity of the Kashmir Education  Initiative. Through KEI's dedicated efforts to empower scholars, I gained a deeper understanding of global issues, cultural appreciation, and a sense of responsibility toward creating positive change in the world.",
         
-//         "Upon graduating from UWC, I embarked on the next chapter of my journey by enrolling at the University of Oklahoma to pursue a Bachelor's in Human Health & Biology with Pre-Medicine. Armed with the values and skills instilled in me by both UWC and KEI, I approached my studies with unwavering confidence and determination. The solid foundation laid by UWC and the transformative influence of KEI's initiatives opened doors to countless opportunities. It paved the way for my success at the University of Oklahoma and beyond.",
+        "Upon graduating from UWC, I embarked on the next chapter of my journey by enrolling at the University of Oklahoma to pursue a Bachelor's in Human Health & Biology with Pre-Medicine. Armed with the values and skills instilled in me by both UWC and KEI, I approached my studies with unwavering confidence and determination. The solid foundation laid by UWC and the transformative influence of KEI's initiatives opened doors to countless opportunities. It paved the way for my success at the University of Oklahoma and beyond.",
 
-//         "As I reflect on my journey, I am immensely grateful for the profound impact of UWC and the guiding light of KEI. Their collective efforts have not only shaped my academic and personal growth but have also equipped me with the tools and mindset needed to thrive as a global citizen, making meaningful contributions to society wherever my path may lead.",
+        "As I reflect on my journey, I am immensely grateful for the profound impact of UWC and the guiding light of KEI. Their collective efforts have not only shaped my academic and personal growth but have also equipped me with the tools and mindset needed to thrive as a global citizen, making meaningful contributions to society wherever my path may lead.",
 
-//         "The countless experiences in KEI gave me a unique birds-eye view of the educational happenings in and outside the classroom. The enthusiasm & joy KEI has for teaching, supporting and mentoring creates a fantastic atmosphere for learning and helped me bag a 60 lakh scholarship in UWC RBC GERMANY. UWC scholarship isn't only a feather in my cap, KEI has helped me with various achievements like All India Rank 136 in NEST-JUNIOR 2019, a Medal of Distinction for achieving Zonal rank 19 in National Science Olympiad 2020-21 or Silver medalist in Goprep talent search Examination.",
+        "The countless experiences in KEI gave me a unique birds-eye view of the educational happenings in and outside the classroom. The enthusiasm & joy KEI has for teaching, supporting and mentoring creates a fantastic atmosphere for learning and helped me bag a 60 lakh scholarship in UWC RBC GERMANY. UWC scholarship isn't only a feather in my cap, KEI has helped me with various achievements like All India Rank 136 in NEST-JUNIOR 2019, a Medal of Distinction for achieving Zonal rank 19 in National Science Olympiad 2020-21 or Silver medalist in Goprep talent search Examination.",
 
-//         "Besides academics, KEI has remained with me in various projects like 'Utilisation of waste paper and preservation of Handicrafts on 26th NSC.",
+        "Besides academics, KEI has remained with me in various projects like 'Utilisation of waste paper and preservation of Handicrafts on 26th NSC.",
 
-//         "Thanks, KEI Once again",
+        "Thanks, KEI Once again",
 
 
-//     ]
-// },
+    ]
+},
 
-// {
-//     id: 16,
-//     name: "Mehak Fayaz",
-//     year: 2024,    
-//     slug: "mehak-fayaz",   // used in URL
-//     thumbnail: mehak,  // used in grid
-//     title: "Mehak's Journey with KEI",
-//     date: "March 25, 2024",
-//     image: Mehak,
-//     paragraphs:[
-//         "I am Mehak Fayaz, MBBS student at Govt. Medical College, Anantnag.",
+{
+    id: 16,
+    name: "Mehak Fayaz",
+    year: 2024,    
+    slug: "mehak-fayaz",   // used in URL
+    thumbnail: mehak,  // used in grid
+    title: "Mehak's Journey with KEI",
+    date: "March 25, 2024",
+    image: Mehak,
+    paragraphs:[
+        "I am Mehak Fayaz, MBBS student at Govt. Medical College, Anantnag.",
         
-//         "Coming from an underprivileged family, getting financial support was like a miracle for me and my family. I want to express my heartfelt gratitude to KEI for being there for me during the most crucial stage of my life. Their support not only helped me financially but also allowed me to progress smoothly in my studies. KEI's workshops for skill development have been a game-changer for me. Initiatives like these are so important for students like me to overcome financial constraints and reach for the stars."
-//     ]
-// },
+        "Coming from an underprivileged family, getting financial support was like a miracle for me and my family. I want to express my heartfelt gratitude to KEI for being there for me during the most crucial stage of my life. Their support not only helped me financially but also allowed me to progress smoothly in my studies. KEI's workshops for skill development have been a game-changer for me. Initiatives like these are so important for students like me to overcome financial constraints and reach for the stars."
+    ]
+},
 
-// {
-//     id: 17,
-//     name: "Karia Zainab",
-//     year: 2024,    
-//     slug: "karia-zainab",   // used in URL
-//     thumbnail: kariathumb,  // used in grid
-//     title: "Karia Zainab's Jouney with KEI",
-//     date: "March 23, 2024",
-//     image: Karia,
-//     paragraphs:[
-//         "My name is Kaira Zainab, and I come from a humble background. Despite my financial limitations, my dreams have always been steadfast. I am immensely grateful to my creator for blessing me with the KEI family. My journey with KEI began in grade 9 in the year 2013.",
+{
+    id: 17,
+    name: "Karia Zainab",
+    year: 2024,    
+    slug: "karia-zainab",   // used in URL
+    thumbnail: kariathumb,  // used in grid
+    title: "Karia Zainab's Jouney with KEI",
+    date: "March 23, 2024",
+    image: Karia,
+    paragraphs:[
+        "My name is Kaira Zainab, and I come from a humble background. Despite my financial limitations, my dreams have always been steadfast. I am immensely grateful to my creator for blessing me with the KEI family. My journey with KEI began in grade 9 in the year 2013.",
        
-//         "During my high school years, KEI supported me not only with scholarships but also through enriching workshops and alumni meets, reinforcing my belief in turning dreams into reality. Through their unwavering support, I was able to navigate through financial constraints and pursue my undergraduate and postgraduate degrees.",
+        "During my high school years, KEI supported me not only with scholarships but also through enriching workshops and alumni meets, reinforcing my belief in turning dreams into reality. Through their unwavering support, I was able to navigate through financial constraints and pursue my undergraduate and postgraduate degrees.",
         
-//         "Being a part of KEI felt like belonging to a tribe where determination and hard work could make dreams take flight. With KEI's backing, I earned my B. Pharm degree from Era University, Lucknow, in 2021. Continuing with KEI's support, I secured admission to one of the top 1% universities globally, China Medical University, Taiwan, for my postgraduate studies.",
+        "Being a part of KEI felt like belonging to a tribe where determination and hard work could make dreams take flight. With KEI's backing, I earned my B. Pharm degree from Era University, Lucknow, in 2021. Continuing with KEI's support, I secured admission to one of the top 1% universities globally, China Medical University, Taiwan, for my postgraduate studies.",
 
-//         "Throughout my journey, KEI has been my constant companion, and words cannot adequately express my gratitude towards them. It would be an utmost honor for me to give back by volunteering with KEI and contributing to transforming lives, just like mine was transformed.",
+        "Throughout my journey, KEI has been my constant companion, and words cannot adequately express my gratitude towards them. It would be an utmost honor for me to give back by volunteering with KEI and contributing to transforming lives, just like mine was transformed.",
 
-//         "I owe my success to the unshakable trust of my parents and the unwavering support of KEI. Their belief in me has been the cornerstone of my achievements."
-//     ]
-// },
+        "I owe my success to the unshakable trust of my parents and the unwavering support of KEI. Their belief in me has been the cornerstone of my achievements."
+    ]
+},
 
-// {
-//     id: 18,
-//     name: "Tabish Nabi",
-//     year: 2024,    
-//     slug: "tabish-nabi",   // used in URL
-//     thumbnail: tabishthumb,  // used in grid
-//     title: "Tabish's Journey with KEI",
-//     date: "March 23, 2024",
-//     image: Tabish,
-//     paragraphs:[
-//         "Amid the challenges faced in Kashmir, my prospects seemed limited until an opportunity presented itself in the form of the Kashmir Education Initiative (KEI). Little did I know, this organization would become the cornerstone of my transformation. Joining back in 2015 as a scholar marked a turning point in my life. Initially reserved and uncertain, I soon found myself immersed in a world of opportunities and growth.",
+{
+    id: 18,
+    name: "Tabish Nabi",
+    year: 2024,    
+    slug: "tabish-nabi",   // used in URL
+    thumbnail: tabishthumb,  // used in grid
+    title: "Tabish's Journey with KEI",
+    date: "March 23, 2024",
+    image: Tabish,
+    paragraphs:[
+        "Amid the challenges faced in Kashmir, my prospects seemed limited until an opportunity presented itself in the form of the Kashmir Education Initiative (KEI). Little did I know, this organization would become the cornerstone of my transformation. Joining back in 2015 as a scholar marked a turning point in my life. Initially reserved and uncertain, I soon found myself immersed in a world of opportunities and growth.",
         
-//         "Through various workshops, seminars, and community events, KEI provided me with a platform to explore my interests and develop new skills. From participating in group discussions to eventually becoming a speaker, KEI helped me find my voice and build my confidence.",
+        "Through various workshops, seminars, and community events, KEI provided me with a platform to explore my interests and develop new skills. From participating in group discussions to eventually becoming a speaker, KEI helped me find my voice and build my confidence.",
         
-//         "Despite being a diligent student, there were moments when the weight of expectations felt overwhelming. During these times, I found solace in the guidance of a mentor provided by KEI. With unwavering support and invaluable advice, my mentor became a beacon of light, steering me through the challenges of high school and beyond. ",
+        "Despite being a diligent student, there were moments when the weight of expectations felt overwhelming. During these times, I found solace in the guidance of a mentor provided by KEI. With unwavering support and invaluable advice, my mentor became a beacon of light, steering me through the challenges of high school and beyond. ",
 
-//         "Thanks to KEI's support, I pursued my bachelor's degree in computer science from Delhi Technological University (DTU). Additionally, I became the first Kashmiri to receive a Mitacs Global Research Internship offer in  Canada, which broadened my horizons and allowed me to gain valuable experience.",
+        "Thanks to KEI's support, I pursued my bachelor's degree in computer science from Delhi Technological University (DTU). Additionally, I became the first Kashmiri to receive a Mitacs Global Research Internship offer in  Canada, which broadened my horizons and allowed me to gain valuable experience.",
 
-//         "Throughout my journey, KEI has been more than just a financial aid provider. It has been a support system—a family that has guided me through challenges and celebrated my successes. They have always welcomed me, infused the sense of belongingness and their help is just one call away. Name anything and KEI has done for me. From mentorship to access to digital resources, KEI has been instrumental in my personal and professional growth.",
+        "Throughout my journey, KEI has been more than just a financial aid provider. It has been a support system—a family that has guided me through challenges and celebrated my successes. They have always welcomed me, infused the sense of belongingness and their help is just one call away. Name anything and KEI has done for me. From mentorship to access to digital resources, KEI has been instrumental in my personal and professional growth.",
 
-//         "Looking back, I am grateful for the impact KEI has had on my life. It has empowered me to overcome obstacles and pursue my aspirations with confidence. KEI embodies the belief that education can truly make a difference, even in the most challenging circumstances.",
+        "Looking back, I am grateful for the impact KEI has had on my life. It has empowered me to overcome obstacles and pursue my aspirations with confidence. KEI embodies the belief that education can truly make a difference, even in the most challenging circumstances.",
 
-//         "In KEI, I have found not only support but also a community of individuals striving for progress and empowerment. As I continue on my journey, I carry with me the lessons and experiences that KEI has provided—a testament to the power of education to transform lives and create opportunities for a brighter future."
+        "In KEI, I have found not only support but also a community of individuals striving for progress and empowerment. As I continue on my journey, I carry with me the lessons and experiences that KEI has provided—a testament to the power of education to transform lives and create opportunities for a brighter future."
 
-//     ]
-// },
+    ]
+},
 
-// {
-//     id: 19,
-//     name: "Snober Mehraj",
-//     year: 2024,    
-//     slug: "snober-mehraj2",   // used in URL
-//     thumbnail: snober2thumb,  // used in grid
-//     title: "Snober's Jouney with KEI",
-//     date: "March 20, 2024",
-//     image: Snober,
-//     paragraphs:[
-//         "I am Snober, a proud alumna of KEI, graduating from its High School Scholarship Program in my 12th-grade year with the class of 2022. My story with KEI is one of self-discovery and empowerment, a journey that began when I was introduced to this institution during my 9th-grade years.",
+{
+    id: 19,
+    name: "Snober Mehraj",
+    year: 2024,    
+    slug: "snober-mehraj2",   // used in URL
+    thumbnail: snober2thumb,  // used in grid
+    title: "Snober's Jouney with KEI",
+    date: "March 20, 2024",
+    image: Snober,
+    paragraphs:[
+        "I am Snober, a proud alumna of KEI, graduating from its High School Scholarship Program in my 12th-grade year with the class of 2022. My story with KEI is one of self-discovery and empowerment, a journey that began when I was introduced to this institution during my 9th-grade years.",
         
-//         "It is a story of finding my voice. It was a distant acquaintance who first mentioned KEI to me, and I joined with the hope of receiving financial assistance. On the day of my registration, I remember feeling nervous and unsure of myself. As I walked through the doors of KEI, I carried with me the silent prayer to escape any questions that required confidence in my answers. Like many young students, I believed that the correctness of my responses defined my worth. ",
+        "It is a story of finding my voice. It was a distant acquaintance who first mentioned KEI to me, and I joined with the hope of receiving financial assistance. On the day of my registration, I remember feeling nervous and unsure of myself. As I walked through the doors of KEI, I carried with me the silent prayer to escape any questions that required confidence in my answers. Like many young students, I believed that the correctness of my responses defined my worth. ",
         
-//         "However, that first day at KEI marked the beginning of a profound transformation. Despite my initial shyness and lack of confidence, I found myself immersed in a supportive environment that encouraged growth and self-expression. The workshops, mentorship, and other meticulously designed programs brought new challenges and opportunities for learning, and gradually, I began to find my voice.",
+        "However, that first day at KEI marked the beginning of a profound transformation. Despite my initial shyness and lack of confidence, I found myself immersed in a supportive environment that encouraged growth and self-expression. The workshops, mentorship, and other meticulously designed programs brought new challenges and opportunities for learning, and gradually, I began to find my voice.",
 
-//         "Through these programs and the feeling of being in the KEI family, I discovered the power within me to overcome obstacles and embrace my strengths. No longer was I defined by the correctness of my answers; instead, I learned to value the process of learning and the journey of self-discovery. Currently, I am cherishing my dream of becoming a journalist, all stemming from finding my voice.",
+        "Through these programs and the feeling of being in the KEI family, I discovered the power within me to overcome obstacles and embrace my strengths. No longer was I defined by the correctness of my answers; instead, I learned to value the process of learning and the journey of self-discovery. Currently, I am cherishing my dream of becoming a journalist, all stemming from finding my voice.",
 
-//         "Looking back on my time at KEI, I am filled with gratitude for the opportunities it provided me. It was within these walls that I found the courage to speak up, the confidence to pursue my dreams, and the resilience to face life's challenges head-on. In addition, KEI prepares leaders of tomorrow who are ready to contribute to society. I am part of the KEI volunteer group which is always on the front foot to be part of KEI initiatives impacting more lives like me. This sense of community keeps me satisfied that life is all about learning and lending help to others.",
+        "Looking back on my time at KEI, I am filled with gratitude for the opportunities it provided me. It was within these walls that I found the courage to speak up, the confidence to pursue my dreams, and the resilience to face life's challenges head-on. In addition, KEI prepares leaders of tomorrow who are ready to contribute to society. I am part of the KEI volunteer group which is always on the front foot to be part of KEI initiatives impacting more lives like me. This sense of community keeps me satisfied that life is all about learning and lending help to others.",
 
-//         "Today, as a proud alumna of KEI, I carry with me the lessons learned and the memories cherished. My journey with KEI has shaped not only my academic success but also my personal growth and development. It is a journey that continues to resonate within me, reminding me of the transformative power of education and the importance of finding my voice in a world filled with endless possibilities."
-//     ]
-// },
+        "Today, as a proud alumna of KEI, I carry with me the lessons learned and the memories cherished. My journey with KEI has shaped not only my academic success but also my personal growth and development. It is a journey that continues to resonate within me, reminding me of the transformative power of education and the importance of finding my voice in a world filled with endless possibilities."
+    ]
+},
 
-// {
-//     id: 20,
-//     name: "Owais Amin",
-//     year: 2024,    
-//     slug: "owais-amin",   // used in URL
-//     thumbnail: owaisthumb,  // used in grid
-//     title: "Owais Amin's Journey with KEI",
-//     date: "March 18, 2024",
-//     image: Owais,
-//     paragraphs:[
-//         "My name is Owais Amin Khan, hailing from the quaint village of 'Nikas,' just 5 kilometers from Pulwama. ",
+{
+    id: 20,
+    name: "Owais Amin",
+    year: 2024,    
+    slug: "owais-amin",   // used in URL
+    thumbnail: owaisthumb,  // used in grid
+    title: "Owais Amin's Journey with KEI",
+    date: "March 18, 2024",
+    image: Owais,
+    paragraphs:[
+        "My name is Owais Amin Khan, hailing from the quaint village of 'Nikas,' just 5 kilometers from Pulwama. ",
 
-//         "Currently pursuing a BA LLB program from the Main Campus of Kashmir University, my journey with Kashmir Education Initiative began in 2017 when I earned the title of a KEI scholar after acing the Talent Search Examination. Before this, concepts like mentorship programs and the significance of communication and leadership skills were unknown.",
+        "Currently pursuing a BA LLB program from the Main Campus of Kashmir University, my journey with Kashmir Education Initiative began in 2017 when I earned the title of a KEI scholar after acing the Talent Search Examination. Before this, concepts like mentorship programs and the significance of communication and leadership skills were unknown.",
 
-//         "The initial interaction with the Kashmir Education Initiative opened my eyes to their mission and goals, enlightening me about the positive impact they aimed to instill in the younger generation. As a teenager in transition, KEI swiftly ushered in notable changes in my life, offering not just monetary scholarships but also invaluable mentorship and personality development programs. These proved crucial during those formative years, providing the understanding and support every student requires.",
+        "The initial interaction with the Kashmir Education Initiative opened my eyes to their mission and goals, enlightening me about the positive impact they aimed to instill in the younger generation. As a teenager in transition, KEI swiftly ushered in notable changes in my life, offering not just monetary scholarships but also invaluable mentorship and personality development programs. These proved crucial during those formative years, providing the understanding and support every student requires.",
 
-//         "Whether facing the 2019 shutdown and internet suspension in the valley or enduring the global lockdown due to COVID-19, KEI consistently stepped up, guiding us when others struggled to provide resources. Amidst the challenges, the team went door to door, delivering offline video lectures and study materials to scholars, ensuring every student was provided with the necessary tools for learning.",
+        "Whether facing the 2019 shutdown and internet suspension in the valley or enduring the global lockdown due to COVID-19, KEI consistently stepped up, guiding us when others struggled to provide resources. Amidst the challenges, the team went door to door, delivering offline video lectures and study materials to scholars, ensuring every student was provided with the necessary tools for learning.",
 
-//         "The COVID-19 lockdown, despite its challenges, played a pivotal role in my personal development. With time for introspection, I identified and honed my inner talents, thanks to the introduction of various online courses by Kashmir Education Initiative. From tech workshops to personality development and arts, I actively participated in workshops and webinars, discovering my interests and aspirations.",
+        "The COVID-19 lockdown, despite its challenges, played a pivotal role in my personal development. With time for introspection, I identified and honed my inner talents, thanks to the introduction of various online courses by Kashmir Education Initiative. From tech workshops to personality development and arts, I actively participated in workshops and webinars, discovering my interests and aspirations.",
 
-//         "I owe a significant part of my transformation to KEI, which helped shape my skills and passion, providing direction and wings to my raw emotions and interests. Shifting my career from a medical background to law, I successfully qualified the national-level exam 'CLAT' without any coaching, armed with the time management and problem-solving skills acquired from KEI's annual workshops.",
+        "I owe a significant part of my transformation to KEI, which helped shape my skills and passion, providing direction and wings to my raw emotions and interests. Shifting my career from a medical background to law, I successfully qualified the national-level exam 'CLAT' without any coaching, armed with the time management and problem-solving skills acquired from KEI's annual workshops.",
 
-//         "During the lockdown, the photography courses launched by Kashmir Education Initiative, featuring top-class mentor Mr. Suhail Mir, were a standout experience. This particular course uncovered my inner passion for visual arts and photography, evolving into a hobby. Presently, I collaborate with 'realme,' one of the leading smartphone brands, as a content creator – a feat made possible by my newfound love for photography and personality development through KEI workshops.",
+        "During the lockdown, the photography courses launched by Kashmir Education Initiative, featuring top-class mentor Mr. Suhail Mir, were a standout experience. This particular course uncovered my inner passion for visual arts and photography, evolving into a hobby. Presently, I collaborate with 'realme,' one of the leading smartphone brands, as a content creator – a feat made possible by my newfound love for photography and personality development through KEI workshops.",
 
-//         "In recent years, I developed an interest in conflict management and peacebuilding. In 2023, I secured a spot in the Peace Practice Alliance class of 2024, an international online fellowship by the Euphrates Institute and U-Peace University (affiliated with the United Nations). KEI's earlier exposure to conflict management concepts and leadership skills paved the way for me to grasp opportunities typically beyond a freshman's reach.",
+        "In recent years, I developed an interest in conflict management and peacebuilding. In 2023, I secured a spot in the Peace Practice Alliance class of 2024, an international online fellowship by the Euphrates Institute and U-Peace University (affiliated with the United Nations). KEI's earlier exposure to conflict management concepts and leadership skills paved the way for me to grasp opportunities typically beyond a freshman's reach.",
 
-//         "I am grateful to KEI for introducing me to peacebuilding, leadership skills, and conflict management concepts early in my development. These insights have enabled me to comprehend the opportunities provided by institutes like Euphrates Institute and U-Peace University, shaping my goals with clarity.",
+        "I am grateful to KEI for introducing me to peacebuilding, leadership skills, and conflict management concepts early in my development. These insights have enabled me to comprehend the opportunities provided by institutes like Euphrates Institute and U-Peace University, shaping my goals with clarity.",
 
-//         "The consistent and timely contacts from KEI's teams, inquiring about my journey's progress and offering assistance, remain unwavering. While my four-year scholarship journey may have concluded literally, the impact and clarity instilled by KEI will remain indefinitely."
+        "The consistent and timely contacts from KEI's teams, inquiring about my journey's progress and offering assistance, remain unwavering. While my four-year scholarship journey may have concluded literally, the impact and clarity instilled by KEI will remain indefinitely."
         
 
-//     ]
+    ]
 
-//     },
+    },
 
-//     {
-//         id: 21,
-//         name: "Jehangir Yousuf",
-//         year: 2024,    
-//         slug: "jehangir-yousuf",   // used in URL
-//         thumbnail: jehangirthumb,  // used in grid
-//         title: "Jehangir Yousuf's Journey in Medicine",
-//         date: "March 15, 2024",
-//         image: Jehangir,
-//         paragraphs:[
-//             "Myself Jehangir Yousuf. I am from Narbal, Budgam. I scored 677 out of 720 in NEET UG 2023. I also scored 492 out of 500 in the 12th class board examination.",
+    {
+        id: 21,
+        name: "Jehangir Yousuf",
+        year: 2024,    
+        slug: "jehangir-yousuf",   // used in URL
+        thumbnail: jehangirthumb,  // used in grid
+        title: "Jehangir Yousuf's Journey in Medicine",
+        date: "March 15, 2024",
+        image: Jehangir,
+        paragraphs:[
+            "Myself Jehangir Yousuf. I am from Narbal, Budgam. I scored 677 out of 720 in NEET UG 2023. I also scored 492 out of 500 in the 12th class board examination.",
     
-//             "Talking about my journey regarding NEET, it was not the thing I planned yesterday & fulfilled today. It took a lot of dedication, determination & hard work to achieve such a feat. This journey is only smooth for some. It has a lot of hardships in it. The one who becomes habitual to these hardships & faces them happily makes this journey successful.",
+            "Talking about my journey regarding NEET, it was not the thing I planned yesterday & fulfilled today. It took a lot of dedication, determination & hard work to achieve such a feat. This journey is only smooth for some. It has a lot of hardships in it. The one who becomes habitual to these hardships & faces them happily makes this journey successful.",
     
-//             "In my journey with NEET, I would like to give credit to Kashmir Education Initiative (KEI) who stayed with me during each & every moment of my preparation. They provided me with a mentor who guided me throughout my journey. Also, the sessions with them regarding all the development of children like communication skills, how to overcome stress, how to make study effective & productive, etc. were quite helpful in my journey. I am very thankful to KEI for giving me things.",        
+            "In my journey with NEET, I would like to give credit to Kashmir Education Initiative (KEI) who stayed with me during each & every moment of my preparation. They provided me with a mentor who guided me throughout my journey. Also, the sessions with them regarding all the development of children like communication skills, how to overcome stress, how to make study effective & productive, etc. were quite helpful in my journey. I am very thankful to KEI for giving me things.",        
     
-//         ]
+        ]
     
-//         },
+        },
 
-//         {
-//             id: 22,
-//             name: "Umair Bashir",
-//             year: 2024,    
-//             slug: "umair-bashir",   // used in URL
-//             thumbnail: umairthumb,  // used in grid
-//             title: "A TECH CHAMP - KEI SCHOLAR",
-//             date: "Feb 28, 2024",
-//             image: Umair,
-//             paragraphs:[
-//                 "I am Umair Bashir, an alumnus of Kashmir Education Initiative. I started in 2014 as a KEI scholar and then went on to become a volunteer. At first, I thought that KEI was only an organization that provided scholarships, but then I attended workshops and educational programs. These sessions opened my mind and broadened my vision. The financial aid not only helped me cover my tuition fees but also allowed me to focus more on my studies.",
+        {
+            id: 22,
+            name: "Umair Bashir",
+            year: 2024,    
+            slug: "umair-bashir",   // used in URL
+            thumbnail: umairthumb,  // used in grid
+            title: "A TECH CHAMP - KEI SCHOLAR",
+            date: "Feb 28, 2024",
+            image: Umair,
+            paragraphs:[
+                "I am Umair Bashir, an alumnus of Kashmir Education Initiative. I started in 2014 as a KEI scholar and then went on to become a volunteer. At first, I thought that KEI was only an organization that provided scholarships, but then I attended workshops and educational programs. These sessions opened my mind and broadened my vision. The financial aid not only helped me cover my tuition fees but also allowed me to focus more on my studies.",
 
-//                 "Even with busy lives, it can be hard to find time to volunteer. However, the benefits of volunteering have been enormous for me, my family, and my community. It has helped me to reduce stress, make friends, connect with the community, and learn new skills. Giving to others helps us to protect our mental and physical health. Volunteering has also allowed me to gain experience and meet people in my field. Even if I am not planning on changing careers, volunteering also allowed me to practice important skills used in the workplace, such as teamwork, communication, problem-solving, project planning, task management, and organization.",
+                "Even with busy lives, it can be hard to find time to volunteer. However, the benefits of volunteering have been enormous for me, my family, and my community. It has helped me to reduce stress, make friends, connect with the community, and learn new skills. Giving to others helps us to protect our mental and physical health. Volunteering has also allowed me to gain experience and meet people in my field. Even if I am not planning on changing careers, volunteering also allowed me to practice important skills used in the workplace, such as teamwork, communication, problem-solving, project planning, task management, and organization.",
 
-//                 "In 2018, I was introduced to the Student Advisory Board (SAB) as a member. After gaining more experience, I was assigned as the Social Media Lead. In this role, I have been able to connect our scholars with KEI through the SAB social media pages. This was the beginning of my learning new skills. I also joined the A2STEM initiative as a member and learned about courses such as graphics design and robotics. During the pandemic, with the internet easily accessible, I continued to learn more about these courses. Today I can multitask programs such as photo editing and video processing thanks to my experience with the Kashmir Education Initiative.",
+                "In 2018, I was introduced to the Student Advisory Board (SAB) as a member. After gaining more experience, I was assigned as the Social Media Lead. In this role, I have been able to connect our scholars with KEI through the SAB social media pages. This was the beginning of my learning new skills. I also joined the A2STEM initiative as a member and learned about courses such as graphics design and robotics. During the pandemic, with the internet easily accessible, I continued to learn more about these courses. Today I can multitask programs such as photo editing and video processing thanks to my experience with the Kashmir Education Initiative.",
 
-//                 "One of the most rewarding aspects of my experience with KEI has been the opportunity to give back to my community. Through volunteering and participating in various initiatives, I have been able to make a positive impact on the lives of others and contribute to the development of my community. It has been a truly fulfilling and enriching experience, and I am grateful for the opportunity to be a part of KEI.",
+                "One of the most rewarding aspects of my experience with KEI has been the opportunity to give back to my community. Through volunteering and participating in various initiatives, I have been able to make a positive impact on the lives of others and contribute to the development of my community. It has been a truly fulfilling and enriching experience, and I am grateful for the opportunity to be a part of KEI.",
 
-//                 "I was also selected for the GAP, Graduate Abroad Program, which has allowed me to connect with people from all over the world. They have provided me with their expertise and ideas on how to navigate studying abroad in my field of engineering. I have been assigned a mentor who helps me with my research on universities, and we have bi-weekly meetings to discuss my progress on applications. The program has opened doors for me by introducing me to helpful people and is allowing me to develop my professional life and skills. I am currently applying to multiple universities in different countries, and I am confident that I will receive an acceptance from one of them. The next four to five months will be crucial for my future as they will shape the direction of my career."
+                "I was also selected for the GAP, Graduate Abroad Program, which has allowed me to connect with people from all over the world. They have provided me with their expertise and ideas on how to navigate studying abroad in my field of engineering. I have been assigned a mentor who helps me with my research on universities, and we have bi-weekly meetings to discuss my progress on applications. The program has opened doors for me by introducing me to helpful people and is allowing me to develop my professional life and skills. I am currently applying to multiple universities in different countries, and I am confident that I will receive an acceptance from one of them. The next four to five months will be crucial for my future as they will shape the direction of my career."
         
-//             ]
+            ]
         
-//             }
+            }
 
 ];
 

@@ -35,11 +35,11 @@
 }
 
 .impact-label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 700;
-  color: #48BEDA;
+  color: #47BFDA;
   text-transform: uppercase;
 }
 
@@ -108,7 +108,7 @@
   right: 40px;
   width: 80px;
   height: 80px;
-  background: #48BEDA;
+  background: #47BFDA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,7 +178,7 @@
 .impact-card-name {
   font-size: 15px;
   font-weight: 700;
-  color: #48BEDA;
+  color: #47BFDA;
   margin: 0;
 }
 
@@ -213,7 +213,7 @@
 }
 
 .impact-swiper .swiper-pagination-bullet-active {
-  background: #48BEDA;
+  background: #47BFDA;
   opacity: 1;
 }
 
@@ -226,7 +226,7 @@
 
 .impact-cta-btn {
   display: inline-block;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   padding: 13px 32px;
   border-radius: 4px;

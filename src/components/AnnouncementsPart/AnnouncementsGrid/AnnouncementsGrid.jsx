@@ -5,7 +5,7 @@ const CATEGORIES = ["All", "Scholarships", "Programmes", "Events", "Press", "Com
 
 const CATEGORY_COLORS = {
   Scholarships: "#1B4F8A",
-  Programmes:   "#48BEDA",
+  Programmes:   "#47BFDA",
   Events:       "#E8A020",
   Press:        "#2E7D32",
   Community:    "#6D1ED4",
@@ -80,7 +80,7 @@ const AnnouncementModal = ({ item, onClose }) => {
     };
   }, [onClose]);
 
-  const color = CATEGORY_COLORS[item.category] || "#48BEDA";
+  const color = CATEGORY_COLORS[item.category] || "#47BFDA";
 
   return (
     <div className="ann-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
@@ -148,7 +148,7 @@ const AnnouncementsGrid = () => {
         {/* Cards */}
         <div className="ann-cards-grid">
           {filtered.map((item) => {
-            const color = CATEGORY_COLORS[item.category] || "#48BEDA";
+            const color = CATEGORY_COLORS[item.category] || "#47BFDA";
             return (
               <div
                 key={item.id}

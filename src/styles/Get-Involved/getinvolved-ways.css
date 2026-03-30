@@ -26,7 +26,7 @@
     font-size: 13px;
     letter-spacing: 2px;
     font-weight: 600;
-    color: #48BEDA;
+    color: #47BFDA;
     display: block;
   }
   
@@ -102,7 +102,7 @@
   .gi-card a {
     font-size: 14px;
     font-weight: 700;
-    color: #48BEDA;
+    color: #47BFDA;
     text-decoration: none;
     letter-spacing: 0.6px;
     transition: opacity 0.2s ease;
@@ -119,7 +119,7 @@
     text-align: center;
     font-style: italic;
     font-size: 17px;
-    color: #48BEDA;
+    color: #47BFDA;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;

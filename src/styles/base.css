@@ -87,12 +87,12 @@ p {
 .programs-label,
 .ss-label,
 .mission-label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 17px;
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 /* =====================================
@@ -101,7 +101,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #48BEDA;
+  color: #47BFDA;
   transition: color 0.3s ease;
 }
 
@@ -130,7 +130,7 @@ input[type="button"] {
   font-weight: 600;
 
   border: none;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 
   padding: 12px 28px;
@@ -150,12 +150,12 @@ input[type="submit"]:hover {
 /* Outline Button Utility */
 .button-outline {
   background: transparent;
-  border: 2px solid #48BEDA;
-  color: #48BEDA;
+  border: 2px solid #47BFDA;
+  color: #47BFDA;
 }
 
 .button-outline:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 }
 
@@ -170,14 +170,14 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 10px 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   transition: border-color 0.3s ease;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #48BEDA;
+  border-color: #47BFDA;
   outline: none;
 }
 

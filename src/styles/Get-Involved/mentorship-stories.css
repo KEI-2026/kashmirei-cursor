@@ -46,7 +46,7 @@
   left: 0;
   height: 4px;
   width: 100%;
-  background: linear-gradient(90deg, #48BEDA, #7fd3e7);
+  background: linear-gradient(90deg, #47BFDA, #7fd3e7);
 }
 
 .ms-card:hover {
@@ -124,7 +124,7 @@
   margin-top: auto;
   font-size: 13px;
   font-weight: 600;
-  color: #48BEDA;
+  color: #47BFDA;
   text-decoration: none;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .btn-primary {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #fff;
   padding: 12px 26px;
   border-radius: 6px;
@@ -156,15 +156,15 @@
 
 .btn-outline {
   background: transparent;
-  color: #48BEDA;
+  color: #47BFDA;
   padding: 12px 26px;
   border-radius: 6px;
-  border: 1.5px solid #48BEDA;
+  border: 1.5px solid #47BFDA;
   cursor: pointer;
 }
 
 .btn-outline:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #fff;
 }
 

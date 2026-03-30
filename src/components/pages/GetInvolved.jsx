@@ -1,4 +1,4 @@
-import GetInvolvedHero from "../GetInvolvedPart/GetInvolvedHero/GetInvolvedHero";
+import GetInvolvedPhotos from "../GetInvolvedPart/GetInvolvedPhotos/GetInvolvedPhotos";
 import GetInvolvedWays from "../GetInvolvedPart/GetInvolvedWays/GetInvolvedWays";
 import GetInvolvedSupport from "../GetInvolvedPart/GetInvolvedSupport/GetInvolvedSupport";
 
@@ -7,7 +7,7 @@ const GetInvolved = () => {
     <>
       
       <GetInvolvedWays />
-      <GetInvolvedHero />
+      <GetInvolvedPhotos />
       <GetInvolvedSupport />
     </>
   );

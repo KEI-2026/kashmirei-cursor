@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Home/stats.css";
-import statsImage from "../../../assets/Images/Young-girl-with-device-DSLE.jpg";
+import statsImage from "../../../assets/Images/home-stats.jpg";
 // ⚠️ adjust case if folder is images
 
 const StatsSection = () => {

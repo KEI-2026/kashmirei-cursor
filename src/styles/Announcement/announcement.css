@@ -5,7 +5,7 @@
 .section-announcement {
     width: 100%;
     overflow: hidden;
-    background: #48BEDA;
+    background: #47BFDA;
     padding: 14px 0;
     cursor: pointer;
   }
@@ -108,7 +108,7 @@
     padding: 10px 18px;
     border: none;
     border-radius: 6px;
-    background: #48BEDA;
+    background: #47BFDA;
     color: white;
     cursor: pointer;
   }

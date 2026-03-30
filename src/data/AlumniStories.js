@@ -1,3 +1,4 @@
+// this page is commented out
 import Gousia from "../assets/Images/Gousia.webp";
 import gousiathumb from "../assets/Thumbnails/gousiathumb.png";
 

@@ -24,7 +24,7 @@
 }
 
 .donate-cta-inner p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 16px;
   line-height: 1.85;
   color: #555;
@@ -42,7 +42,7 @@
 
 .cta-btn-primary {
   padding: 14px 36px;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -62,8 +62,8 @@
   display: inline-block;
   padding: 13px 34px;
   background: transparent;
-  color: #48BEDA;
-  border: 2px solid #48BEDA;
+  color: #47BFDA;
+  border: 2px solid #47BFDA;
   border-radius: 6px;
   font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
   font-size: 15px;
@@ -73,7 +73,7 @@
 }
 
 .cta-btn-outline:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 }
 

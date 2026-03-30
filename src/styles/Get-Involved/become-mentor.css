@@ -61,7 +61,7 @@
 /* Highlight box */
 .highlight-box {
   background: #eef7fb;
-  border-left: 4px solid #48BEDA;
+  border-left: 4px solid #47BFDA;
   padding: 20px;
   border-radius: 6px;
   margin-bottom: 25px;
@@ -97,7 +97,7 @@
 .apply-button,
 .back-button {
   padding: 12px 20px;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -122,12 +122,12 @@
 /* Secondary button */
 .secondary-btn {
   background: transparent;
-  color: #48BEDA;
-  border: 2px solid #48BEDA;
+  color: #47BFDA;
+  border: 2px solid #47BFDA;
 }
 
 .secondary-btn:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #fff;
 }
 

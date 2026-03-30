@@ -11,7 +11,7 @@ const partners = [
   },
   {
     initials: "MCW",
-    color: "#48BEDA",
+    color: "#47BFDA",
     name: "MCW Global",
     desc: "Access to the Young Leaders Access Programme — connecting KEI scholars with global leadership networks.",
   },

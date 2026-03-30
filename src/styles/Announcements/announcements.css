@@ -7,12 +7,12 @@
 
 .ann-label {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 12px;
 }
 
@@ -50,12 +50,12 @@
 
 .ann-hero-label {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 18px;
 }
 
@@ -68,7 +68,7 @@
   margin: 0;
 }
 
-.ann-hero-content h1 span { color: #48BEDA; }
+.ann-hero-content h1 span { color: #47BFDA; }
 
 
 /* ============================================================
@@ -111,7 +111,7 @@
   border: 2px solid #d0dde6;
   background: transparent;
   color: #555;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -120,14 +120,14 @@
 }
 
 .ann-filter-pill:hover {
-  border-color: #48BEDA;
-  color: #48BEDA;
+  border-color: #47BFDA;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .ann-filter-pill.active {
-  background: #48BEDA;
-  border-color: #48BEDA;
+  background: #47BFDA;
+  border-color: #47BFDA;
   color: #ffffff;
 }
 
@@ -156,7 +156,7 @@
 
 .ann-card-top-bar {
   height: 5px;
-  background: var(--ann-color, #48BEDA);
+  background: var(--ann-color, #47BFDA);
   flex-shrink: 0;
 }
 
@@ -177,7 +177,7 @@
   display: inline-block;
   padding: 3px 11px;
   border-radius: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -186,7 +186,7 @@
 }
 
 .ann-card-date {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   color: #999;
   font-weight: 500;
@@ -202,7 +202,7 @@
 }
 
 .ann-card-summary {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   color: #555;
   line-height: 1.75;
@@ -220,8 +220,8 @@
   background: transparent;
   border: none;
   border-top: 1px solid #e4eef4;
-  color: #48BEDA;
-  font-family: "Roboto", sans-serif;
+  color: #47BFDA;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
@@ -304,11 +304,11 @@
 .ann-modal-header {
   padding: 48px 36px 28px;
   border-bottom: 1px solid #e4eef4;
-  border-left: 5px solid #48BEDA;
+  border-left: 5px solid #47BFDA;
 }
 
 .ann-modal-date {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   color: #999;
   font-weight: 500;
@@ -330,7 +330,7 @@
 }
 
 .ann-modal-body p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #444;
   line-height: 1.85;
@@ -352,7 +352,7 @@
 .ann-modal-cta {
   display: inline-block;
   padding: 12px 28px;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   border-radius: 6px;
   font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
@@ -363,7 +363,7 @@
 }
 
 .ann-modal-cta:hover {
-  background: #35a3c3;
+  background: #2FA8C4;
   color: #fff;
 }
 
@@ -395,7 +395,7 @@
 }
 
 .events-sub {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #555;
   line-height: 1.8;
@@ -425,7 +425,7 @@
 .event-date-box {
   flex-shrink: 0;
   width: 80px;
-  background: #48BEDA;
+  background: #47BFDA;
   border-radius: 10px;
   padding: 14px 10px;
   text-align: center;
@@ -437,7 +437,7 @@
 }
 
 .event-month {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -453,7 +453,7 @@
 }
 
 .event-year {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 11px;
   opacity: 0.7;
 }
@@ -475,7 +475,7 @@
   display: inline-block;
   padding: 3px 10px;
   border-radius: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -490,7 +490,7 @@
 
 .event-location,
 .event-time {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   color: #666;
 }
@@ -505,7 +505,7 @@
 }
 
 .event-desc {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   color: #555;
   line-height: 1.7;
@@ -520,10 +520,10 @@
 .event-action-btn {
   display: inline-block;
   padding: 10px 22px;
-  border: 2px solid #48BEDA;
+  border: 2px solid #47BFDA;
   border-radius: 6px;
-  color: #48BEDA;
-  font-family: "Roboto", sans-serif;
+  color: #47BFDA;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -532,7 +532,7 @@
 }
 
 .event-action-btn:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 }
 
@@ -552,7 +552,7 @@
 }
 
 .events-empty p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #888;
   margin: 0;
@@ -591,7 +591,7 @@
 .past-year-rule {
   flex: 1;
   height: 2px;
-  background: linear-gradient(to right, #48BEDA, #e4eef4);
+  background: linear-gradient(to right, #47BFDA, #e4eef4);
   border-radius: 2px;
 }
 
@@ -634,7 +634,7 @@
 }
 
 .past-event-img-placeholder p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   color: #aaa;
   margin: 0;
@@ -654,7 +654,7 @@
 }
 
 .past-event-date {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   color: #999;
 }
@@ -669,7 +669,7 @@
 }
 
 .past-event-location {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   color: #777;
   margin: 0;
@@ -681,8 +681,8 @@
   background: transparent;
   border: none;
   border-top: 1px solid #e4eef4;
-  color: #48BEDA;
-  font-family: "Roboto", sans-serif;
+  color: #47BFDA;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
@@ -724,7 +724,7 @@
 }
 
 .newsletter-text p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
@@ -744,7 +744,7 @@
   border-radius: 6px 0 0 6px;
   background: rgba(255,255,255,0.08);
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   outline: none;
   transition: border-color 0.2s ease;
@@ -753,13 +753,13 @@
 .newsletter-input::placeholder { color: rgba(255,255,255,0.4); }
 
 .newsletter-input:focus {
-  border-color: #48BEDA;
+  border-color: #47BFDA;
   background: rgba(255,255,255,0.12);
 }
 
 .newsletter-btn {
   padding: 12px 24px;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   border: none;
   border-radius: 0 6px 6px 0;
@@ -773,14 +773,14 @@
 }
 
 .newsletter-btn:hover {
-  background: #35a3c3;
+  background: #2FA8C4;
   box-shadow: none;
 }
 
 .newsletter-success {
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 15px;
-  color: #48BEDA;
+  color: #47BFDA;
   font-weight: 600;
   flex-shrink: 0;
 }

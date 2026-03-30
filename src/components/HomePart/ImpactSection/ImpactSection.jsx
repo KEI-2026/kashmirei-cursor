@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import scholarStories from "../../../data/ScholarStories";
-import impactBg from "../../../assets/Images/impact-bg.jpg";
+import impactBg from "../../../assets/Images/home-impact-bg.jpg";
 
 const ImpactSection = () => {
   const stories = [...scholarStories].sort((a, b) => (b.year || 0) - (a.year || 0)).slice(0, 5);

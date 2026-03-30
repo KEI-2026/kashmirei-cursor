@@ -40,6 +40,7 @@
   border: 1px solid #e9eaee;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 
+  font-family: "Franklin Gothic Book", sans-serif;
   text-align: center;
   transition: 0.3s ease;
 
@@ -90,6 +91,7 @@
 
 .ss-card h4 {
   font-size: 17px;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
   color: #111;
@@ -100,11 +102,12 @@
 ===================================== */
 
 .ss-read-more {
+  font-family: "Franklin Gothic Book", sans-serif;
   display: inline-block;
   margin-top: auto;
   font-size: 13px;
   font-weight: 600;
-  color: #48BEDA;
+  color: #47BFDA;
   text-decoration: none;
 }
 
@@ -118,11 +121,12 @@
 
 .ss-back-top {
   margin-top: 60px;
+  font-family: "Franklin Gothic Book", sans-serif;
   text-align: center;
 }
 
 .ss-back-top button {
-  background: #48BEDA;
+  background: #47BFDA;
   color: white;
   padding: 10px 22px;
   border-radius: 6px;
@@ -133,7 +137,7 @@
 }
 
 .ss-back-top button:hover {
-  background: #3aa9c4;
+  background: #2FA8C4;
 }
 
 /* =====================================
@@ -149,7 +153,8 @@
 }
 
 .btn-primary {
-  background: #48BEDA;
+  background: #47BFDA;
+  font-family: "Franklin Gothic Book", sans-serif;
   color: #ffffff;
   padding: 12px 26px;
   border-radius: 6px;
@@ -161,23 +166,24 @@
 }
 
 .btn-primary:hover {
-  background: #3aa9c4;
+  background: #2FA8C4;
 }
 
 .btn-outline {
+  font-family: "Franklin Gothic Book", sans-serif;
   background: transparent;
-  color: #48BEDA;
+  color: #47BFDA;
   padding: 12px 26px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
-  border: 1.5px solid #48BEDA;
+  border: 1.5px solid #47BFDA;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .btn-outline:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
 }
 

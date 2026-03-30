@@ -31,12 +31,12 @@
 
 .about-hero-label {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #48BEDA;
+  color: #47BFDA;
   margin-bottom: 18px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .about-hero-content h1 span {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 @media (max-width: 992px) {

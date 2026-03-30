@@ -1,13 +1,14 @@
 import React from "react";
 
 import HeroSection from "../HomePart/HeroSection/HeroSection";
+import AnnouncementSection from "../AnnouncementSection/AnnouncementSection";
 import StatsSection from "../HomePart/StatsSection/StatsSection";
-
-import MissionSection from "../HomePart/MissionSection/MissionSection";
 import ValueWeDeliver from "../HomePart/ValueWeDeliver/ValueWeDeliver";
+import MissionSection from "../HomePart/MissionSection/MissionSection";
+
 import ImpactSection from "../HomePart/ImpactSection/ImpactSection";
 import OurMissionSection from "../HomePart/OurMissionSection/OurMissionSection";
-import AnnouncementSection from "../AnnouncementSection/AnnouncementSection";
+
 
 
 const Home = () => {

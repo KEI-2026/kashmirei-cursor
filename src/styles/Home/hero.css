@@ -57,7 +57,7 @@
 }
 
 .hero-slide-content h1 span {
-  color: #48BEDA;
+  color: #47BFDA;
 }
 
 .hero-subheading {
@@ -81,7 +81,7 @@
 
 .hero-btn {
   display: inline-block;
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 6px;
@@ -118,7 +118,7 @@
 }
 
 .hero-swiper-full .swiper-pagination-bullet-active {
-  background: #48BEDA;
+  background: #47BFDA;
   transform: scale(1.2);
 }
 
@@ -137,9 +137,9 @@
 /* Hover effect */
 .hero-prev:hover,
 .hero-next:hover {
-  background: #48BEDA;
+  background: #47BFDA;
   color: #ffffff;
-  border-color: #48BEDA;
+  border-color: #47BFDA;
 }
 
 
