@@ -11,7 +11,7 @@ import imgEL     from "../../../assets/Images/what-we-do-4.webp";
 //need to change
 import imgGooru  from "../../../assets/Images/what-we-do-6th.png";
 
-import imgDSLE   from "../../../assets/Images/what-we-do-6.jpg";
+import imgDSLE   from "../../../assets/Images/what-we-do-6.JPG";
 import imgIBSP   from "../../../assets/Images/what-we-do-7.JPG";
 import imgGAP    from "../../../assets/Images/what-we-do-8.jpg";
 
