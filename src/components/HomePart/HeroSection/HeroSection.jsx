@@ -5,7 +5,7 @@ import heroImage2 from "../../../assets/Images/Hero-Home-2-twokids.jpeg";
 import heroImage3 from "../../../assets/Images/Hero-Home-3-schoolboys.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Keyboard } from "swiper/modules";
+import { Pagination, Keyboard, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,8 +14,9 @@ const HeroSection = () => {
   return (
     <section className="section-hero">
       <Swiper
-        modules={[Pagination, Keyboard]}
+        modules={[Pagination, Keyboard, Autoplay]}
         loop={true}
+        autoplay={{ delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true }}
         pagination={{ clickable: true }}
         keyboard={{ enabled: true, onlyInViewport: true }}
         className="hero-swiper-full"

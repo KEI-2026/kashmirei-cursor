@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/Announcements/announcements.css";
+import "../../../../styles/Events/upcoming-events.css";
 
 const TYPE_COLORS = {
   "In-Person": "#2E7D32",
@@ -55,7 +55,7 @@ const UpcomingEvents = () => {
       <div className="events-container">
 
         <div className="events-header">
-          <span className="ann-label">UPCOMING EVENTS</span>
+          <span className="events-label">UPCOMING EVENTS</span>
           <h2>Mark Your Calendar.</h2>
           <p className="events-sub">
             Join us at our next events — in Kashmir, across the USA, and online.

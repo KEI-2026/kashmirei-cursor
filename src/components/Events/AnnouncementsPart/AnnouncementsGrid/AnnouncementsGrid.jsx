@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../../styles/Announcements/announcements.css";
+import "../../../../styles/Announcements/announcements.css";
 
 const CATEGORIES = ["All", "Scholarships", "Programmes", "Events", "Press", "Community"];
 

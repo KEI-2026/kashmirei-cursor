@@ -11,9 +11,17 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff") format("woff");
+  font-family: "Franklin Gothic Book";
+  src: url("../assets/fonts/Franklin-Gothic-Book-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Medium";
+  src: url("../assets/fonts/OPTIFranklinGothic-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -38,7 +46,7 @@ body {
   margin: 0;
 
   /* PRIMARY BODY FONT */
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
@@ -61,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-weight: 600;
   line-height: 1.2;
   color: #000;

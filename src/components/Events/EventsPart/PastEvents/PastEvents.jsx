@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../../styles/Announcements/announcements.css";
+import "../../../../styles/Events/past-events.css";
 
 const pastEvents = [
   {
@@ -68,7 +68,7 @@ const PastEvents = () => {
       <div className="events-container">
 
         <div className="events-header">
-          <span className="ann-label">PAST EVENTS</span>
+          <span className="events-label">PAST EVENTS</span>
           <h2>A Look Back.</h2>
           <p className="events-sub">
             Every event is a chapter in our story of impact.
@@ -123,21 +123,21 @@ const PastEvents = () => {
 
       {/* Recap mini-modal */}
       {openRecap && (
-        <div className="ann-modal-backdrop" onClick={() => setOpenRecap(null)}>
-          <div className="ann-modal-drawer ann-modal-drawer--sm"
+        <div className="events-modal-backdrop" onClick={() => setOpenRecap(null)}>
+          <div className="events-modal-drawer events-modal-drawer--sm"
             onClick={(e) => e.stopPropagation()}>
-            <button className="ann-modal-close" onClick={() => setOpenRecap(null)}>✕</button>
-            <div className="ann-modal-header" style={{ borderColor: TYPE_COLORS[openRecap.type] }}>
-              <span className="ann-cat-pill"
+            <button className="events-modal-close" onClick={() => setOpenRecap(null)}>✕</button>
+            <div className="events-modal-header" style={{ borderColor: TYPE_COLORS[openRecap.type] }}>
+              <span className="events-cat-pill"
                 style={{ background: TYPE_COLORS[openRecap.type] }}>
                 {openRecap.type}
               </span>
-              <p className="ann-modal-date">{openRecap.date} · {openRecap.location}</p>
-              <h2 className="ann-modal-title">{openRecap.title}</h2>
+              <p className="events-modal-date">{openRecap.date} · {openRecap.location}</p>
+              <h2 className="events-modal-title">{openRecap.title}</h2>
             </div>
-            <div className="ann-modal-body">
+            <div className="events-modal-body">
               <p>{openRecap.recap}</p>
-              <p className="ann-modal-placeholder-note">
+              <p className="events-modal-placeholder-note">
                 Full event recap, photos, and videos will be added here shortly.
               </p>
             </div>

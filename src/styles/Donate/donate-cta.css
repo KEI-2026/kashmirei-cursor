@@ -15,7 +15,7 @@
 }
 
 .donate-cta-inner h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #0f1b24;
@@ -46,7 +46,7 @@
   color: #ffffff;
   border: none;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -65,7 +65,7 @@
   color: #47BFDA;
   border: 2px solid #47BFDA;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;

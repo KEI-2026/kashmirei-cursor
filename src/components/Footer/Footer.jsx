@@ -5,11 +5,12 @@ import logo from "../../assets/Images/KEI-new-logo/Logos-03.svg";
 
 const FOOTER_QUICK_LINKS = [
   { path: "/", label: "Home" },
-  { path: "/get-involved", label: "About Us" }, // needs correct page
-  { path: "/announcements", label: "Events" },
+  { path: "/get-involved", label: "get-involved" }, // needs correct page
+  { path: "/about", label: "About" },
+  { path: "/events", label: "Events" },
   { path: "/what-we-do", label: "What We Do" },
   { path: "/scholar-stories", label: "Scholar Stories" },
-  { path: "/donate", label: "Media" }, // needs correct page
+  { path: "/donate", label: "donate" }, // needs correct page
 ];
 
 const SOCIAL_LINKS = [

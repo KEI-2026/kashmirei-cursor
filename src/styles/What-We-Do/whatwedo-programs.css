@@ -97,7 +97,7 @@
 }
 
 .wwd-rainbow-heading {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 34px;
   font-weight: 600;
   color: #0f1b24;
@@ -251,7 +251,7 @@
 }
 
 .wwd-prog-number {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 72px;
   font-weight: 900;
   line-height: 1;
@@ -268,7 +268,7 @@
 }
 
 .wwd-prog-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 26px;
   font-weight: 600;
   color: #0f1b24;
@@ -319,7 +319,7 @@
 }
 
 .wwd-prog-stat strong {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: var(--stat-color, #47BFDA);

@@ -60,7 +60,7 @@
 }
 
 .ann-hero-content h1 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 50px;
   font-weight: 600;
   line-height: 1.2;
@@ -90,7 +90,7 @@
 }
 
 .ann-grid-header h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 38px;
   font-weight: 600;
   color: #0f1b24;
@@ -193,7 +193,7 @@
 }
 
 .ann-card-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #0f1b24;
@@ -316,7 +316,7 @@
 }
 
 .ann-modal-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #0f1b24;
@@ -355,7 +355,7 @@
   background: #47BFDA;
   color: #ffffff;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -387,7 +387,7 @@
 }
 
 .events-header h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 38px;
   font-weight: 600;
   color: #0f1b24;
@@ -446,7 +446,7 @@
 }
 
 .event-day {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
@@ -496,7 +496,7 @@
 }
 
 .event-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 19px;
   font-weight: 600;
   color: #0f1b24;
@@ -581,7 +581,7 @@
 }
 
 .past-year-label {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #0f1b24;
@@ -660,7 +660,7 @@
 }
 
 .past-event-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #0f1b24;
@@ -716,7 +716,7 @@
 }
 
 .newsletter-text h3 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
@@ -763,7 +763,7 @@
   color: #ffffff;
   border: none;
   border-radius: 0 6px 6px 0;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;

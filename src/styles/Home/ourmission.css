@@ -66,7 +66,7 @@
 }
 
 .ourmission-content h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 16px;
@@ -97,7 +97,7 @@
 }
 
 .ourmission-content h4 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -115,7 +115,7 @@
 /* BELIEVE STATEMENT */
 
 .ourmission-believe {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -144,7 +144,7 @@
 }
 
 .ourmission-vm-item h5 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -168,7 +168,7 @@
   color: #fff;
   padding: 12px 26px;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;

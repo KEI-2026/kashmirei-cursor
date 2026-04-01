@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../../styles/Announcements/announcements.css";
+import "../../../../styles/Announcements/announcements.css";
 
 const NewsletterStrip = () => {
   const [email, setEmail] = useState("");

@@ -8,7 +8,7 @@
 
 .about-label {
   display: block;
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -22,7 +22,7 @@
 }
 
 .about-section-num {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 96px;
   font-weight: 900;
   line-height: 1;
@@ -38,7 +38,7 @@
   border: 2px solid #47BFDA;
   border-radius: 6px;
   color: #47BFDA;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -76,7 +76,7 @@
 }
 
 .about-story-left h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #0f1b24;
@@ -85,7 +85,7 @@
 }
 
 .about-story-intro {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.85;
   color: #555;
@@ -142,7 +142,7 @@
 
 .about-timeline-year {
   display: inline-block;
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -156,7 +156,7 @@
 }
 
 .about-timeline-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #0f1b24;
@@ -164,7 +164,7 @@
 }
 
 .about-timeline-text {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.85;
   color: #555;
@@ -188,7 +188,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 240px;
   font-weight: 900;
   color: #ffffff;
@@ -221,7 +221,7 @@
 }
 
 .about-vision-quote {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.6;
@@ -233,7 +233,7 @@
 }
 
 .about-vision-mission {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 16px;
   line-height: 1.85;
   color: rgba(255, 255, 255, 0.8);
@@ -241,7 +241,7 @@
 }
 
 .about-vision-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14.5px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.5);
@@ -255,7 +255,7 @@
   background: #47BFDA;
   color: #ffffff;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -287,7 +287,7 @@
 }
 
 .about-values-header h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #0f1b24;
@@ -296,7 +296,7 @@
 }
 
 .about-values-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #555;
   line-height: 1.8;
@@ -330,7 +330,7 @@
   position: absolute;
   top: 12px;
   right: 18px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 48px;
   font-weight: 900;
   color: var(--val-color, #47BFDA);
@@ -351,7 +351,7 @@
 }
 
 .about-value-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #0f1b24;
@@ -360,7 +360,7 @@
 }
 
 .about-value-desc {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   color: #555;
   line-height: 1.75;
@@ -387,7 +387,7 @@
 }
 
 .about-partners-header h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #0f1b24;
@@ -396,7 +396,7 @@
 }
 
 .about-partners-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #555;
   line-height: 1.8;
@@ -436,7 +436,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -449,7 +449,7 @@
 }
 
 .about-partner-name {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #0f1b24;
@@ -457,7 +457,7 @@
 }
 
 .about-partner-desc {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13.5px;
   color: #555;
   line-height: 1.75;
@@ -488,7 +488,7 @@
 }
 
 .about-team-header h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #0f1b24;
@@ -496,7 +496,7 @@
 }
 
 .about-team-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #555;
   line-height: 1.8;
@@ -509,7 +509,7 @@
 }
 
 .about-team-tier-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #0f1b24;
@@ -560,7 +560,7 @@
 }
 
 .about-team-name {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #0f1b24;
@@ -568,7 +568,7 @@
 }
 
 .about-team-role {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   color: #47BFDA;
   font-weight: 600;
@@ -604,7 +604,7 @@
 }
 
 .about-volunteer-quote {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: #333;
@@ -613,7 +613,7 @@
 }
 
 .about-volunteer-role {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -642,7 +642,7 @@
 }
 
 .about-cta-inner h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #ffffff;
@@ -650,7 +650,7 @@
 }
 
 .about-cta-inner p {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 16px;
   line-height: 1.85;
   color: rgba(255, 255, 255, 0.85);
@@ -670,7 +670,7 @@
   background: #ffffff;
   color: #47BFDA;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -689,7 +689,7 @@
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -726,7 +726,7 @@
 }
 
 .about-contact-info h2 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 38px;
   font-weight: 600;
   color: #0f1b24;
@@ -735,7 +735,7 @@
 }
 
 .about-contact-intro {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: #555;
@@ -765,7 +765,7 @@
 }
 
 .about-office-body h4 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #0f1b24;
@@ -773,7 +773,7 @@
 }
 
 .about-office-body p {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13.5px;
   color: #555;
   line-height: 1.7;
@@ -796,7 +796,7 @@
 }
 
 .about-form-heading {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 26px;
   font-weight: 600;
   color: #0f1b24;
@@ -804,7 +804,7 @@
 }
 
 .about-form-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14.5px;
   color: #666;
   line-height: 1.75;
@@ -830,7 +830,7 @@
 }
 
 .about-form-group label {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #333;
@@ -853,7 +853,7 @@
 
 .about-form-group input,
 .about-form-group textarea {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14.5px;
   border: 1.5px solid #d0dde6;
   border-radius: 7px;
@@ -887,7 +887,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 14px;
   color: #333;
   cursor: pointer;
@@ -907,7 +907,7 @@
 }
 
 .captcha-recaptcha-icon {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 10px;
   font-weight: 700;
   color: #4a90d9;
@@ -915,7 +915,7 @@
 }
 
 .captcha-recaptcha-sub {
-  font-family: "Franklin Gothic Book", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 9px;
   color: #999;
   margin-top: 2px;
@@ -927,7 +927,7 @@
   color: #ffffff;
   border: none;
   border-radius: 7px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -961,7 +961,7 @@
 }
 
 .about-form-success h4 {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   color: #0f1b24;
   margin: 0 0 8px;

@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../styles/Announcements/announcements.css";
-import heroBg from "../../../assets/Images/announcements-section-alumni-interaction.jpg";
+import "../../../../styles/Announcements/announcements.css";
+import heroBg from "../../../../assets/Images/announcements-section-alumni-interaction.jpg";
 
 const AnnouncementsHero = () => {
   return (

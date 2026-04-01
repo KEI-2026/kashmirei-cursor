@@ -1,7 +1,7 @@
 .mission-section {
   background: #f2f3f5;
   padding: 50px 0 40px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
 }
 
 .mission-container {
@@ -31,7 +31,7 @@
 }
 
 .mission-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 18px;
@@ -109,7 +109,7 @@
 /* Title styling (Franklin Gothic look) */
 .mission-text h4 {
   margin-bottom: 6px;
-  font-family: "Franklin Gothic Demi", "Franklin Gothic Medium", Arial, sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -140,7 +140,7 @@
   color: #ffffff;
   border: none;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;

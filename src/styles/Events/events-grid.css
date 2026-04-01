@@ -1,0 +1,299 @@
+.section-events-grid {
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.events-grid-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.events-grid-header {
+  margin-bottom: 32px;
+}
+
+.events-grid-header h2 {
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #0f1b24;
+  margin: 0;
+}
+
+/* Filter bar */
+.events-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.events-filter-pill {
+  padding: 7px 18px;
+  border-radius: 30px;
+  border: 2px solid #d0dde6;
+  background: transparent;
+  color: #555;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.events-filter-pill:hover {
+  border-color: #47BFDA;
+  color: #ffffff;
+}
+
+.events-filter-pill.active {
+  background: #47BFDA;
+  border-color: #47BFDA;
+  color: #ffffff;
+}
+
+/* Cards grid */
+.events-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.events-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1.5px solid #e4eef4;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.events-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.11);
+}
+
+.events-card-top-bar {
+  height: 5px;
+  background: var(--events-color, #47BFDA);
+  flex-shrink: 0;
+}
+
+.events-card-body {
+  padding: 24px 24px 16px;
+  flex: 1;
+}
+
+.events-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.events-cat-pill {
+  display: inline-block;
+  padding: 3px 11px;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.events-card-date {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+}
+
+.events-card-title {
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0f1b24;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.events-card-summary {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.75;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.events-card-readmore {
+  display: block;
+  padding: 14px 24px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #e4eef4;
+  color: #47BFDA;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.events-card-readmore:hover {
+  background: #f0f8fc;
+  color: #2ea3c2;
+}
+
+
+/* ── Modal / Drawer ──────────────────────────────────────────── */
+
+.events-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 35, 0.65);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  animation: fadeBackdrop 0.2s ease;
+}
+
+@keyframes fadeBackdrop {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.events-modal-drawer {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  animation: slideDrawer 0.3s ease;
+  position: relative;
+}
+
+.events-modal-drawer--sm {
+  max-width: 480px;
+}
+
+@keyframes slideDrawer {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+.events-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f4f8fb;
+  border: none;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 2;
+}
+
+.events-modal-close:hover {
+  background: #e4eef4;
+  color: #0f1b24;
+}
+
+.events-modal-header {
+  padding: 48px 36px 28px;
+  border-bottom: 1px solid #e4eef4;
+  border-left: 5px solid #47BFDA;
+}
+
+.events-modal-date {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+  margin: 10px 0 12px;
+}
+
+.events-modal-title {
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f1b24;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.events-modal-body {
+  padding: 28px 36px;
+  flex: 1;
+}
+
+.events-modal-body p {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.85;
+  margin: 0 0 14px;
+}
+
+.events-modal-placeholder-note {
+  font-style: italic;
+  color: #999 !important;
+  font-size: 13px !important;
+  margin-top: 20px;
+}
+
+.events-modal-footer {
+  padding: 20px 36px 36px;
+  border-top: 1px solid #e4eef4;
+}
+
+.events-modal-cta {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #47BFDA;
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.events-modal-cta:hover {
+  background: #2FA8C4;
+  color: #fff;
+}
+
+
+@media (max-width: 992px) {
+  .section-events-grid { padding: 60px 24px; }
+  .events-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .section-events-grid { padding: 48px 16px; }
+  .events-cards-grid { grid-template-columns: 1fr; }
+  .events-modal-drawer { max-width: 100%; }
+  .events-grid-header h2 { font-size: 28px; }
+}

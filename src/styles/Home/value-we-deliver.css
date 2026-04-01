@@ -21,7 +21,7 @@
 }
 
 .value-title {
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.2;
@@ -30,7 +30,7 @@
 }
 
 .value-subtitle {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #444;
@@ -40,7 +40,7 @@
 }
 
 .value-blurb {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #333;
@@ -72,7 +72,7 @@
 }
 
 .value-cta-text {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   font-size: 15px;
   color: #444;
   margin: 0;
@@ -84,7 +84,7 @@
   color: #ffffff;
   padding: 12px 26px;
   border-radius: 6px;
-  font-family: "Franklin Gothic Demi", "Roboto", sans-serif;
+  font-family: "Franklin Gothic Demi", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
