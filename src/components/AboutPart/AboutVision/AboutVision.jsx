@@ -22,10 +22,10 @@ const AboutVision = () => {
         <div className="about-vision-col">
           <span className="about-label about-label--light">OUR MISSION</span>
           <p className="about-vision-mission">
-            To provide bright but at-risk students in conflict-ridden
+            "To provide bright but at-risk scholars in conflict-ridden
             regions like Kashmir a supportive and leadership-oriented
             educational environment through mentorship, experiential
-            opportunities, and financial assistance.
+            opportunities, and financial assistance."
           </p>
           <p className="about-vision-sub">
             Education is not charity — it's empowerment. By nurturing

@@ -233,18 +233,20 @@
 }
 
 .about-vision-mission {
-  font-family: "Franklin Gothic Book", sans-serif;
-  font-size: 16px;
-  line-height: 1.85;
-  color: rgba(255, 255, 255, 0.8);
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
   margin: 0 0 18px;
 }
 
 .about-vision-sub {
-  font-family: "Franklin Gothic Book", sans-serif;
-  font-size: 14.5px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.5);
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
   margin: 0 0 28px;
   font-style: italic;
 }
