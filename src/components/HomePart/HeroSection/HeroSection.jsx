@@ -81,7 +81,7 @@ const HeroSection = () => {
               </h1>
               <h2 className="hero-subheading">Every Scholar Deserves a Path Forward</h2>
               <p>
-                We provide scholarships, mentorship, and leadership development for bright but at-risk students in Kashmir
+                We provide scholarships, mentorship, and leadership development for bright but at-risk students in Kashmir.
               </p>
             </div>
           </div>
