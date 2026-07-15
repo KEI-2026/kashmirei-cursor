@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Get-Involved/getinvolved-ways.css";
 import impactStats from "../../../data/impactStats";
-import TrustBar from "../../common/TrustBar";
 import {
   FORM_RESPONSE_SLA,
   getVolunteerFormHref,
@@ -311,7 +310,7 @@ const GetInvolvedWays = () => {
                     Apply to Become a Mentor
                   </a>
                   <Link
-                    to="/mentorship-success-stories"
+                    to="/our-impact"
                     className="gi-modal-btn gi-detail-btn gi-detail-btn-outline"
                   >
                     Read Our Impact →
@@ -428,7 +427,6 @@ const GetInvolvedWays = () => {
           </div>
         )}
 
-        <TrustBar />
         <div className="gi-closing">
           <p className="gi-closing-line">
             Not sure where to start? Write to us at{" "}
