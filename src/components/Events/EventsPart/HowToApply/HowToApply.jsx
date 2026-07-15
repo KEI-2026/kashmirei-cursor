@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../../styles/Events/upcoming-events.css"; // Reuse events styling for consistency
+import ApplicationFormLink from "../../../shared/ApplicationFormLink";
 
 const HowToApply = () => {
   const steps = [
@@ -8,8 +9,7 @@ const HowToApply = () => {
       title: "Application Form",
       desc: (
         <>
-          Complete the {/* FUTURE ONLINE FORM LINK: Paste google form link or HTML doc link here in href, e.g. href="your_link_here" and remove onClick */}
-          <a href="#" onClick={(e) => { e.preventDefault(); alert("Form Will be Available Soon"); }} style={{ color: "#47BFDA", textDecoration: "underline", fontWeight: "600", cursor: "pointer" }}>online application form</a>. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
+          Complete the <ApplicationFormLink />. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
         </>
       )
     },

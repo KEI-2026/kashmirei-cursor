@@ -88,12 +88,9 @@ const AllPrograms = () => {
               <div className="wwd-prog-container">
                 {/* Image column */}
                 <div className="wwd-prog-image-col">
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setActiveProgram(prog);
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => setActiveProgram(prog)}
                     className="wwd-prog-section-link"
                   >
                     <div
@@ -102,7 +99,7 @@ const AllPrograms = () => {
                     >
                       <img src={prog.image} alt={prog.title} />
                     </div>
-                  </a>
+                  </button>
                 </div>
 
                 {/* Content column */}
@@ -116,32 +113,26 @@ const AllPrograms = () => {
                   />
                   
                   {/* Clickable Title */}
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setActiveProgram(prog);
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => setActiveProgram(prog)}
                     className="wwd-prog-section-link"
                   >
                     <h3 className="wwd-prog-title" style={{ transition: "color 0.2s" }}>
                       {prog.title}
                     </h3>
-                  </a>
+                  </button>
 
                   <p className="wwd-prog-subtitle">{prog.subtitle}</p>
                   <p className="wwd-prog-desc">{prog.description}</p>
 
                   {/* View Details Link */}
                   <div style={{ marginBottom: "28px" }}>
-                    <a 
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setActiveProgram(prog);
-                      }}
+                    <button
+                      type="button"
+                      onClick={() => setActiveProgram(prog)}
                       className="button-outline"
-                      style={{ 
+                      style={{
                         backgroundColor: prog.color,
                         borderColor: prog.color,
                         color: "#fff",
@@ -149,11 +140,12 @@ const AllPrograms = () => {
                         fontSize: "13px",
                         textTransform: "uppercase",
                         textDecoration: "none",
-                        display: "inline-block"
+                        display: "inline-block",
+                        cursor: "pointer",
                       }}
                     >
                       View Program Details →
-                    </a>
+                    </button>
                   </div>
 
                   {/* Program stats */}
@@ -180,7 +172,14 @@ const AllPrograms = () => {
       {activeProgram && (
         <div className="prog-modal-backdrop" onClick={() => setActiveProgram(null)}>
           <div className="prog-modal-drawer" onClick={(e) => e.stopPropagation()}>
-            <button className="prog-modal-close" onClick={() => setActiveProgram(null)}>✕</button>
+            <button
+              type="button"
+              className="prog-modal-close"
+              aria-label="Close program details"
+              onClick={() => setActiveProgram(null)}
+            >
+              ✕
+            </button>
             
             <div 
               className="prog-modal-header" 

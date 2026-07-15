@@ -220,6 +220,14 @@
   text-decoration: none;
   color: inherit;
   display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
 }
 
 .wwd-prog-img-wrap {

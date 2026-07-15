@@ -1,4 +1,5 @@
 // Shared programs data for KEI website
+import impactStats from "./impactStats";
 import imgHSP    from "../assets/Images/what-we-do-hssp.JPG";
 import imgCAP    from "../assets/Images/what-we-do-cap.webp";
 import imgMentor from "../assets/Images/what-we-do-mentor.JPG";
@@ -60,7 +61,7 @@ export const programs = [
     description:
       "The Digital Smart Learning Ecosystem (DSLE) program is a structured and interconnected environment of digital tools and online platforms, integrated to enhance scholars' learning. It equips scholars with devices, internet connectivity, and digital literacy skills to eliminate the digital divide in Kashmir.",
     stats: [
-      { value: "1,600+", label: "Devices Distributed" },
+      { value: impactStats.devices, label: "Devices Distributed" },
       { value: "100%", label: "Digital Literacy Focus" },
     ],
     image: imgDSLE,
@@ -136,8 +137,8 @@ export const programs = [
     description:
       "KEI offers capacity-building workshops to equip scholars with operational and character competencies to help them excel in all aspects of their lives. The program provides essential life skills needed to thrive in the 21st century and builds a collaborative 'KEI Scholar' identity.",
     stats: [
-      { value: "500+", label: "Workshops Conducted" },
-      { value: "2,000+", label: "Scholars Engaged" },
+      { value: impactStats.careerWorkshops, label: "Workshops Conducted" },
+      { value: impactStats.alumni, label: "Scholars Engaged" },
       { value: "21st Century", label: "Skill Development" },
     ],
     image: imgEL,
@@ -171,7 +172,7 @@ export const programs = [
     description:
       "Many students in Kashmir have never been exposed to the breadth of career pathways available to them. The Career Awareness Program bridges this gap through interactive sessions with professionals, industry visits, career fairs, and AI-assisted career mapping tools. Scholars gain clarity about their strengths, interests, and the steps required to pursue rewarding careers — turning ambition into actionable plans.",
     stats: [
-      { value: "10,000+", label: "Career Sessions Held" },
+      { value: impactStats.careerWorkshops, label: "Career Sessions Held" },
       { value: "30+", label: "Professional Coaches" },
       { value: "50+", label: "Career Domains Covered" },
     ],
@@ -188,7 +189,7 @@ export const programs = [
     description:
       "Our Mentorship Program pairs each scholar with a dedicated mentor from the global professional community to bridge the academic and career guidance gap, empowering scholars to excel, set targets, and build character.",
     stats: [
-      { value: "300+", label: "Active Mentors" },
+      { value: impactStats.mentors, label: "Active Mentors" },
       { value: "4,000+", label: "Mentorship Sessions/Year" },
     ],
     image: imgMentor,

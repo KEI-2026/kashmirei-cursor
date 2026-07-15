@@ -1,18 +1,15 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-// Global Styles
 import "./styles/base.css";
 import "./styles/Header/header.css";
 import "./styles/Footer/footer.css";
 
-// Layout Components
 import SkipLink from "./components/SkipLink";
 import Header from "./components/Header/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 
-// Pages
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import EventsAndAnnouncements from "./components/pages/EventsAndAnnouncements";
@@ -22,21 +19,12 @@ import HowToApplyPage from "./components/pages/HowToApplyPage";
 import ProgramDetail from "./components/pages/ProgramDetail";
 import Donate from "./components/pages/Donate";
 import GetInvolved from "./components/pages/GetInvolved";
-import OurImpact from "./components/pages/OurImpact";
 import FAQ from "./components/pages/FAQ";
 import ScholarStories from "./components/pages/ScholarStories";
 import ImpactByNumbers from "./components/pages/ImpactByNumbers";
-// Mentorship Pages
 import MentorshipSuccessStories from "./components/pages/GetInvolvedWays_Pages/MentorshipSuccessStories/MentorshipSuccessStories";
-
-// ✅ CORRECT IMPORT
 import MentorshipStoryPage from "./components/pages/GetInvolvedWays_Pages/MentorshipStoryPage";
-
-// Blog Page
 import Blog from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/Blog";
-
-// Video Player Pages
-// import ScholarVideoPlayer from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/ScholarVideoPlayer";
 import AlumniVideoPlayer from "./components/OurImpactPart/AlumniPart/AlumniStorySection/AlumniVideoPlayer";
 import StripePayment from "./components/pages/StripePayment";
 
@@ -49,7 +37,6 @@ const App = () => {
 
       <main id="main-content">
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/for-scholars" element={<ForScholars />} />
@@ -60,31 +47,19 @@ const App = () => {
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/our-impact" element={<ScholarStories />} />
           <Route path="/faq" element={<FAQ />} />
-
           <Route
             path="/mentorship-success-stories"
             element={<MentorshipSuccessStories />}
           />
-
-          {/* ✅ THIS WORKS NOW */}
-          <Route
-            path="/mentorship/:slug"
-            element={<MentorshipStoryPage />}
-          />
-
+          <Route path="/mentorship/:slug" element={<MentorshipStoryPage />} />
           <Route path="/events-and-announcements" element={<EventsAndAnnouncements />} />
           <Route path="/announcements" element={<Navigate to="/events-and-announcements" replace />} />
           <Route path="/events" element={<Navigate to="/events-and-announcements" replace />} />
-
           <Route path="/impact-by-numbers" element={<ImpactByNumbers />} />
-          <Route path="/scholar-stories" element={<ScholarStories />} />
-
+          <Route path="/scholar-stories" element={<Navigate to="/our-impact" replace />} />
           <Route path="/blog/:slug" element={<Blog />} />
-
-          {/* <Route path="/scholar-video/:slug" element={<ScholarVideoPlayer />} /> */}
           <Route path="/alumni-video/:slug" element={<AlumniVideoPlayer />} />
           <Route path="/stripe-payment" element={<StripePayment />} />
-
         </Routes>
       </main>
 

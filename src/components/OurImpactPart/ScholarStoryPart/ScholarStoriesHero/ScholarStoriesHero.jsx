@@ -3,18 +3,14 @@ import "../../../../styles/Scholar-Page/scholar-hero.css";
 
 const ScholarStoriesHero = () => {
   return (
-    <section className="section-ss-hero">
+    <section className="section-ss-hero our-impact-hero">
       <div className="container">
-        <h1>
-          Voices of Hope. <br />
-          Stories of <span>Transformation.</span>
-        </h1>
+        <span className="our-impact-hero-label">OUR IMPACT</span>
 
         <p className="ss-subtitle">
-          Our scholars don’t just dream—they achieve. Their journeys speak to the transformative
-          power of access, mentorship, and belief.
+          Scholar stories, cohort profiles, and the measurable outcomes of KEI&apos;s
+          programs across Kashmir.
         </p>
-        
       </div>
     </section>
   );

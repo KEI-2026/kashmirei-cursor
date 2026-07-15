@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import ScholarStoriesHero from "../OurImpactPart/ScholarStoryPart/ScholarStoriesHero/ScholarStoriesHero";
 import AlumniStoriesVideos from "../OurImpactPart/AlumniPart/AlumniStoriesVideos/AlumniStoriesVideos";
 import scholarStories from "../../data/ScholarStories";
+import impactStats from "../../data/impactStats";
 import "../../styles/Scholar-Page/scholar-grid.css";
-
-// 2025 Scholar Profile stats currently shown in the second section of ImpactByNumbers.jsx
 const scholarStats = [
   {
     number: "829",
@@ -33,7 +32,7 @@ const scholarStats = [
     desc: "Extending reach across the Kashmir Valley.",
   },
   {
-    number: "96%",
+    number: impactStats.distinction,
     label: "Passed with Distinction",
     desc: "Reflecting strong academic excellence.",
   },
@@ -72,9 +71,9 @@ const ScholarStories = () => {
 
   return (
     <>
-      {/* <ScholarStoriesHero /> */}
+      <ScholarStoriesHero />
 
-      <section id="our-impact-section" className="section-ss-grid" style={{ backgroundColor: "#f2f3f5", padding: "100px 0 22px" }}>
+      <section id="our-impact-section" className="section-ss-grid" style={{ backgroundColor: "#f2f3f5", padding: "60px 0 22px" }}>
         <div className="container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 40px" }}>
           
           {/* Main 3-column layout */}
@@ -88,8 +87,7 @@ const ScholarStories = () => {
             {/* Columns 1 & 2: Scholar Stories Grid */}
             <div className="our-impact-stories-col">
               <div style={{ marginBottom: "32px" }}>
-                <span className="section-label" style={{ color: "#47BFDA", letterSpacing: "2px", fontWeight: "600", fontSize: "14px" }}>SCHOLAR SPOTLIGHTS</span>
-                <h2 style={{ fontSize: "32px", color: "#0f1b24", marginTop: "8px", fontFamily: "Franklin Gothic Demi, sans-serif" }}>Real Journeys. Real Results.</h2>
+                <span className="our-impact-hero-label">Real Journeys. Real Results.</span>
               </div>
 
               <div className="ss-grid" style={{
@@ -117,7 +115,7 @@ const ScholarStories = () => {
                       <Link
                         to={`/blog/${story.slug}`}
                         className="ss-read-more"
-                        style={{ color: "#47BFDA", textDecoration: "none", fontSize: "13px", fontWeight: "600", display: "inline-block", marginTop: "10px" }}
+                        style={{ textDecoration: "none", fontSize: "13px", fontWeight: "600", display: "inline-block", marginTop: "10px" }}
                       >
                         Read Full Story →
                       </Link>
@@ -146,9 +144,17 @@ const ScholarStories = () => {
               position: "sticky",
               top: "100px"
             }}>
-              <span className="section-label" style={{ color: "#47BFDA", letterSpacing: "1.5px", fontWeight: "600", fontSize: "12px", textTransform: "uppercase" }}>
-                Cohort Profile
-              </span>
+              <div className="our-impact-sidebar-label-row">
+                <span className="section-label our-impact-section-label">
+                  Cohort Profile
+                </span>
+                <Link
+                  to="/impact-by-numbers"
+                  className="section-label our-impact-section-label our-impact-numbers-link"
+                >
+                  Impact by Numbers →
+                </Link>
+              </div>
               <h3 style={{ fontSize: "20px", color: "#0f1b24", marginTop: "6px", marginBottom: "24px", borderBottom: "2px solid #f4f8fb", paddingBottom: "12px", fontFamily: "Franklin Gothic Demi, sans-serif" }}>
                 2025 Scholar Stats
               </h3>

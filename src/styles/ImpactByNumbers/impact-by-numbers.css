@@ -1,263 +1,134 @@
 /* =========================================
-   GLOBAL CONTAINER
+   IMPACT BY NUMBERS — compact light layout
 ========================================= */
 
+.impact-by-numbers-page {
+  background: #f2f3f5;
+  padding: 0 0 40px;
+}
+
 .impact-container {
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-/* =========================================
-   IMPACT SECTION (DARK)
-========================================= */
-
-.section-impact {
-  padding: 140px 0;
-  background: #0f1b24;
-  color: #ffffff;
+.impact-by-numbers-block {
+  margin-bottom: 28px;
 }
 
-/* HEADER */
-
-.impact-header {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto 70px;
+.impact-by-numbers-block:last-child {
+  margin-bottom: 0;
 }
 
-.impact-label {
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  color: #47BFDA;
-  font-weight: 600;
-  margin-bottom: 12px;
+.impact-by-numbers-block-header {
+  margin-bottom: 14px;
 }
 
-.impact-header h2 {
-  font-size: 46px;
-  font-weight: 800;
-  margin-bottom: 18px;
-  color: #ffffff;
-}
-
-.impact-header p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #d3d9de;
-}
-
-/* GRID */
-
-.impact-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-/* IMPACT CARD */
-
-.impact-stat-card {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 20px;
-  padding: 36px 30px;
-  position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(6px);
-  transition: all 0.35s ease;
-}
-
-/* glow */
-
-.impact-stat-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top left, rgba(72, 190, 218, 0.18), transparent 60%);
-  opacity: 0;
-  transition: 0.35s ease;
-}
-
-.impact-stat-card:hover::before {
-  opacity: 1;
-}
-
-.impact-stat-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-}
-
-/* content */
-
-.impact-stat-card h3 {
-  font-size: 42px;
-  font-weight: 900;
-  color: #47BFDA;
-}
-
-.impact-stat-card h4 {
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.impact-stat-card p {
-  color: #c8d0d6;
+.impact-by-numbers-block-header .our-impact-section-label {
+  display: block;
 }
 
 /* =========================================
-   PROFILE SECTIONS
+   STAT GRIDS
 ========================================= */
 
-.profile-section {
-  padding: 120px 0;
-}
-
-.scholar-section {
-  background: #ffffff;
-}
-
-.alumni-section {
-  background: #f2f3f5;
-}
-
-/* TITLE */
-
-.profile-title {
-  text-align: center;
-  font-size: 42px;
-  font-weight: 900;
-  margin-bottom: 60px;
-  color: #1a2b3c;
-}
-
-/* =========================================
-   SCHOLAR GRID (4 + CENTERED 3 IN ONE LINE)
-========================================= */
-
-.scholar-section .profile-grid {
+.impact-stats-grid,
+.profile-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 14px;
 }
-
-/* CENTER SECOND ROW PROPERLY */
-
-.scholar-section .profile-card:nth-child(n-5) {
-  justify-self: center;
-}
-
-/* ensure cards don’t stretch weirdly */
-.scholar-section .profile-card {
-  max-width: 260px;
-  width: 100%;
-}
-
-/* =========================================
-   ALUMNI GRID
-========================================= */
 
 .alumni-section .profile-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* =========================================
-   PROFILE CARD
+   STAT CARDS
 ========================================= */
 
+.impact-stat-card,
 .profile-card {
-  border-radius: 20px;
-  padding: 30px 26px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.35s ease;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border: 1.5px solid #e4eef4;
+  border-radius: 12px;
+  padding: 16px 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* 🔥 DARKER CARD BACKGROUND (as requested) */
-.scholar-section .profile-card {
-  background: #dedee0; /* slightly darker for better contrast */
-}
-
-.alumni-section .profile-card {
-  background: #d8d9db; /* slightly darker than before */
-}
-
-/* glow */
-
-.profile-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top left, rgba(72, 190, 218, 0.25), transparent 60%);
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.profile-card:hover::before {
-  opacity: 1;
-}
-
-/* hover */
-
+.impact-stat-card:hover,
 .profile-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
 }
 
-/* text */
-
+.impact-stat-card h3,
 .profile-card h3 {
-  font-size: 42px;
-  font-weight: 900;
-  color: #47BFDA;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #47bfda;
+  margin: 0 0 6px;
 }
 
+.impact-stat-card h4,
 .profile-card h4 {
-  font-size: 18px;
-  color: #1a2b3c;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #0f1b24;
+  margin: 0 0 5px;
 }
 
+.impact-stat-card p,
 .profile-card p {
-  font-size: 13px;
-  color: #5f6b76;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #666;
+  margin: 0;
 }
 
 /* =========================================
    RESPONSIVE
 ========================================= */
 
+@media (max-width: 1200px) {
+  .alumni-section .profile-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
-  .scholar-section .profile-grid {
+  .impact-stats-grid,
+  .profile-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .scholar-section .profile-card {
-    grid-column: auto !important;
-    max-width: 100%;
+  .alumni-section .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .impact-header h2,
-  .profile-title {
-    font-size: 28px;
-  }
-
-  .impact-stat-card,
-  .profile-card {
-    padding: 24px;
+  .impact-container {
+    padding: 0 20px;
   }
 
   .impact-stat-card h3,
   .profile-card h3 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 480px) {
-  .scholar-section .profile-grid {
+  .impact-stats-grid,
+  .profile-grid,
+  .alumni-section .profile-grid {
     grid-template-columns: 1fr;
   }
 }

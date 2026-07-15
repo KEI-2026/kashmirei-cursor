@@ -9,6 +9,14 @@
   background-color: #e6e6e6;
 }
 
+.section-ss-hero.our-impact-hero {
+  background-color: #f2f3f5;
+}
+
+.section-ss-hero.our-impact-hero--compact {
+  padding: 100px 0 12px;
+}
+
 /* Container */
 
 .section-ss-hero .container {
@@ -29,6 +37,18 @@
 
 .section-ss-hero h1 span {
   color: #47BFDA;
+}
+
+/* Our Impact page label (matches Support for Scholars / Get Involved) */
+.our-impact-hero-label {
+  display: block;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #47BFDA;
+  margin-bottom: 14px;
 }
 
 /* Subtitle */

@@ -1,6 +1,8 @@
 // this whole page is commented out
 // import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/Programs/programs.css";
+import impactStats from "../../../data/impactStats";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard } from "swiper/modules";
@@ -25,9 +27,9 @@ const ProgramsSection = () => {
             <h2>How We Create Change</h2>
           </div>
 
-          <a href="#" className="button-outline">
+          <Link to="/for-scholars/programs" className="button-outline">
             VIEW ALL PROGRAMS
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -74,7 +76,7 @@ const ProgramsSection = () => {
                   High School, UG & PG, Graduate Abroad (GAP) / IBSP
                 </p>
                 <p>
-                  <strong>2,800+ High School Scholars</strong>
+                  <strong>{impactStats.hsScholars} High School Scholars</strong>
                 </p>
               </div>
             </div>

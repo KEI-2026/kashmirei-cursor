@@ -76,6 +76,29 @@
   color: #47BFDA;
 }
 
+/* Donate CTA button */
+.nav-donate-btn {
+  background: #47BFDA;
+  color: #ffffff !important;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-donate-btn:hover {
+  background: #3aa9c4;
+  border-color: #1B4F8A;
+  color: #ffffff !important;
+}
+
+.nav-donate-btn::after {
+  display: none !important;
+}
+
 /* Active underline for normal links only */
 .site-navigation ul.menu > li > a.active-link::after {
   content: "";
@@ -291,6 +314,16 @@
     width: 100%;
     text-align: left;
     padding-bottom: 0;
+  }
+
+  .mobile-open .site-navigation ul.menu li a.nav-donate-btn {
+    display: block;
+    width: auto;
+    max-width: 160px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 6px 16px;
   }
 
   .mobile-open .dropdown-toggle {

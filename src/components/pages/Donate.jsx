@@ -3,7 +3,6 @@ import DonateHero from "../DonatePart/DonateHero/DonateHero";
 import DonateMethodCards from "../DonatePart/DonateMethodCards/DonateMethodCards";
 import DonateForm from "../DonatePart/DonateForm/DonateForm";
 import DonateCompliance from "../DonatePart/DonateCompliance/DonateCompliance";
-import DonateCallToAction from "../DonatePart/DonateCallToAction/DonateCallToAction";
 
 const Donate = () => {
   return (
@@ -12,7 +11,6 @@ const Donate = () => {
       <DonateMethodCards />
       <DonateForm />
       <DonateCompliance />
-      {/* <DonateCallToAction /> */}
     </>
   );
 };

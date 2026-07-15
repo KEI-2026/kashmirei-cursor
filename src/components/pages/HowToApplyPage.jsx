@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ApplicationFormLink from "../shared/ApplicationFormLink";
 
 const HowToApplyPage = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -10,8 +11,7 @@ const HowToApplyPage = () => {
       title: "Application Form",
       desc: (
         <>
-          Complete the {/* FUTURE ONLINE FORM LINK: Paste google form link or HTML doc link here in href, e.g. href="your_link_here" and remove onClick */}
-          <a href="#" onClick={(e) => { e.preventDefault(); alert("Form Will be Available Soon"); }} style={{ color: "#47BFDA", textDecoration: "underline", fontWeight: "600", cursor: "pointer" }}>online application form</a> to submit your application digitally. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office to obtain and fill out a physical form.
+          Complete the <ApplicationFormLink /> to submit your application digitally. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office to obtain and fill out a physical form.
         </>
       ),
       details: [

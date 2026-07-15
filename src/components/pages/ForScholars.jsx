@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ForScholarsProgramIntro from "../ForScholarsPart/ForScholarsProgramIntro";
 import ForScholarsPrograms from "../ForScholarsPart/ForScholarsPrograms";
+import ApplicationFormLink from "../shared/ApplicationFormLink";
 import "../../styles/For-Scholars/forscholars.css";
 
 const ForScholars = () => {
@@ -11,8 +12,7 @@ const ForScholars = () => {
       title: "Application Form",
       desc: (
         <>
-          Complete the {/* FUTURE ONLINE FORM LINK: Paste google form link or HTML doc link here in href, e.g. href="your_link_here" and remove onClick */}
-          <a href="#" onClick={(e) => { e.preventDefault(); alert("Form Will be Available Soon"); }} style={{ color: "#47BFDA", textDecoration: "underline", fontWeight: "600", cursor: "pointer" }}>online application form</a>. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
+          Complete the <ApplicationFormLink />. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
         </>
       )
     },

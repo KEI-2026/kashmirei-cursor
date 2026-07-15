@@ -1,6 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Get-Involved/getinvolved-ways.css";
+import impactStats from "../../../data/impactStats";
+import TrustBar from "../../common/TrustBar";
+import {
+  FORM_RESPONSE_SLA,
+  getVolunteerFormHref,
+  externalLinkProps,
+} from "../../../config/formLinks";
+
+const volunteerFormHref = getVolunteerFormHref();
+const volunteerFormLinkProps = externalLinkProps(volunteerFormHref);
+
+const MENTOR_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfKvVgYMBk7IyH-rIR43V9B-3ZQUyZunFZxMWYi2Wq3VZu4Lg/viewform?usp=sf_link";
 
 const CardIcon = ({ name }) => {
   const paths = {
@@ -57,19 +70,12 @@ const CardIcon = ({ name }) => {
   );
 };
 
-// TODO: replace with the real volunteer interest form URL
-const VOLUNTEER_FORM_URL =
-  "https://docs.google.com/forms/d/e/YOUR_FORM_LINK_HERE/viewform";
-
-const MENTOR_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfKvVgYMBk7IyH-rIR43V9B-3ZQUyZunFZxMWYi2Wq3VZu4Lg/viewform?usp=sf_link";
-
 const partners = [
   {
     initials: "PW",
     color: "#1A1D20",
     name: "Physics Wallah (PW)",
-    desc: "Through KEI's collaboration with Physics Wallah (PW), KEI scholars receive access to PW's Premium Power Batch, providing specialized preparation for competitive examinations such as NEET, JEE, CLAT, and other national-level entrance exams. The initiative supports Class 11 and 12 scholars by equipping them with the resources and guidance needed to excel in these highly competitive examinations and pursue their academic aspirations.",
+    desc: "Through KEI's partnership with Physics Wallah (PW), KEI scholars receive access to PW's Premium Power Batch, providing specialized preparation for competitive examinations such as NEET, JEE, CLAT, and other national-level entrance exams. The initiative supports Class 11 and 12 scholars by equipping them with the resources and guidance needed to excel in these highly competitive examinations and pursue their academic aspirations.",
     url: "https://www.pw.live/",
   },
   {
@@ -83,7 +89,7 @@ const partners = [
     initials: "MDR",
     color: "#F39C12",
     name: "Mindler",
-    desc: "KEI's collaboration with Mindler equips scholars with the knowledge and guidance needed to make informed academic and career decisions. Through this partnership, scholars explore diverse career opportunities and educational streams, understand the pathways to achieve their goals, and develop personalized career plans along with alternate options to navigate their future with confidence and clarity.",
+    desc: "KEI's partnership with Mindler equips scholars with the knowledge and guidance needed to make informed academic and career decisions. Through this partnership, scholars explore diverse career opportunities and educational streams, understand the pathways to achieve their goals, and develop personalized career plans along with alternate options to navigate their future with confidence and clarity.",
     url: "https://www.mindler.com/",
   },
 ];
@@ -108,13 +114,13 @@ const cards = [
     title: "Build With Us",
     tagline: "Give your network",
     summary: "Program, technology, CSR, or institutional partnerships.",
-    cta: "SEE HOW WE COLLABORATE",
+    cta: "SEE HOW WE PARTNER",
   },
   {
     id: "donate",
     title: "Donate",
     tagline: "Give your support",
-    summary: "91% of every dollar goes directly to programs.",
+    summary: `${impactStats.programAllocation} of every dollar goes directly to programs.`,
     cta: "SEE WAYS TO GIVE",
   },
 ];
@@ -137,7 +143,7 @@ const GetInvolvedWays = () => {
     <section className="gi-ways">
       <div className="container">
         <div className="gi-ways-header">
-          <h2 className="gi-section-label">WAYS TO GET INVOLVED</h2>
+          <span className="gi-section-label">WAYS TO GET INVOLVED</span>
           <p className="gi-ways-intro">
             KEI is powered by people — volunteers who run our programs, mentors
             who guide our scholars, partners who extend our reach, and donors
@@ -146,10 +152,10 @@ const GetInvolvedWays = () => {
         </div>
 
         <div className="gi-impact-strip">
-          <span>8,000+ scholarships awarded</span>
-          <span>300+ active mentors</span>
-          <span>1,600+ digital devices provided</span>
-          <span>91% of every dollar to programs</span>
+          <span>{impactStats.scholarships} scholarships awarded</span>
+          <span>{impactStats.mentors} active mentors</span>
+          <span>{impactStats.devices} digital devices provided</span>
+          <span>{impactStats.programAllocation} of every dollar to programs</span>
         </div>
 
         <div className="gi-ways-grid gi-ways-grid-4">
@@ -231,14 +237,14 @@ const GetInvolvedWays = () => {
                 </div>
                 <div className="gi-detail-cta-row">
                   <a
-                    href={VOLUNTEER_FORM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={volunteerFormHref}
+                    {...volunteerFormLinkProps}
                     className="gi-modal-btn gi-detail-btn"
                   >
                     Fill the Volunteer Interest Form
                   </a>
                 </div>
+                <p className="gi-detail-note">{FORM_RESPONSE_SLA}</p>
               </div>
             )}
 
@@ -293,7 +299,7 @@ const GetInvolvedWays = () => {
                   </div>
                 </div>
                 <p className="gi-proof-line">
-                  300+ active mentors · 1,000+ mentorship sessions every year
+                  {impactStats.mentors} active mentors · {impactStats.mentorSessions} mentorship sessions every year
                 </p>
                 <div className="gi-detail-cta-row">
                   <a
@@ -308,9 +314,10 @@ const GetInvolvedWays = () => {
                     to="/mentorship-success-stories"
                     className="gi-modal-btn gi-detail-btn gi-detail-btn-outline"
                   >
-                    Read Success Stories →
+                    Read Our Impact →
                   </Link>
                 </div>
+                <p className="gi-detail-note">{FORM_RESPONSE_SLA}</p>
               </div>
             )}
 
@@ -318,14 +325,14 @@ const GetInvolvedWays = () => {
               <div className="gi-detail-inner">
                 <div className="gi-detail-header">
                   <span className="gi-detail-label">GET INVOLVED / PARTNER</span>
-                  <h3>Build With Us</h3>
+                  <h3>Partner With Us</h3>
                 </div>
                 <p className="gi-detail-lead">
-                  Some of KEI&apos;s biggest leaps came through collaboration.
+                  Some of KEI&apos;s biggest leaps came through partnership.
                   If your organization believes talent should never be limited
-                  by circumstance, let&apos;s build together.
+                  by circumstance, let&apos;s partner together.
                 </p>
-                <h4>Ways to collaborate</h4>
+                <h4>Ways to partner</h4>
                 <div className="gi-role-grid">
                   <div className="gi-role-item">
                     <h5>Program Partnerships</h5>
@@ -355,10 +362,8 @@ const GetInvolvedWays = () => {
                         {p.initials}
                       </div>
                       <div className="gi-partner-info">
-                        <h4>{p.name}</h4>
-                        <span className="gi-partner-tag">
-                          With Kashmir Education Initiative&apos;s Collaboration
-                        </span>
+                        <h5>{p.name}</h5>
+                        <span className="gi-partner-tag">KEI Partner</span>
                         <p>{p.desc}</p>
                         {p.url && (
                           <a
@@ -394,7 +399,7 @@ const GetInvolvedWays = () => {
                 <p className="gi-detail-lead">
                   Every scholarship changes the trajectory of an entire family.
                   KEI is a registered 501(c)(3) public charity (EIN
-                  42-1733906), and <strong>91% of every dollar goes directly
+                  42-1733906), and <strong>{impactStats.programAllocation} of every dollar goes directly
                   to programs</strong>. U.S. donations are tax-deductible.
                 </p>
                 <h4>Give Any Amount</h4>
@@ -423,6 +428,7 @@ const GetInvolvedWays = () => {
           </div>
         )}
 
+        <TrustBar />
         <div className="gi-closing">
           <p className="gi-closing-line">
             Not sure where to start? Write to us at{" "}

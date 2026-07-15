@@ -1,6 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/Home/ourmission.css";
 import missionImage from "../../../assets/Images/home-about.JPG";
+
+const ANNUAL_REPORT_URL =
+  "mailto:info@kashmirei.org?subject=Annual%20Report%20Request";
 
 const OurMissionSection = () => {
   return (
@@ -43,7 +47,7 @@ const OurMissionSection = () => {
             </div>
           </div>
 
-          <a href="#" className="ourmission-btn">
+          <a href={ANNUAL_REPORT_URL} className="ourmission-btn">
             DOWNLOAD ANNUAL REPORT
           </a>
 

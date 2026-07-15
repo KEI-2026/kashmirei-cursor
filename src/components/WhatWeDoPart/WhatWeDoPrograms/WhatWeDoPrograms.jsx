@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../../../styles/What-We-Do/whatwedo-programs.css";
+import impactStats from "../../../data/impactStats";
 
 import rainbowImg from "../../../assets/Images/value-we-deliver-rearranged.png";
 
@@ -28,7 +29,7 @@ const programs = [
     description:
       "The High School Support Program equips students from underserved communities with the academic skills and confidence needed to succeed in competitive high school entrance exams. Through structured coaching, mock tests, and dedicated tutors, we close the gap between potential and opportunity — ensuring every gifted student in Kashmir has a fair shot at quality secondary education.",
     stats: [
-      { value: "2,800+", label: "Scholars Supported" },
+      { value: impactStats.hsScholars, label: "Scholars Supported" },
       { value: "85%", label: "Exam Pass Rate" },
       { value: "10+", label: "Years Running" },
     ],
@@ -43,7 +44,7 @@ const programs = [
     description:
       "Many students in Kashmir have never been exposed to the breadth of career pathways available to them. The Career Awareness Program bridges this gap through interactive sessions with professionals, industry visits, career fairs, and AI-assisted career mapping tools. Scholars gain clarity about their strengths, interests, and the steps required to pursue rewarding careers — turning ambition into actionable plans.",
     stats: [
-      { value: "500+", label: "Career Sessions Held" },
+      { value: impactStats.careerWorkshops, label: "Career Sessions Held" },
       { value: "40+", label: "Industry Professionals" },
       { value: "8", label: "Career Domains Covered" },
     ],
@@ -58,8 +59,8 @@ const programs = [
     description:
       "Our Mentorship Program pairs each scholar with a dedicated mentor from the global Kashmiri diaspora and broader professional community. Through regular one-on-one sessions, scholars receive personalised guidance on academics, career planning, and personal growth. With additional Supercoach sessions and leadership training, scholars develop the mindset and skills of future leaders.",
     stats: [
-      { value: "300+", label: "Active Mentors" },
-      { value: "1,000+", label: "Mentorship Sessions/Year" },
+      { value: impactStats.mentors, label: "Active Mentors" },
+      { value: impactStats.mentorSessions, label: "Mentorship Sessions/Year" },
     ],
     image: imgMentor,
   },
@@ -72,8 +73,8 @@ const programs = [
     description:
       "The Experiential Learning Program takes scholars out of the classroom and into real environments where knowledge comes alive. From hospital and laboratory visits to entrepreneurship workshops and community projects, scholars experience how education translates into action. These hands-on experiences deepen curiosity, sharpen critical thinking, and help scholars connect classroom learning to real-world challenges.",
     stats: [
-      { value: "500+", label: "Workshops Conducted" },
-      { value: "2, 00+", label: "Scholars Engaged" },
+      { value: impactStats.careerWorkshops, label: "Workshops Conducted" },
+      { value: impactStats.alumni, label: "Scholars Engaged" },
       // { value: "CMI", label: "Partnership" },
     ],
     image: imgEL,
@@ -102,7 +103,7 @@ const programs = [
     description:
       "The Digital Smart Learning Ecosystem (DSLE) program equips scholars with devices, internet connectivity, and digital literacy skills. By establishing smart learning labs in schools and providing tablets and laptops to selected scholars, KEI eliminates the digital divide that holds back so many talented students. Scholars learn to harness technology for research, collaboration, and creative problem-solving — essential competencies for the 21st century.",
     stats: [
-      { value: "1,600+", label: "Devices Distributed" },
+      { value: impactStats.devices, label: "Devices Distributed" },
       { value: "100%", label: "Digital Literacy Focus" },
     ],
     image: imgDSLE,

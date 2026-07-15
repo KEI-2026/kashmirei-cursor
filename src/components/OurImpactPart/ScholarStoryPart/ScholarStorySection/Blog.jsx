@@ -31,7 +31,7 @@ const Blog = () => {
         {/* Back button */} 
         {/* <button className="back-button" 
         onClick={handleBackClick} > 
-          ← Back to Scholar Stories 
+          ← Back to Our Impact 
           </button> */}
 
         <div className="story-date">{story.date}</div>
@@ -55,7 +55,7 @@ const Blog = () => {
           className="back-button"
           onClick={handleBackClick}
         >
-          ← Back to Scholar Stories
+          ← Back to Our Impact
         </button>
 
       </div>

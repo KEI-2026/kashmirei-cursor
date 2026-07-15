@@ -44,7 +44,7 @@ const AboutPartners = () => {
           <span className="about-label">OUR PARTNERS</span>
           <h2>Working Together<br />for Lasting Change.</h2>
           <p className="about-partners-sub">
-            We collaborate with global education and leadership organisations
+            We partner with global education and leadership organisations
             to expand access and opportunity for every scholar we serve.
           </p>
         </div>
@@ -81,7 +81,7 @@ const AboutPartners = () => {
             <h4 className="about-partner-name">More Partners</h4>
             <p className="about-partner-desc">
               We are always looking for mission-aligned organisations to
-              collaborate with. Reach out to explore a partnership.
+              partner with. Reach out to explore a partnership.
             </p>
           </div>
         </div>

@@ -1,79 +1,80 @@
 import React from "react";
 import "../../../styles/ImpactByNumbers/impact-by-numbers.css";
+import impactStats from "../../../data/impactStats";
 
 const ImpactSection = () => {
-  const impactStats = [
+  const impactCards = [
     {
-      number: "8,000+",
+      number: impactStats.scholarships,
       title: "Scholarships Awarded",
       description:
-        "Thousands of students have received financial support through KEI, enabling them to pursue their education without barriers.",
+        "Financial support enabling students to pursue education without barriers.",
     },
     {
-      number: "1600+",
+      number: impactStats.devices,
       title: "Digital Devices Provided",
       description:
-        "Access to digital learning tools has empowered students to stay connected, learn effectively, and thrive in a modern academic environment.",
+        "Tools that keep scholars connected and learning effectively.",
     },
     {
-      number: "500+",
+      number: impactStats.careerWorkshops,
       title: "Career Workshops Conducted",
       description:
-        "Workshops and sessions designed to guide students in career planning, skill-building, and making informed academic decisions.",
+        "Sessions for career planning, skill-building, and academic decisions.",
     },
     {
-      number: "96%",
+      number: impactStats.distinction,
       title: "Scholars Graduate With Distinction",
       description:
-        "A remarkable success rate showcasing the academic excellence and dedication of KEI-supported scholars.",
+        "Reflecting academic excellence across KEI-supported scholars.",
     },
     {
-      number: "2000+",
+      number: impactStats.alumni,
       title: "Alumni Network",
       description:
-        "A growing community of alumni who continue to inspire, mentor, and contribute back to the ecosystem.",
+        "Alumni who inspire, mentor, and give back to the ecosystem.",
     },
     {
       number: "Countless",
       title: "Lives Transformed",
       description:
-        "Beyond numbers, KEI’s impact is reflected in the confidence, growth, and success stories of every scholar supported.",
+        "Confidence, growth, and success beyond what numbers alone capture.",
     },
     {
       number: "600+",
       title: "Career Guidance Sessions (Mindler)",
       description:
-        "Students received personalized career guidance through AI-powered tools to make informed academic and professional choices.",
+        "AI-powered guidance for academic and professional choices.",
     },
     {
-      number: "1000+",
+      number: impactStats.mentorSessions,
       title: "Mentorship Sessions",
       description:
-        "One-on-one mentorship sessions connecting students with experts to guide their academic and career journeys.",
+        "One-on-one sessions connecting scholars with expert mentors.",
     },
     {
       number: "82,000+",
       title: "Navigator Competencies Gained",
       description:
-        "Students developed critical skills and competencies through structured learning and career readiness programs.",
+        "Skills built through structured learning and career readiness.",
     },
     {
       number: "10+",
       title: "Graduate Abroad Readiness Programs",
       description:
-        "Specialized programs preparing students for international education opportunities and global exposure.",
+        "Preparing scholars for international education opportunities.",
     },
     {
       number: "24+",
       title: "FLY Competitiveness Workshops",
       description:
-        "Workshops focused on building competitiveness, confidence, and essential skills for future success.",
+        "Building competitiveness, confidence, and essential skills.",
     },
     {
       number: "50+",
       title: "International Bridge Scholarships",
       description:
-        "Scholarships supporting students in accessing global academic opportunities and international pathways.",
+        "Supporting access to global academic pathways.",
     },
   ];
 
@@ -104,7 +105,7 @@ const ImpactSection = () => {
       desc: "Extending reach across the Kashmir Valley.",
     },
     {
-      number: "96%",
+      number: impactStats.distinction,
       label: "Passed with Distinction",
       desc: "Reflecting strong academic excellence.",
     },
@@ -116,7 +117,7 @@ const ImpactSection = () => {
     {
       number: "$1.8K",
       label: "Spent Per Scholar",
-      desc: "Digital access, mentoring, 21ᵗʰ century skills, AI career guidance, etc.",
+      desc: "Digital access, mentoring, 21st century skills, AI career guidance, etc.",
     },
   ];
 
@@ -143,27 +144,20 @@ const ImpactSection = () => {
     },
     {
       number: "30%",
-      label: "Preparing for  Professional Exams",
+      label: "Preparing for Professional Exams",
       desc: "Focused on competitive career pathways.",
     },
   ];
 
   return (
-    <>
-      {/* IMPACT */}
-      <section className="section-impact">
-        <div className="impact-container">
-          <div className="impact-header">
-            <span className="impact-label">IMPACT BY NUMBERS</span>
-            <h2>Measuring Change, One Scholar at a Time</h2>
-            <p>
-              Every number reflects a real journey of resilience, opportunity,
-              and transformation made possible through KEI’s support.
-            </p>
+    <section className="impact-by-numbers-page">
+      <div className="impact-container">
+        <div className="impact-by-numbers-block">
+          <div className="impact-by-numbers-block-header">
+            <span className="section-label our-impact-section-label">Key Metrics</span>
           </div>
-
           <div className="impact-stats-grid">
-            {impactStats.map((item, index) => (
+            {impactCards.map((item, index) => (
               <div className="impact-stat-card" key={index}>
                 <h3>{item.number}</h3>
                 <h4>{item.title}</h4>
@@ -172,13 +166,13 @@ const ImpactSection = () => {
             ))}
           </div>
         </div>
-      </section>
 
-      {/* SCHOLAR */}
-      <section className="profile-section scholar-section">
-        <div className="impact-container">
-          <h2 className="profile-title">2025 Scholar Profile</h2>
-
+        <div className="impact-by-numbers-block scholar-section">
+          <div className="impact-by-numbers-block-header">
+            <span className="section-label our-impact-section-label">
+              2025 Scholar Profile
+            </span>
+          </div>
           <div className="profile-grid">
             {scholarStats.map((item, index) => (
               <div className="profile-card" key={index}>
@@ -189,13 +183,13 @@ const ImpactSection = () => {
             ))}
           </div>
         </div>
-      </section>
 
-      {/* ALUMNI */}
-      <section className="profile-section alumni-section">
-        <div className="impact-container">
-          <h2 className="profile-title">2008 - 2022 Alumni Profile</h2>
-
+        <div className="impact-by-numbers-block alumni-section">
+          <div className="impact-by-numbers-block-header">
+            <span className="section-label our-impact-section-label">
+              2008–2022 Alumni Profile
+            </span>
+          </div>
           <div className="profile-grid">
             {alumniStats.map((item, index) => (
               <div className="profile-card" key={index}>
@@ -206,8 +200,8 @@ const ImpactSection = () => {
             ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

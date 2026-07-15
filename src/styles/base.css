@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Franklin Gothic Demi";
   src: url("../assets/fonts/FRADM.woff") format("woff");
-  font-weight: 600;
+  font-weight: 600 900;
   font-style: normal;
   font-display: swap;
 }
@@ -40,6 +40,11 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+}
+
+:root {
+  --kei-accent: #47BFDA;
+  --kei-accent-text: #1E7A93;
 }
 
 body {
@@ -94,13 +99,19 @@ p {
 .impact-label,
 .programs-label,
 .ss-label,
-.mission-label {
+.mission-label,
+.our-impact-section-label {
   font-family: "Franklin Gothic Book", sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 17px;
-  color: #47BFDA;
+  color: var(--kei-accent-text);
+}
+
+.our-impact-section-label {
+  font-size: 14px;
+  letter-spacing: 1.5px;
 }
 
 /* =====================================
@@ -109,12 +120,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #47BFDA;
+  color: var(--kei-accent-text);
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #2ea3c2;
+  color: #155f73;
 }
 
 /* =====================================

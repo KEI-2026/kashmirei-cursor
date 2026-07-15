@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Home/stats.css";
 import statsImage from "../../../assets/Images/home-stats.jpg";
-// ⚠️ adjust case if folder is images
+import impactStats from "../../../data/impactStats";
 
 const StatsSection = () => {
   return (
@@ -29,10 +29,6 @@ const StatsSection = () => {
             <br />
             <span>– KEI Donor</span>
           </blockquote>
-
-          {/* <a href="/donate" className="button">
-            Donate Now
-          </a> */}
         </div>
 
         {/* CENTER IMAGE */}
@@ -42,19 +38,18 @@ const StatsSection = () => {
 
         {/* RIGHT STATS COLUMN */}
         <div className="stats-column">
-  <div className="stat-item"><h3>8,000+</h3><p>Scholarships Awarded</p></div>
-  <div className="stat-item"><h3>1600+</h3><p>Digital Devices Provided</p></div>
-  <div className="stat-item"><h3>500+</h3><p>Career Workshops Conducted</p></div>
-  <div className="stat-item"><h3>96%</h3><p>Scholars Graduate With Distinction</p></div>
-  <div className="stat-item"><h3>2000+</h3><p>Alumni Pool</p></div>
+          <div className="stat-item"><h3>{impactStats.scholarships}</h3><p>Scholarships Awarded</p></div>
+          <div className="stat-item"><h3>{impactStats.devices}</h3><p>Digital Devices Provided</p></div>
+          <div className="stat-item"><h3>{impactStats.careerWorkshops}</h3><p>Career Workshops Conducted</p></div>
+          <div className="stat-item"><h3>{impactStats.distinction}</h3><p>Scholars Graduate With Distinction</p></div>
+          <div className="stat-item"><h3>{impactStats.alumni}</h3><p>Alumni Pool</p></div>
         </div>
-
 
       </div>
 
       <div className="stats-cta">
         <p className="stats-cta-text">See the full scope of our impact.</p>
-        <Link to="/our-impact" className="stats-btn-primary">
+        <Link to="/impact-by-numbers" className="stats-btn-primary">
           IMPACT BY NUMBERS
         </Link>
       </div>

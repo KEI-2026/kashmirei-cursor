@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { path: "/get-involved", label: "Get Involved" },
   { path: "/our-impact", label: "Our Impact" },
   { path: "/about", label: "About" },
-  { path: "/donate", label: "Donate" },
+  { path: "/donate", label: "Donate", cta: true },
 ];
 
 const Navbar = () => {
@@ -104,7 +104,13 @@ const Navbar = () => {
                 ) : (
                   <NavLink
                     to={item.path}
-                    className={({ isActive }) => (isActive ? "active-link" : "")}
+                    className={({ isActive }) =>
+                      item.cta
+                        ? "nav-donate-btn"
+                        : isActive
+                          ? "active-link"
+                          : ""
+                    }
                     onClick={closeMenus}
                   >
                     {item.label}

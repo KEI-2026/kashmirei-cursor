@@ -1,5 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "../../../styles/Get-Involved/volunteer-with-us.css";
+import {
+  getVolunteerFormHref,
+  externalLinkProps,
+} from "../../../config/formLinks";
+
+const volunteerFormHref = getVolunteerFormHref();
+const volunteerFormLinkProps = externalLinkProps(volunteerFormHref);
 
 const Volunteer = () => {
   const navigate = useNavigate();
@@ -53,9 +60,8 @@ const Volunteer = () => {
 
           {/* Google Form Button */}
           <a
-            href="https://docs.google.com/forms/d/e/YOUR_FORM_LINK_HERE/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={volunteerFormHref}
+            {...volunteerFormLinkProps}
             className="apply-button"
           >
             Fill Volunteer Information Form

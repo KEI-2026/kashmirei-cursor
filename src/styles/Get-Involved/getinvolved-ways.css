@@ -292,7 +292,7 @@
   letter-spacing: 0.5px;
 }
 
-.gi-partner-info h4 {
+.gi-partner-info h5 {
   font-size: 16px;
   font-weight: 700;
   color: #0f1b24;
@@ -305,8 +305,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #47BFDA;
-  background: rgba(71, 191, 218, 0.08);
+  color: var(--kei-accent-text);
+  background: rgba(30, 122, 147, 0.08);
   padding: 4px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -382,8 +382,8 @@
    INLINE EXPANDING SECTIONS (v2 layout)
    ========================================= */
 
-/* ---- section label heading (matches .wwd-section-label on For Scholars) ---- */
-.gi-ways-header h2.gi-section-label {
+/* ---- section label (matches .wwd-section-label / Support for Scholars) ---- */
+.gi-ways-header .gi-section-label {
   display: block;
   font-family: "Franklin Gothic Book", sans-serif;
   font-size: 17px;
@@ -474,7 +474,7 @@
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #47bfda;
+  color: var(--kei-accent-text);
   margin-bottom: 8px;
 }
 
@@ -526,7 +526,7 @@
 .gi-detail-label {
   font-size: 12px;
   font-weight: 700;
-  color: #47bfda;
+  color: var(--kei-accent-text);
   letter-spacing: 1.5px;
   text-transform: uppercase;
   display: block;
@@ -650,7 +650,7 @@
 .gi-proof-line {
   font-size: 13.5px;
   font-weight: 600;
-  color: #47bfda;
+  color: var(--kei-accent-text);
   letter-spacing: 0.3px;
   margin: 4px 0 24px;
 }
@@ -683,7 +683,12 @@
 /* ---- closing ---- */
 .gi-closing {
   margin-top: 40px;
+  padding-top: 28px;
   text-align: center;
+}
+
+.gi-closing .trust-bar {
+  margin-bottom: 28px;
 }
 
 .gi-closing-line {
@@ -695,7 +700,7 @@
 }
 
 .gi-closing-line a {
-  color: #47bfda;
+  color: var(--kei-accent-text);
   font-weight: 700;
   text-decoration: none;
 }

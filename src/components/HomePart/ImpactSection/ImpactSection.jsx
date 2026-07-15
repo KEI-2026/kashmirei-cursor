@@ -26,7 +26,7 @@ const ImpactSection = () => {
 
       <div className="impact-inner">
         <div className="impact-header-wrap">
-          <span className="impact-label">IMPACT STORIES</span>
+            <span className="impact-label">OUR IMPACT</span>
           <h2>Real Stories of Transformation</h2>
           <p>
             Our scholars' journeys are a testament to the power of education
@@ -134,8 +134,8 @@ const ImpactSection = () => {
         </div>
 
         <div className="impact-cta">
-          <Link to="/scholar-stories" className="impact-cta-btn">
-            EXPLORE ALL SCHOLAR STORIES
+          <Link to="/our-impact" className="impact-cta-btn">
+            EXPLORE OUR IMPACT
           </Link>
         </div>
       </div>

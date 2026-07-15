@@ -104,7 +104,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  color: #47BFDA;
+  color: var(--kei-accent-text);
   text-decoration: none;
 }
 
@@ -283,4 +283,25 @@
     position: static !important;
     max-width: 100% !important;
   }
+}
+
+/* =====================================
+   COHORT PROFILE SIDEBAR HEADER
+===================================== */
+
+.our-impact-sidebar-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.our-impact-numbers-link {
+  text-decoration: none;
+}
+
+.our-impact-numbers-link:hover {
+  color: #155f73;
+  text-decoration: underline;
 }

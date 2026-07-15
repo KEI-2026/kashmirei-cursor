@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Footer/footer.css";
 import logo from "../../assets/Images/KEI-new-logo/Logos-03.svg";
+import { NEWSLETTER_API_ENDPOINT } from "../../config/newsletter";
 
 const SITEMAP_LINKS = [
   { path: "/", label: "Home" },
   { path: "/for-scholars", label: "For Scholars" },
   { path: "/get-involved", label: "Get Involved" },
-  { path: "/scholar-stories", label: "Our Impact" },
+  { path: "/our-impact", label: "Our Impact" },
   { path: "/about", label: "About" },
   { path: "/donate", label: "Donate" },
   { path: "/events-and-announcements", label: "Events & Announcements" },
@@ -21,6 +22,44 @@ const SOCIAL_LINKS = [
 ];
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [subscribeStatus, setSubscribeStatus] = useState(null);
+
+  const handleNewsletterSubmit = async (event) => {
+    event.preventDefault();
+
+    const trimmedEmail = email.trim();
+    if (!trimmedEmail) {
+      return;
+    }
+
+    // TODO(go-live): Replace this stub with a real mailing-list integration
+    // (e.g. Mailchimp, Buttondown, or POST to NEWSLETTER_API_ENDPOINT).
+    if (NEWSLETTER_API_ENDPOINT) {
+      try {
+        const response = await fetch(NEWSLETTER_API_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: trimmedEmail }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Newsletter subscribe failed");
+        }
+
+        setSubscribeStatus("success");
+        setEmail("");
+        return;
+      } catch {
+        setSubscribeStatus("error");
+        return;
+      }
+    }
+
+    setSubscribeStatus("success");
+    setEmail("");
+  };
+
   return (
     <footer className="site-footer">
 
@@ -80,7 +119,52 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4 - Contact */}
+        {/* Column 4 - Stay Connected */}
+        <div className="footer-col footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p className="footer-newsletter-copy">
+            Get updates on scholars, programs, and events.
+          </p>
+          <form className="footer-newsletter-form" onSubmit={handleNewsletterSubmit}>
+            <label htmlFor="footer-newsletter-email" className="footer-newsletter-label">
+              Email address
+            </label>
+            <div className="footer-newsletter-fields">
+              <input
+                id="footer-newsletter-email"
+                type="email"
+                name="email"
+                value={email}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                  if (subscribeStatus) {
+                    setSubscribeStatus(null);
+                  }
+                }}
+                placeholder="you@example.com"
+                autoComplete="email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+          {subscribeStatus === "success" && (
+            <p className="footer-newsletter-message footer-newsletter-message-success">
+              Thanks for subscribing. We&apos;ll be in touch soon.
+            </p>
+          )}
+          {subscribeStatus === "error" && (
+            <p className="footer-newsletter-message footer-newsletter-message-error">
+              Something went wrong. Email{" "}
+              <a href="mailto:info@kashmirei.org?subject=Newsletter%20Signup">
+                info@kashmirei.org
+              </a>{" "}
+              to join our list.
+            </p>
+          )}
+        </div>
+
+        {/* Column 5 - Contact */}
         <div className="footer-col">
           <h4>Contact Us</h4>
           <address>

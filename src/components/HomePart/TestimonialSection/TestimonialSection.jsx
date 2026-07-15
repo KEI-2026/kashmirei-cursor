@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import InvolvementOptionsList from "./InvolvementOptionsList";
 import TestimonialsStories from "./TestimonialsStories";
 
@@ -17,9 +18,9 @@ const TestimonialsSection = () => (
       />
     </header>
     <InvolvementOptionsList />
-    <a className="button" href="#">
+    <Link to="/donate" className="button">
       Donate Now
-    </a>
+    </Link>
     <TestimonialsStories />
   </section>
 );

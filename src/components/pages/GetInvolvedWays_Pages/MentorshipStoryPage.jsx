@@ -62,15 +62,9 @@ const MentorshipStoryPage = () => {
 
         </div>
 
-        {/* Back bottom */}
-        {/* <button className="back-button" onClick={() => navigate(-1)}>
-          ← Back to Stories
-        </button> */}
-
-        {/* Back */}
         <button className="back-button" onClick={() => navigate(-1)}>
-                ← Back
-                </button>
+          ← Back
+        </button>
       </div>
     </section>
   );

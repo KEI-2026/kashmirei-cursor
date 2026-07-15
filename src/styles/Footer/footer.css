@@ -19,8 +19,8 @@
   padding: 0 60px;
 
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
-  gap: 60px;
+  grid-template-columns: 1.3fr 1fr 0.9fr 1.1fr 1.2fr;
+  gap: 40px;
   align-items: start;
 }
 
@@ -85,12 +85,13 @@
 .footer-col a {
   text-decoration: none;
   color: #0d0d0d;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
   font-size: 16px;
 }
 
 .footer-col a:hover {
-  color: #ffffff;
+  color: #0f1b24;
+  text-decoration: underline;
 }
 
 /* =========================
@@ -110,6 +111,94 @@
 .footer-col strong {
   color: #0a0a0a;
   font-weight: 700;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.footer-newsletter-copy {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0d0d0d;
+  margin: 0 0 14px;
+  max-width: 280px;
+}
+
+.footer-newsletter-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.footer-newsletter-form {
+  margin: 0;
+}
+
+.footer-newsletter-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-newsletter-fields input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: "Franklin Gothic Book", sans-serif;
+  color: #0d0d0d;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.footer-newsletter-fields input:focus {
+  outline: none;
+  border-color: #0f1b24;
+}
+
+.footer-newsletter-fields button {
+  width: 100%;
+  border: 1px solid #0f1b24;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  color: #ffffff;
+  background: #0f1b24;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-newsletter-fields button:hover {
+  background: #1a2a36;
+  border-color: #1a2a36;
+}
+
+.footer-newsletter-message {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-newsletter-message-success {
+  color: #0f1b24;
+}
+
+.footer-newsletter-message-error {
+  color: #7a1f1f;
+}
+
+.footer-newsletter-message a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* =========================
@@ -134,8 +223,12 @@
 
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 40px;
     padding: 0 40px;
+  }
+
+  .footer-newsletter-copy {
+    max-width: 100%;
   }
 
   .footer-about p {
@@ -188,6 +281,21 @@
   }
 
   .footer-col address {
+    text-align: center;
+  }
+
+  .footer-newsletter-copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-newsletter-fields {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .footer-newsletter-message {
     text-align: center;
   }
 
@@ -244,11 +352,7 @@
 
 .footer-sitemap-sub a {
   font-size: 14.5px !important;
-  opacity: 0.85;
-}
-
-.footer-sitemap-sub a:hover {
-  opacity: 1;
+  color: #0d0d0d;
 }
 
 @media (max-width: 768px) {
