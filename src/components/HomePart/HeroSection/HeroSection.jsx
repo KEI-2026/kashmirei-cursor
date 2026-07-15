@@ -36,7 +36,7 @@ const HeroSection = () => {
               <h2 className="hero-subheading">Every Dream Deserves a Chance</h2>
               <p>
                 Our mission is to empower extraordinary but financially
-                challenged students to realize their full.
+                challenged students to realize their full potential.
               </p>
             </div>
           </div>
@@ -50,13 +50,11 @@ const HeroSection = () => {
             <div className="hero-overlay" />
             <div className="hero-slide-content">
               <h1>
-                Kashmir Education Initiative: <br />
-                Where potential meets <span>opportunity</span>
+                Education for <span>Stronger Communities</span>
               </h1>
+              <h2 className="hero-subheading">Every Community Deserves to Rise</h2>
               <p>
-                We support academically gifted but financially vulnerable
-                students in Kashmir with the resources, mentorship, and skills
-                they need to thrive.
+                We invest in Kashmiri scholars so they can lead positive change in their families and strengthen the communities they serve.
               </p>
             </div>
           </div>
@@ -79,11 +77,11 @@ const HeroSection = () => {
             <div className="hero-overlay" />
             <div className="hero-slide-content">
               <h1>
-                Kashmir Education <br />
-                Initiative <span>(KEI)</span>
+                Where potential meets <span>opportunity</span>
               </h1>
+              <h2 className="hero-subheading">Every Scholar Deserves a Path Forward</h2>
               <p>
-                A USA-based non-profit organisation. A registered 501(c)(3) tax-exempt charity in the United States (incorporated in Massachusetts)
+                We provide scholarships, mentorship, and leadership development for bright but at-risk students in Kashmir
               </p>
             </div>
           </div>
