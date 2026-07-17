@@ -2,25 +2,24 @@ import React from "react";
 
 import HeroSection from "../HomePart/HeroSection/HeroSection";
 import AnnouncementSection from "../AnnouncementSection/AnnouncementSection";
+import WhyKeiExists from "../HomePart/WhyKeiExists/WhyKeiExists";
+import OurModel from "../HomePart/OurModel/OurModel";
 import StatsSection from "../HomePart/StatsSection/StatsSection";
-import ValueWeDeliver from "../HomePart/ValueWeDeliver/ValueWeDeliver";
-import MissionSection from "../HomePart/MissionSection/MissionSection";
 import ImpactSection from "../HomePart/ImpactSection/ImpactSection";
-import OurMissionSection from "../HomePart/OurMissionSection/OurMissionSection";
-
-
+import MissionSection from "../HomePart/MissionSection/MissionSection";
+import "../../styles/Home/home-sections.css";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <AnnouncementSection />
-      <ValueWeDeliver />
+      <WhyKeiExists />
+      <OurModel />
       <StatsSection />
-      <ImpactSection />
-      <OurMissionSection />
-
+      <hr className="home-section-divider" />
       <MissionSection />
+      <ImpactSection />
     </>
   );
 };

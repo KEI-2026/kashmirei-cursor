@@ -14,10 +14,6 @@ const DonateCompliance = () => {
             non-religious 501(c)(3) tax-exempt charity incorporated in Massachusetts,
             United States. All donations are tax-deductible under US federal law.
           </p>
-          <div className="compliance-ein">
-            <span className="ein-label">EIN</span>
-            <strong>42-1733906</strong>
-          </div>
         </div>
 
         <div className="compliance-divider" />

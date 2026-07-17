@@ -1,59 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Home/stats.css";
-import statsImage from "../../../assets/Images/home-stats.jpg";
+import "../../../styles/For-Scholars/forscholars-programs.css";
 import impactStats from "../../../data/impactStats";
+
+const stats = [
+  {
+    value: impactStats.scholarships,
+    label: "Scholarships Awarded",
+    meaning: "one family's trajectory at a time",
+  },
+  {
+    value: impactStats.distinction,
+    label: "Graduate With Distinction",
+    meaning: "support works when it's more than money",
+  },
+  {
+    value: impactStats.mentors,
+    label: "Active Mentors",
+    meaning: "the Kashmiri diaspora giving back",
+  },
+  {
+    value: impactStats.countries,
+    label: "Countries",
+    meaning: "scholars at universities worldwide",
+  },
+];
 
 const StatsSection = () => {
   return (
     <section className="section-stats">
-      <div className="stats-container">
+      <div className="stats-inner">
+        <span className="wwd-section-label home-section-eyebrow">Our Impact</span>
+        <h2 className="home-section-heading">Eighteen years. One promise kept.</h2>
 
-        {/* LEFT TEXT */}
-        <div className="stats-content">
-          <span className="stats-label">IMAGINE THIS</span>
-
-          <h3>Why KEI Support Matters</h3>
-
-          <p>
-            We believe that every young person has the potential to
-            change the world, regardless of their background or
-            circumstances. KEI ensures a supportive structure of
-            financial scholarships, mentors and digital resources
-            are provided to students to succeed.
-          </p>
-
-          <blockquote>
-            “Donating to KEI creates a lasting, force multiplier impact.
-            These students represent our future.”
-            <br />
-            <span>– KEI Donor</span>
-          </blockquote>
+        <div className="stats-grid">
+          {stats.map((item) => (
+            <article key={item.label} className="stats-card">
+              <p className="stats-value">{item.value}</p>
+              <h3 className="stats-label">{item.label}</h3>
+              <p className="stats-meaning">{item.meaning}</p>
+            </article>
+          ))}
         </div>
 
-        {/* CENTER IMAGE */}
-        <figure className="stats-image">
-          <img src={statsImage} alt="Why Support KEI" />
-        </figure>
-
-        {/* RIGHT STATS COLUMN */}
-        <div className="stats-column">
-          <div className="stat-item"><h3>{impactStats.scholarships}</h3><p>Scholarships Awarded</p></div>
-          <div className="stat-item"><h3>{impactStats.devices}</h3><p>Digital Devices Provided</p></div>
-          <div className="stat-item"><h3>{impactStats.careerWorkshops}</h3><p>Career Workshops Conducted</p></div>
-          <div className="stat-item"><h3>{impactStats.distinction}</h3><p>Scholars Graduate With Distinction</p></div>
-          <div className="stat-item"><h3>{impactStats.alumni}</h3><p>Alumni Pool</p></div>
-        </div>
-
-      </div>
-
-      <div className="stats-cta">
-        <p className="stats-cta-text">See the full scope of our impact.</p>
-        <Link to="/impact-by-numbers" className="stats-btn-primary">
-          IMPACT BY NUMBERS
+        <Link to="/impact-by-numbers" className="stats-cta-link">
+          See the full impact →
         </Link>
       </div>
-
     </section>
   );
 };

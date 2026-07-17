@@ -1,0 +1,93 @@
+.our-model {
+  position: relative;
+  padding: 32px 0 36px;
+  overflow: hidden;
+}
+
+.our-model--dark {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.our-model-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.our-model-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.our-model-intro {
+  max-width: 720px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.our-model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.our-model-card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px 14px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.our-model-card:hover {
+  transform: translateY(-3px);
+  border-color: #47bfda;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.our-model-card-icon {
+  width: 32px;
+  height: 32px;
+  color: #1b4f8a;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.our-model-cta {
+  display: inline-block;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #47bfda;
+  text-decoration: none;
+}
+
+.our-model-cta:hover {
+  color: #7fd4ea;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .our-model {
+    padding: 28px 0;
+  }
+
+  .our-model-container {
+    padding: 0 20px;
+  }
+
+  .our-model-grid {
+    grid-template-columns: 1fr;
+  }
+}

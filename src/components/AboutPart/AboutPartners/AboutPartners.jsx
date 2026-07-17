@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 import "../../../styles/About/about.css";
 
 const partners = [
-  /*
-  {
-    initials: "IMT",
-    color: "#1B4F8A",
-    name: "Iqbal Memorial Trust",
-    desc: "Standardised testing frameworks and experiential learning opportunities for KEI scholars across Kashmir.",
-  },
-  */
   {
     initials: "PW",
     color: "#1A1D20",

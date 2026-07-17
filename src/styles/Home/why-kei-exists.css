@@ -1,0 +1,74 @@
+.why-kei-exists {
+  background: #ffffff;
+  padding: 36px 0 32px;
+}
+
+.why-kei-exists-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.why-kei-exists-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.why-kei-exists-content .home-section-heading {
+  text-align: left;
+}
+
+.why-kei-exists-content .home-section-eyebrow {
+  text-align: left;
+}
+
+.why-kei-exists-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0 0 12px;
+}
+
+.why-kei-exists-stat {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #47bfda !important;
+  margin: 0 !important;
+}
+
+.why-kei-exists-media {
+  display: flex;
+  min-height: 100%;
+}
+
+.why-kei-exists-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 992px) {
+  .why-kei-exists-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-kei-exists {
+    padding: 28px 0;
+  }
+
+  .why-kei-exists-container {
+    padding: 0 20px;
+  }
+}

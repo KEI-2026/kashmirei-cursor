@@ -8,6 +8,7 @@ const impactStats = {
   mentorSessions: "1,000+",
   alumni: "2,000+",
   programAllocation: "91%",
+  countries: "15+",
 };
 
 export default impactStats;
