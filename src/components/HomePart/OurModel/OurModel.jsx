@@ -40,7 +40,7 @@ const OurModel = () => {
           More than academic support
         </h2>
         <p className="our-model-intro">
-          We call our students scholars and give them an identity. Our programs follow
+          We call our students Scholars and give them an identity. Our programs follow
           each Scholar across their full educational journey — from high school through
           graduate study abroad — combining academics, mentorship, 21st-century skills,
           and career guidance. Together they reflect our model of Identity, Tools, and

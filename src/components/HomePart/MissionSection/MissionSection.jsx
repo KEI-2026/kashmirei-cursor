@@ -11,8 +11,7 @@ const pathways = [
     id: "mentor",
     icon: "mentor",
     title: "Give your experience",
-    description:
-      "You've walked this path. Mentor one scholar, 2 hours a month.",
+    description: "Mentor one scholar for 2 hours a month.",
     button: "Become a Mentor",
     to: "/get-involved",
   },
@@ -21,7 +20,7 @@ const pathways = [
     icon: "heart-handshake",
     title: "Give your time",
     description:
-      "Programs, outreach, research — a few hours a month, from anywhere.",
+      "Volunteer with us, help with programs, outreach and research.",
     button: "Volunteer",
     to: "/get-involved",
   },
@@ -29,7 +28,7 @@ const pathways = [
     id: "donate",
     icon: "donate",
     title: "Give your support",
-    description: "$55/month funds a scholar's entire year of high school.",
+    description: "Fund the programs that support our Scholars.",
     button: "Donate",
     to: "/donate",
   },
