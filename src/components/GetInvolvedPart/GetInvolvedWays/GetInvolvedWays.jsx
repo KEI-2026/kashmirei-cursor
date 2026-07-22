@@ -256,7 +256,7 @@ const GetInvolvedWays = () => {
                     Apply to Become a Mentor
                   </a>
                   <Link
-                    to="/our-impact"
+                    to="/our-impact#mentorship-success"
                     className="gi-modal-btn gi-detail-btn gi-detail-btn-outline"
                   >
                     Read Our Impact →

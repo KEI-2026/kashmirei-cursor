@@ -22,6 +22,7 @@ import GetInvolved from "./components/pages/GetInvolved";
 import FAQ from "./components/pages/FAQ";
 import ScholarStories from "./components/pages/ScholarStories";
 import ImpactByNumbers from "./components/pages/ImpactByNumbers";
+import MentorshipStoryPage from "./components/pages/GetInvolvedWays_Pages/MentorshipStoryPage";
 import Blog from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/Blog";
 import AlumniVideoPlayer from "./components/OurImpactPart/AlumniPart/AlumniStorySection/AlumniVideoPlayer";
 import StripePayment from "./components/pages/StripePayment";
@@ -47,9 +48,9 @@ const App = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route
             path="/mentorship-success-stories"
-            element={<Navigate to="/our-impact" replace />}
+            element={<Navigate to="/our-impact#mentorship-success" replace />}
           />
-          <Route path="/mentorship/:slug" element={<Navigate to="/our-impact" replace />} />
+          <Route path="/mentorship/:slug" element={<MentorshipStoryPage />} />
           <Route path="/events-and-announcements" element={<EventsAndAnnouncements />} />
           <Route path="/announcements" element={<Navigate to="/events-and-announcements" replace />} />
           <Route path="/events" element={<Navigate to="/events-and-announcements" replace />} />

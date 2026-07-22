@@ -352,18 +352,20 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .gi-modal-btn:hover {
   background: #3aa9c4;
-  color: #ffffff;
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(72, 190, 218, 0.3);
 }
 
 .gi-modal-btn:active {
   background: #2ea3c4;
   color: #ffffff !important;
   transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(72, 190, 218, 0.2);
   outline: none;
 }
 
@@ -480,15 +482,28 @@
 }
 
 .gi-card-toggle {
-  background: none;
+  background: transparent;
   border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
   font-size: 13px;
   font-family: inherit;
   font-weight: 700;
   color: #47bfda;
   cursor: pointer;
-  padding: 0;
   letter-spacing: 0.6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.gi-card-toggle:hover {
+  background: #47bfda;
+  color: #ffffff !important;
+}
+
+.gi-card-active .gi-card-toggle {
+  background: #47bfda;
+  color: #ffffff !important;
 }
 
 /* ---- detail panel ---- */
@@ -672,13 +687,22 @@
 
 .gi-detail-btn-outline {
   background: transparent;
-  border: 2.5px solid #47bfda;
-  color: #47bfda;
+  border: 2px solid #47BFDA;
+  color: #47BFDA;
+  transition: all 0.3s ease;
 }
 
 .gi-detail-btn-outline:hover {
-  background: rgba(71, 191, 218, 0.08);
-  color: #3aa9c4;
+  background: #47BFDA;
+  color: #ffffff !important;
+}
+
+.gi-detail-btn-outline:active {
+  background: #3aa9c4;
+  border-color: #3aa9c4;
+  color: #ffffff !important;
+  transform: scale(0.97);
+  outline: none;
 }
 
 /* ---- closing ---- */

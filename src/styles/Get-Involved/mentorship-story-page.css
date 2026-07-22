@@ -1,0 +1,149 @@
+.ms-story-page {
+    background: #ffffff;
+    padding: 100px 0 22px;
+  }
+  
+  @media (max-width: 992px) {
+    .ms-story-page {
+      padding: 80px 0 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ms-story-page {
+      padding: 70px 0 22px;
+    }
+  }
+  
+  /* CONTAINER */
+  .story-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 45px;
+  }
+  
+  /* TITLE */
+  .story-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* PEOPLE HEADER */
+  .story-people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .story-people img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .story-people p {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .connector {
+    font-size: 20px;
+    color: #47BFDA;
+  }
+  
+  /* TEXT */
+  .story-text {
+    font-family: "Franklin Gothic Book", sans-serif;
+  }
+  
+  /* HEADINGS */
+  .section-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+  }
+  
+  /* PARAGRAPHS */
+  .story-text p {
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+    color: #2c2c2c;
+  }
+  
+  /* FLOAT IMAGE */
+  .story-image {
+    float: right;
+    width: 200px;
+    margin-left: 28px;
+    margin-bottom: 18px;
+  }
+  
+  .story-image img {
+    width: 90%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* CLEAR FLOAT */
+  .story-container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  /* BACK BUTTON */
+  .back-button {
+    margin-top: 25px;
+    padding: 8px 16px;
+    background: #47BFDA;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background: #3aa7c3;
+    color: white;
+  }
+  
+  .back-button:active {
+    background: #2ea3c2;
+    color: white !important;
+    transform: scale(0.97);
+    outline: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .story-container {
+      padding: 30px 20px;
+    }
+  
+    .story-image {
+      float: none;
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  
+    .story-image img {
+      height: auto;
+    }
+  
+    .story-people {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .connector {
+      display: none;
+    }
+  }

@@ -74,7 +74,7 @@ const BecomeMentor = () => {
         {/* Success Stories Button (OUTSIDE CARD) */}
         <div className="stories-btn-wrapper">
           <Link
-            to="/our-impact"
+            to="/our-impact#mentorship-success"
             className="apply-button secondary-btn"
           >
             Read Our Impact

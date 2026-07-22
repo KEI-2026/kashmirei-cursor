@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScholarStoriesHero from "../OurImpactPart/ScholarStoryPart/ScholarStoriesHero/ScholarStoriesHero";
 import AlumniStoriesVideos from "../OurImpactPart/AlumniPart/AlumniStoriesVideos/AlumniStoriesVideos";
+import MentorshipSuccessStories from "../OurImpactPart/MentorshipPart/MentorshipSuccessStories";
 import scholarStories from "../../data/ScholarStories";
 import impactStats from "../../data/impactStats";
 import "../../styles/Scholar-Page/scholar-grid.css";
@@ -52,7 +53,7 @@ const ScholarStories = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Relying on ScrollToTop component and hash routing
   }, []);
 
   // Sort stories by year DESC
@@ -187,6 +188,7 @@ const ScholarStories = () => {
       </section>
 
       <AlumniStoriesVideos />
+      <MentorshipSuccessStories />
     </>
   );
 };

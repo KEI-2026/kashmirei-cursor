@@ -1,6 +1,6 @@
 // Thumbnail 
 import thumb from "../assets/Images/Thumbnails/thumb.png";
-import ghazanfarthumb from "../assets/Images/Thumbnails/ghazanfarthumb.png";
+
 import snoberthumb from "../assets/Images/Thumbnails/snober-thumbnail.webp";
 import gousiathumb from "../assets/Images/Thumbnails/gousia-thumb.webp";
 import irfanthumb from "../assets/Images/Thumbnails/irfan-thumbnail.webp";
@@ -21,7 +21,7 @@ import uzmathumb from "../assets/Images/Thumbnails/uzmathumb.jpeg";
 // Profile picture
 
 import thumbprofile from "../assets/Images/Profile/thumbprofile.png";
-import ghazanfarprofile from "../assets/Images/Profile/ghazanfar.JPG";
+
 import snoberprofile from "../assets/Images/Profile/snober-profile.png";
 import gousiaprofile from "../assets/Images/Profile/gousia-profile.png";
 import irfanprofile from "../assets/Images/Profile/irfan-profile.png";
@@ -58,15 +58,7 @@ const alumniVideos = [
     image: snoberprofile,
     video: "https://www.youtube.com/embed/3oZkk9BhLO4?rel=0&modestbranding=1",
   },
-  {
-    id: 3,
-    slug: "ghazanfar-rizvi",
-    name: "Ghazanfar Rizvi",
-    subtitle: "Ghazanfar's Peom for KEI",
-    thumbnail: ghazanfarthumb,
-    image: ghazanfarprofile,
-    video: "https://www.youtube.com/embed/zcXKYpC_Bp0?rel=0&modestbranding=1",
-  },
+
   {
     id: 4,
     slug: "gousia-hassan",

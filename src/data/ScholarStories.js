@@ -1,8 +1,6 @@
 import Saqib from "../assets/Images/AlumniScholarPics/saqib.jpg";
 import saqibthumb from "../assets/Images/Thumbnails/saqibthumb.jpg";
 
-import Ghazanfar from "../assets/Images/AlumniScholarPics/ghazanfar.JPG";
-import ghazanfarthumb from "../assets/Images/Thumbnails/ghazanfarthumb.JPG";
 
 import amina from "../assets/Images/AlumniScholarPics/amina.JPG";
 import aminathumb from "../assets/Images/Thumbnails/aminathumb.JPG";
@@ -101,32 +99,7 @@ const scholarStories = [
     ]
   },
 
-  {
-    id: 2,
-    name: "Syed Ghazanfar Rizvi",
-    year: 2024,
-    slug: "syed-ghazanfar-rizvi",
-    thumbnail: ghazanfarthumb, // add your thumbnail
-    title: "Finding His Voice Through Words",
-    date: "March 2025", // adjust if needed
-    image: Ghazanfar, // add your main image
-    subtitle: "Poetry & Literature Enthusiast",
-  
-    paragraphs: [
-  
-      "Syed Ghazanfar Rizvi, hailing from the Budgam district of Jammu and Kashmir, is a Class 12 student from the medical stream with a deep and enduring love for literature.",
-  
-      "Growing up in a family of five—with his father, an artisan, his mother, his sister, and two brothers—he learned early the value of hard work, resilience, and perseverance.",
-  
-      "In 2023, Syed Ghazanfar Rizvi became a scholar of KEI, a milestone that further strengthened his academic and personal journey.",
-  
-      "While pursuing science, his heart found its true expression in poetry. A Kashmiri poet by passion, he has actively participated in state-level mushairas, where his verses have resonated with audiences and earned him recognition on prominent platforms.",
-  
-      "Beyond poetry, he has also stepped into intellectual and public-speaking spaces, participating in a TED Talk event at the National Institute of Technology, Srinagar—an institute of national importance. These experiences helped him refine his voice and share his thoughts with confidence and clarity.",
-  
-      "His journey reflects the power of opportunity and encouragement, showing that with the right support, a student can nurture both intellect and creativity, and rise with confidence while staying rooted in his culture."
-    ]
-  },
+
 
   {
     id: 3,
