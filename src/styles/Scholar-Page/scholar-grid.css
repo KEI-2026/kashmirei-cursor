@@ -274,10 +274,23 @@
 /* =====================================
    OUR IMPACT LAYOUT RESPONSIVE
 ===================================== */
+.our-impact-layout {
+  display: grid;
+  grid-template-columns: 2.1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.our-impact-ss-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px 30px;
+  margin-top: 10px;
+}
+
 @media (max-width: 992px) {
   .our-impact-layout {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .our-impact-stats-sidebar {
     position: static !important;

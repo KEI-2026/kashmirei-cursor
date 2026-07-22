@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px 40px;
-  margin-top: 22px;
+  margin-top: 70px;
 }
 
 /* ================= CARD ================= */
@@ -220,6 +220,10 @@
 
   .ms-card {
     padding: 65px 24px 28px;
+  }
+
+  .ms-avatars {
+    top: -30px;
   }
 
   .avatar {

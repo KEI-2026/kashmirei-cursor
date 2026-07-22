@@ -77,13 +77,8 @@ const ScholarStories = () => {
       <section id="our-impact-section" className="section-ss-grid" style={{ backgroundColor: "#f2f3f5", padding: "60px 0 22px" }}>
         <div className="container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 40px" }}>
           
-          {/* Main 3-column layout */}
-          <div className="our-impact-layout" style={{
-            display: "grid",
-            gridTemplateColumns: "2.1fr 1fr",
-            gap: "50px",
-            alignItems: "start"
-          }}>
+          {/* Main layout */}
+          <div className="our-impact-layout">
             
             {/* Columns 1 & 2: Scholar Stories Grid */}
             <div className="our-impact-stories-col">
@@ -91,12 +86,7 @@ const ScholarStories = () => {
                 <span className="our-impact-hero-label">Real Journeys. Real Results.</span>
               </div>
 
-              <div className="ss-grid" style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-                gap: "50px 30px",
-                marginTop: "10px"
-              }}>
+              <div className="ss-grid our-impact-ss-grid">
                 {storiesToShow.map((story) => {
                   const preview = story?.paragraphs?.join(" ") || "";
                   const truncatedPreview = preview.length > 200 ? preview.substring(0, 200) + "..." : preview;
