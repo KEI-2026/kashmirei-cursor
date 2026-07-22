@@ -751,10 +751,17 @@
 
   .gi-detail-inner {
     padding: 28px 22px 32px;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .gi-detail-columns {
+    grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .gi-role-grid {
+    grid-template-columns: 1fr;
   }
 }
   
