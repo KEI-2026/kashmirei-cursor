@@ -1,0 +1,136 @@
+.mentor-form-container {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mentor-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.mentor-form-header h4 {
+  margin: 0;
+  color: #333;
+  font-family: "Franklin Gothic Demi", sans-serif;
+}
+
+.mentor-form-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mentor-form-close:hover {
+  color: #333;
+}
+
+.mentor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row > .form-group {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 200px;
+}
+
+.mentor-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mentor-form .full-width {
+  width: 100%;
+}
+
+.mentor-form label {
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.mentor-form input[type="text"],
+.mentor-form input[type="email"],
+.mentor-form input[type="tel"],
+.mentor-form input[type="date"],
+.mentor-form select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #fafafa;
+}
+
+.mentor-form input:focus,
+.mentor-form select:focus {
+  outline: none;
+  border-color: var(--kei-accent, #47BFDA);
+  box-shadow: 0 0 0 3px rgba(71, 191, 218, 0.15);
+  background-color: #fff;
+}
+
+.mentor-form select[multiple] {
+  height: 160px;
+  padding: 0.5rem;
+}
+
+.mentor-form select[multiple] option {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.form-help {
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Re-using base site styles in case they are missing context */
+.form-actions input[type="submit"] {
+  cursor: pointer;
+  border: none;
+}

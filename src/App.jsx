@@ -26,6 +26,7 @@ import MentorshipStoryPage from "./components/pages/GetInvolvedWays_Pages/Mentor
 import Blog from "./components/OurImpactPart/ScholarStoryPart/ScholarStorySection/Blog";
 import AlumniVideoPlayer from "./components/OurImpactPart/AlumniPart/AlumniStorySection/AlumniVideoPlayer";
 import StripePayment from "./components/pages/StripePayment";
+import MentorSignupPage from "./components/pages/MentorSignupPage";
 
 const App = () => {
   return (
@@ -59,6 +60,7 @@ const App = () => {
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/alumni-video/:slug" element={<AlumniVideoPlayer />} />
           <Route path="/stripe-payment" element={<StripePayment />} />
+          <Route path="/mentor-signup" element={<MentorSignupPage />} />
         </Routes>
       </main>
 

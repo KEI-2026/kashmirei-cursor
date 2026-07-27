@@ -247,14 +247,14 @@ const GetInvolvedWays = () => {
                   {impactStats.mentors} active mentors · {impactStats.mentorSessions} mentorship sessions every year
                 </p>
                 <div className="gi-detail-cta-row">
-                  <a
-                    href={MENTOR_FORM_URL}
+                  <Link
+                    to="/mentor-signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gi-modal-btn gi-detail-btn"
                   >
-                    Apply to Become a Mentor
-                  </a>
+                    Sign up as a mentor
+                  </Link>
                   <Link
                     to="/our-impact#mentorship-success"
                     className="gi-modal-btn gi-detail-btn gi-detail-btn-outline"

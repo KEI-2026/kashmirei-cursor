@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/Home/why-kei-exists.css";
 import "../../../styles/Home/home-sections.css";
-import whyKeiExistsImage from "../../../assets/Images/why-kei-exists.jpg";
+import whyKeiExistsImage from "../../../assets/Images/homeSecond-section.png";
 
 const WhyKeiExists = () => {
   return (

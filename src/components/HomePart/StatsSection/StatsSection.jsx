@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../../styles/Home/stats.css";
 import "../../../styles/For-Scholars/forscholars-programs.css";
 import impactStats from "../../../data/impactStats";
+import ourImpactImage from "../../../assets/Images/our-impactHome.JPG";
 
 const stats = [
   {
@@ -31,22 +32,28 @@ const StatsSection = () => {
   return (
     <section className="section-stats">
       <div className="stats-inner">
-        <span className="wwd-section-label home-section-eyebrow">Our Impact</span>
-        <h2 className="home-section-heading">Eighteen years. One promise kept.</h2>
+        <div className="stats-content">
+          <span className="wwd-section-label home-section-eyebrow">Our Impact</span>
+          <h2 className="home-section-heading">Eighteen years. One promise kept.</h2>
 
-        <div className="stats-grid">
-          {stats.map((item) => (
-            <article key={item.label} className="stats-card">
-              <p className="stats-value">{item.value}</p>
-              <h3 className="stats-label">{item.label}</h3>
-              <p className="stats-meaning">{item.meaning}</p>
-            </article>
-          ))}
+          <div className="stats-grid">
+            {stats.map((item) => (
+              <article key={item.label} className="stats-card">
+                <p className="stats-value">{item.value}</p>
+                <h3 className="stats-label">{item.label}</h3>
+                <p className="stats-meaning">{item.meaning}</p>
+              </article>
+            ))}
+          </div>
+
+          <Link to="/impact-by-numbers" className="stats-cta-link">
+            See the full impact →
+          </Link>
         </div>
-
-        <Link to="/impact-by-numbers" className="stats-cta-link">
-          See the full impact →
-        </Link>
+        
+        <div className="stats-media">
+          <img src={ourImpactImage} alt="Our Impact at KEI" />
+        </div>
       </div>
     </section>
   );

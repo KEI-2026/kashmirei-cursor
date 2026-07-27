@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 40px;
-  align-items: stretch;
+  align-items: center;
 }
 
 .why-kei-exists-content {
@@ -44,16 +44,17 @@
 
 .why-kei-exists-media {
   display: flex;
-  min-height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .why-kei-exists-media img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  max-width: 280px;
+  height: auto;
   display: block;
   border-radius: 16px;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {
