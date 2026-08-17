@@ -18,6 +18,8 @@ import AllPrograms from "./components/pages/AllPrograms";
 import HowToApplyPage from "./components/pages/HowToApplyPage";
 import ProgramDetail from "./components/pages/ProgramDetail";
 import Donate from "./components/pages/Donate";
+import Donate2 from "./components/pages/Donate2";
+import Donate3 from "./components/pages/Donate3";
 import GetInvolved from "./components/pages/GetInvolved";
 import FAQ from "./components/pages/FAQ";
 import ScholarStories from "./components/pages/ScholarStories";
@@ -44,6 +46,8 @@ const App = () => {
           <Route path="/for-scholars/how-to-apply" element={<HowToApplyPage />} />
           <Route path="/for-scholars/:id" element={<ProgramDetail />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/donate2" element={<Donate2 />} />
+          <Route path="/donate3" element={<Donate3 />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/our-impact" element={<ScholarStories />} />
           <Route path="/faq" element={<FAQ />} />
