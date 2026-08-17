@@ -12,7 +12,7 @@ const ForScholars = () => {
       title: "Application Form",
       desc: (
         <>
-          Complete the <ApplicationFormLink />. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
+          Complete the <Link to="/scholar-application" style={{ color: "var(--kei-accent-text)", textDecoration: "underline", fontWeight: "600" }}>online application form</Link>. Alternatively, offline application forms are present at your respective schools, or you can visit the KEI office for the same.
         </>
       )
     },

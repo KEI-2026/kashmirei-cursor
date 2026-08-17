@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   getScholarApplicationFormHref,
   externalLinkProps,
@@ -15,6 +16,15 @@ const ApplicationFormLink = ({
   style = defaultStyle,
 }) => {
   const href = getScholarApplicationFormHref();
+  const isInternal = href.startsWith("/");
+
+  if (isInternal) {
+    return (
+      <Link to={href} className={className} style={style}>
+        {children}
+      </Link>
+    );
+  }
 
   return (
     <a

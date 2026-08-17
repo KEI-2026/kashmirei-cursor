@@ -36,7 +36,10 @@ const AnnouncementSection = () => {
         const rows = json.table.rows;
 
         if (rows.length > 0 && rows[0].c[0]?.v) {
-          setContent(rows[0].c[0].v);
+          const rawContent = rows[0].c[0].v;
+          // Repeat the text 10 times with a nice dot separator so it appears frequently in the ticker
+          const repeated = Array(10).fill(rawContent).join(' &nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp; ');
+          setContent(repeated);
         } else {
           setContent("No announcements available.");
         }
