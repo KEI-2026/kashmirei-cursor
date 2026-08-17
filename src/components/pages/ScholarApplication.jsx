@@ -238,7 +238,7 @@ const ScholarApplication = () => {
 
                   <div className="form-group">
                       <label htmlFor="phone">Phone</label>
-                      <input id="phone" maxLength="40" name="phone" type="text" />
+                      <input id="phone" maxLength="40" name="phone" type="text" required />
                   </div>
 
               </div>
@@ -301,12 +301,12 @@ const ScholarApplication = () => {
 
                   <div className="form-group">
                       <label htmlFor="00NUo000004dYE4">Class</label>
-                      <input id="00NUo000004dYE4" maxLength="10" name="00NUo000004dYE4" type="text" />
+                      <input id="00NUo000004dYE4" maxLength="10" name="00NUo000004dYE4" type="text" required />
                   </div>
 
                   <div className="form-group">
                       <label htmlFor="00NUo000004dYE3">Class 8th %</label>
-                      <input id="00NUo000004dYE3" name="00NUo000004dYE3" type="text" />
+                      <input id="00NUo000004dYE3" name="00NUo000004dYE3" type="text" required />
                   </div>
 
               </div>
