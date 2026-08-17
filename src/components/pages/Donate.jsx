@@ -73,18 +73,6 @@ const Donate = () => {
         <p style={{ fontSize: "16px", marginBottom: "30px" }}>
           Your donations catalyze transformation for high-potential, economically vulnerable youth through modern education and essential resources—from digital tools to soft skills—shaping the next generation of doers, thinkers, and leaders. Young scholars are supported throughout their high school journey and often beyond.
         </p>
-
-        <p style={{ fontSize: "16px", marginBottom: "20px" }}>
-          SUGGESTED DONATIONS
-        </p>
-
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <div className="donate-box">1 Scholar<br />1 year<br />USD 355</div>
-          <span style={{ color: "#ccc", margin: "0 5px" }}>|</span>
-          <div className="donate-box">1 Scholar<br />4 years<br />USD 1,420</div>
-          <span style={{ color: "#ccc", margin: "0 5px" }}>|</span>
-          <div className="donate-box">5 Scholars<br />4 years<br />USD 7100</div>
-        </div>
       </div>
 
       <div className="donate-options-title">
@@ -93,8 +81,8 @@ const Donate = () => {
 
       <div style={{ textAlign: "center", marginBottom: "50px" }}>
         <a href="#cc" className="nav-btn">Credit Card</a>
-        <a href="#paypal" className="nav-btn">Paypal</a>
-        <a href="#paypal" className="nav-btn">Zelle/Check</a>
+        <a href="https://www.paypal.com/donate?hosted_button_id=X96DRCSXP9K5G" target="_blank" rel="noopener noreferrer" className="nav-btn">Paypal</a>
+        <a href="#zelle" className="nav-btn">Zelle: Zelle@kashmirei.org</a>
       </div>
 
       <div style={{ padding: "0 20px" }}>
@@ -106,13 +94,13 @@ const Donate = () => {
           <b>Option 2:</b> PayPal
         </div>
         
-        <form id="paypal" action="https://www.paypal.com/donate" method="post" target="_top" style={{ marginBottom: "30px", marginLeft: "20px" }}>
+        <form id="paypal" action="https://www.paypal.com/donate" method="post" target="_blank" style={{ marginBottom: "30px", marginLeft: "20px" }}>
           <input type="hidden" name="hosted_button_id" value="X96DRCSXP9K5G" />
           <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" style={{ width: "200px", height: "auto" }} />
           <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
 
-        <div className="option-text">
+        <div id="zelle" className="option-text">
           <b>Option 3:</b> Zelle: <i>Zelle@kashmirei.org</i>
         </div>
 
