@@ -13,15 +13,89 @@ const ScholarApplication = () => {
     }
   }, []);
 
-  const handleIframeLoad = () => {
-    if (isSubmitted) {
-      navigate('/for-scholars');
-    }
-  };
-
   const handleSubmit = () => {
     setIsSubmitted(true);
   };
+
+  if (isSubmitted) {
+    return (
+      <div style={{ padding: "40px 20px", background: "#f4f8fb", fontFamily: "'Segoe UI', Arial, sans-serif", color: "#263746", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <style dangerouslySetInnerHTML={{__html: `
+          .success-container {
+              max-width: 620px;
+              width: 100%;
+              margin: 120px auto 40px;
+              background: #fff;
+              padding: 50px 35px;
+              border-radius: 16px;
+              box-shadow: 0 10px 35px rgba(23, 76, 104, 0.10);
+              border: 1px solid #e3edf2;
+              text-align: center;
+          }
+          .success-icon-wrap {
+              width: 72px;
+              height: 72px;
+              margin: 0 auto 22px;
+              border-radius: 50%;
+              background: #eefafc;
+              color: #47BFDA;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 34px;
+              font-weight: bold;
+              border: 2.5px solid #47BFDA;
+          }
+          .success-title {
+              margin: 0 0 14px;
+              color: #174c68;
+              font-size: 26px;
+              font-weight: 700;
+          }
+          .success-subtitle {
+              margin: 0 0 32px;
+              color: #64748b;
+              font-size: 16px;
+              line-height: 1.6;
+          }
+          .home-btn {
+              display: inline-block;
+              background-color: #47BFDA;
+              color: #ffffff;
+              padding: 12px 42px;
+              border: 1px solid transparent;
+              border-radius: 6px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              text-decoration: none;
+              transition: background-color 0.3s ease, transform 0.15s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+              box-shadow: 0 4px 12px rgba(71, 191, 218, 0.25);
+          }
+          .home-btn:hover {
+              background-color: #3aa9c4;
+              border-color: #1B4F8A;
+              color: #ffffff;
+              transform: translateY(-1px);
+              box-shadow: 0 6px 16px rgba(71, 191, 218, 0.35);
+          }
+        `}} />
+        <iframe 
+            name="hidden_iframe" 
+            id="hidden_iframe" 
+            style={{ display: "none" }} 
+        ></iframe>
+        <div className="success-container">
+          <div className="success-icon-wrap">✓</div>
+          <h1 className="success-title">Your Form Has Been Submitted</h1>
+          <p className="success-subtitle">We'll be back to you soon.</p>
+          <button className="home-btn" onClick={() => navigate('/')}>
+            Home
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ padding: "40px 20px", background: "#f4f8fb", fontFamily: "'Segoe UI', Arial, sans-serif", color: "#263746", minHeight: "100vh" }}>
