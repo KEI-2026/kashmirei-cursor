@@ -15,100 +15,84 @@ const ScholarApplication = () => {
 
   const handleSubmit = () => {
     setIsSubmitted(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  if (isSubmitted) {
-    return (
-      <div style={{ padding: "40px 20px", background: "#f4f8fb", fontFamily: "'Segoe UI', Arial, sans-serif", color: "#263746", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <style dangerouslySetInnerHTML={{__html: `
-          .success-container {
-              max-width: 620px;
-              width: 100%;
-              margin: 120px auto 40px;
-              background: #fff;
-              padding: 50px 35px;
-              border-radius: 16px;
-              box-shadow: 0 10px 35px rgba(23, 76, 104, 0.10);
-              border: 1px solid #e3edf2;
-              text-align: center;
-          }
-          .success-icon-wrap {
-              width: 72px;
-              height: 72px;
-              margin: 0 auto 22px;
-              border-radius: 50%;
-              background: #eefafc;
-              color: #47BFDA;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 34px;
-              font-weight: bold;
-              border: 2.5px solid #47BFDA;
-          }
-          .success-title {
-              margin: 0 0 14px;
-              color: #174c68;
-              font-size: 26px;
-              font-weight: 700;
-          }
-          .success-subtitle {
-              margin: 0 0 32px;
-              color: #64748b;
-              font-size: 16px;
-              line-height: 1.6;
-          }
-          .home-btn {
-              display: inline-block;
-              background-color: #47BFDA;
-              color: #ffffff;
-              padding: 12px 42px;
-              border: 1px solid transparent;
-              border-radius: 6px;
-              font-size: 16px;
-              font-weight: bold;
-              cursor: pointer;
-              text-decoration: none;
-              transition: background-color 0.3s ease, transform 0.15s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-              box-shadow: 0 4px 12px rgba(71, 191, 218, 0.25);
-          }
-          .home-btn:hover {
-              background-color: #3aa9c4;
-              border-color: #1B4F8A;
-              color: #ffffff;
-              transform: translateY(-1px);
-              box-shadow: 0 6px 16px rgba(71, 191, 218, 0.35);
-          }
-        `}} />
-        <iframe 
-            name="hidden_iframe" 
-            id="hidden_iframe" 
-            style={{ display: "none" }} 
-        ></iframe>
-        <div className="success-container">
-          <div className="success-icon-wrap">✓</div>
-          <h1 className="success-title">Your Form Has Been Submitted</h1>
-          <p className="success-subtitle">We'll be back to you soon.</p>
-          <button className="home-btn" onClick={() => navigate('/')}>
-            Home
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div style={{ padding: "40px 20px", background: "#f4f8fb", fontFamily: "'Segoe UI', Arial, sans-serif", color: "#263746", minHeight: "100vh" }}>
       <style dangerouslySetInnerHTML={{__html: `
-        /* ... existing styles ... */
+        /* Form & Success Styles */
         .form-container {
             max-width: 1000px;
-            margin: auto;
+            margin: 100px auto 40px;
             background: #fff;
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 35px rgba(23, 76, 104, 0.10);
             border: 1px solid #e3edf2;
+        }
+
+        .success-container {
+            max-width: 620px;
+            margin: 120px auto 40px;
+            background: #fff;
+            padding: 50px 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(23, 76, 104, 0.10);
+            border: 1px solid #e3edf2;
+            text-align: center;
+        }
+
+        .success-icon-wrap {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: #eefafc;
+            color: #47BFDA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            font-weight: bold;
+            border: 2.5px solid #47BFDA;
+        }
+
+        .success-title {
+            margin: 0 0 14px;
+            color: #174c68;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .success-subtitle {
+            margin: 0 0 32px;
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background-color: #47BFDA;
+            color: #ffffff;
+            padding: 12px 42px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.15s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(71, 191, 218, 0.25);
+        }
+
+        .home-btn:hover {
+            background-color: #3aa9c4;
+            border-color: #1B4F8A;
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(71, 191, 218, 0.35);
         }
 
         .form-header {
@@ -241,7 +225,25 @@ const ScholarApplication = () => {
         }
       `}} />
 
-      <div className="form-container" style={{ marginTop: "100px" }}>
+      {/* Hidden iframe for Salesforce response */}
+      <iframe 
+          name="hidden_iframe" 
+          id="hidden_iframe" 
+          style={{ display: "none" }} 
+      ></iframe>
+
+      {/* Success Confirmation Card */}
+      <div className="success-container" style={{ display: isSubmitted ? "block" : "none" }}>
+        <div className="success-icon-wrap">✓</div>
+        <h1 className="success-title">Your Form Has Been Submitted</h1>
+        <p className="success-subtitle">We'll be back to you soon.</p>
+        <button className="home-btn" type="button" onClick={() => navigate('/')}>
+          Home
+        </button>
+      </div>
+
+      {/* Main Application Form Container */}
+      <div className="form-container" style={{ display: isSubmitted ? "none" : "block" }}>
 
           <div className="form-header">
               <h1>Application HSSP - 2027</h1>
