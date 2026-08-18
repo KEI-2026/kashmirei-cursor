@@ -261,7 +261,7 @@ const ScholarApplication = () => {
 
                   <div className="form-group">
                       <label htmlFor="00N6A00000NnLIx">Student District</label>
-                      <select id="00N6A00000NnLIx" name="00N6A00000NnLIx" title="Student District">
+                      <select id="00N6A00000NnLIx" name="00N6A00000NnLIx" title="Student District" required>
                           <option value="">--None--</option>
                           <option value="Anantnag">Anantnag</option>
                           <option value="Bandipora">Bandipora</option>
