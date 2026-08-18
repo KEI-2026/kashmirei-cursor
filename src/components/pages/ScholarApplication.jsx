@@ -244,7 +244,7 @@ const ScholarApplication = () => {
       <div className="form-container" style={{ marginTop: "100px" }}>
 
           <div className="form-header">
-              <h1>Application HSS - 2027</h1>
+              <h1>Application HSSP - 2027</h1>
               <p>Please provide accurate information in all applicable fields.</p>
           </div>
 
@@ -252,7 +252,6 @@ const ScholarApplication = () => {
               name="hidden_iframe" 
               id="hidden_iframe" 
               style={{ display: "none" }} 
-              onLoad={handleIframeLoad}
           ></iframe>
 
           <form 
