@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 const ScholarApplication = () => {
   const navigate = useNavigate();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [applicantName, setApplicantName] = useState('');
+  const [isDuplicate, setIsDuplicate] = useState(false);
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
@@ -14,6 +16,25 @@ const ScholarApplication = () => {
   }, []);
 
   const handleSubmit = () => {
+    const firstName = document.getElementById("first_name")?.value || "";
+    const lastName = document.getElementById("last_name")?.value || "";
+    const fullName = `${firstName} ${lastName}`.trim() || "Applicant";
+    setApplicantName(fullName);
+
+    try {
+      const stored = JSON.parse(localStorage.getItem("kei_submitted_scholars") || "[]");
+      const key = fullName.toLowerCase();
+      if (stored.includes(key)) {
+        setIsDuplicate(true);
+      } else {
+        stored.push(key);
+        localStorage.setItem("kei_submitted_scholars", JSON.stringify(stored));
+        setIsDuplicate(false);
+      }
+    } catch {
+      setIsDuplicate(false);
+    }
+
     setIsSubmitted(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -235,8 +256,14 @@ const ScholarApplication = () => {
       {/* Success Confirmation Card */}
       <div className="success-container" style={{ display: isSubmitted ? "block" : "none" }}>
         <div className="success-icon-wrap">✓</div>
-        <h1 className="success-title">Your Form Has Been Submitted</h1>
-        <p className="success-subtitle">We'll be back to you soon.</p>
+        <h1 className="success-title">{isDuplicate ? "Form Submitted" : "Your Form Has Been Submitted"}</h1>
+        <p className="success-subtitle">
+          {isDuplicate ? (
+            <>The application has been successfully received for <strong>{applicantName || "the applicant"}</strong>. Please do not submit another/ duplicate application.</>
+          ) : (
+            <>We'll be back to you soon.</>
+          )}
+        </p>
         <button className="home-btn" type="button" onClick={() => navigate('/')}>
           Home
         </button>
