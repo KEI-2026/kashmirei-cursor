@@ -125,6 +125,7 @@ const Footer = () => {
           <p className="footer-newsletter-copy">
             Get updates on scholars, programs, and events.
           </p>
+          {/* 
           <form className="footer-newsletter-form" onSubmit={handleNewsletterSubmit}>
             <label htmlFor="footer-newsletter-email" className="footer-newsletter-label">
               Email address
@@ -162,6 +163,7 @@ const Footer = () => {
               to join our list.
             </p>
           )}
+          */}
         </div>
 
         {/* Column 5 - Contact */}
