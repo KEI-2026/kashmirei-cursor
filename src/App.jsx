@@ -66,6 +66,8 @@ const App = () => {
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/alumni-video/:slug" element={<AlumniVideoPlayer />} />
           <Route path="/stripe-payment" element={<StripePayment />} />
+          <Route path="/donate/stripe-confirm" element={<StripePayment />} />
+          <Route path="/donate2/stripe-confirm" element={<StripePayment />} />
           <Route path="/mentor-signup" element={<MentorSignupPage />} />
         </Routes>
       </main>
