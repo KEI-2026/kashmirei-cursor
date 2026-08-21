@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# Security & React Router Configuration for cPanel Hosting
+# ----------------------------------------------------------------------
+
+# 1. Block Access to Hidden Files (like .env, .git, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Specifically deny direct access to .env file
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 2. Disable Directory Browsing
+Options -Indexes
+
+# 3. Security Headers
+<IfModule mod_headers.c>
+    # Protect against MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    # Protect against clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    # XSS Protection
+    Header set X-XSS-Protection "1; mode=block"
+    # Referrer Policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 4. HTTPS Enforcement & React Router SPA Rewrite Rules
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Serve index.html for all non-file / non-directory requests (React Router 404 Fix)
+    RewriteCond %{REQUEST_URI} !^/api/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>

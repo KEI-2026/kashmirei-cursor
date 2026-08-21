@@ -97,7 +97,7 @@ const DonateForm = () => {
     setIsProcessing(true);
 
     try {
-      const response = await fetch("/api/create-checkout-session", {
+      const response = await fetch("/api/create-checkout-session.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -118,7 +118,14 @@ const DonateForm = () => {
         }),
       });
 
-      const data = await response.json();
+      const responseText = await response.text();
+      let data;
+      try {
+        data = JSON.parse(responseText);
+      } catch {
+        console.error("Non-JSON Server Response:", responseText);
+        throw new Error("Server response was invalid. Please check your cPanel API file.");
+      }
 
       if (!response.ok) {
         throw new Error(data.error || "Failed to initiate payment session.");

@@ -29,13 +29,13 @@ const StripePayment = () => {
           /* Success Page Layout */
           <div className="stripe-payment-card">
             <span className="test-badge">TEST MODE</span>
-            <div className="success-icon-container">
+            <div className="success-icon-container" style={{ backgroundColor: "#e8f5e9", color: "#2E7D32" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={2.5}
-                stroke="currentColor"
+                stroke="#2E7D32"
               >
                 <path
                   strokeLinecap="round"
@@ -44,28 +44,27 @@ const StripePayment = () => {
                 />
               </svg>
             </div>
-            <h1>Donation Confirmed!</h1>
-            <p className="sub-title">
-              Thank you for your generous contribution. Your support directly helps us
-              provide high-potential, financially at-risk scholars in Kashmir with educational opportunities.
+            <h1 style={{ color: "#2E7D32", marginTop: "16px" }}>Thank You For Your Support!</h1>
+            <p className="sub-title" style={{ fontSize: "16px", lineHeight: "1.75", color: "#444" }}>
+              Your donation has been successfully submitted and processed. The scholars and community of Kashmir
+              gratefully appreciate your investment in their potential.
             </p>
 
-            <div className="session-info-box">
-              <span className="label">Stripe Session ID (Reference)</span>
+            <div className="session-info-box" style={{ margin: "20px 0" }}>
+              <span className="label">Transaction Reference ID</span>
               <span className="value">{sessionId}</span>
             </div>
 
-            <p style={{ fontSize: "14px", color: "#666", marginBottom: "30px", lineHeight: "1.6" }}>
-              Your transaction details have been securely logged. The integration is currently verifying this
-              session and syncing donor records directly to Salesforce.
+            <p style={{ fontSize: "14.5px", color: "#555", marginBottom: "30px", lineHeight: "1.6" }}>
+              ✉️ A confirmation email and tax receipt have been sent to your email address.
             </p>
 
             <div className="action-buttons">
-              <Link to="/" className="btn-stripe-confirm btn-primary-stripe">
-                Return to Home
+              <Link to="/donate2" className="btn-stripe-confirm btn-primary-stripe" style={{ backgroundColor: "#47BFDA", borderColor: "#47BFDA" }}>
+                Make Another Donation
               </Link>
-              <Link to="/for-scholars/programs" className="btn-stripe-confirm btn-secondary-stripe">
-                Explore Programs
+              <Link to="/" className="btn-stripe-confirm btn-secondary-stripe">
+                Return to Home
               </Link>
             </div>
           </div>
