@@ -420,7 +420,15 @@ const ScholarApplication = () => {
                           Number Of Siblings
                           <span className="help-icon" title="Enter the total number of your brothers and sisters. Do NOT include yourself in this count.">❔</span>
                       </label>
-                      <input id="00N6A00000NnLKZ" name="00N6A00000NnLKZ" type="number" />
+                      <input 
+                          id="00N6A00000NnLKZ" 
+                          name="00N6A00000NnLKZ" 
+                          type="number" 
+                          min="0" 
+                          max="10" 
+                          step="1"
+                          onKeyDown={(e) => ["e", "E", "+", "-", "."].includes(e.key) && e.preventDefault()}
+                      />
                   </div>
 
                   <div className="form-group">
