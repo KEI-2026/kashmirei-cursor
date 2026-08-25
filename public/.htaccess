@@ -34,6 +34,10 @@ Options -Indexes
     RewriteEngine On
     RewriteBase /
 
+    # Force WWW
+    RewriteCond %{HTTP_HOST} ^kashmirei\.org [NC]
+    RewriteRule ^(.*)$ https://www.kashmirei.org/$1 [L,R=301]
+
     # Force HTTPS
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
