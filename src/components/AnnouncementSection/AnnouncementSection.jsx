@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DOMPurify from "dompurify";
 import "../../styles/Announcement/announcement.css";
 
 /* Replace with your real sheet ID */
@@ -18,25 +19,24 @@ const AnnouncementSection = () => {
         const jsonMatch = data.match(
           /google\.visualization\.Query\.setResponse\((.*)\);/
         );
+        if (jsonMatch) {
+          const json = JSON.parse(jsonMatch[1]);
+          const rows = json.table.rows;
 
-        if (!jsonMatch) {
-          throw new Error("Invalid sheet response format");
-        }
-
-        const json = JSON.parse(jsonMatch[1]);
-        const rows = json.table.rows;
-
-        if (rows.length > 0 && rows[0].c[0]?.v) {
-          const rawContent = rows[0].c[0].v;
-          // Repeat the text 10 times with a nice dot separator so it appears frequently in the ticker
-          const repeated = Array(10).fill(rawContent).join(' &nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp; ');
-          setContent(repeated);
-        } else {
-          setContent("No announcements available.");
+          if (rows.length > 0 && rows[0].c[0]?.v) {
+            const rawContent = rows[0].c[0].v;
+            // Sanitize the HTML before setting it
+            const cleanContent = DOMPurify.sanitize(rawContent);
+            // Repeat the text 10 times with a nice dot separator so it appears frequently in the ticker
+            const repeated = Array(10).fill(cleanContent).join(' &nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp; ');
+            setContent(repeated);
+          } else {
+            setContent("No current announcements.");
+          }
         }
       })
       .catch((err) => {
-        console.error("Error loading announcements:", err);
+        console.error("Error fetching announcements:", err);
         setContent("Unable to load announcements.");
       });
   }, []);

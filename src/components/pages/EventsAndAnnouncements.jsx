@@ -636,7 +636,7 @@ const EventsAndAnnouncements = () => {
       </div>
 
       {/* ── Footer Newsletter Strip ────────────────────────────── */}
-      <NewsletterStrip />
+      {/* <NewsletterStrip /> */}
     </>
   );
 };

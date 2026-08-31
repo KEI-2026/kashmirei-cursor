@@ -25,17 +25,19 @@ const TeamMemberAvatar = ({ name }) => {
   const imgUrl = new URL(`../../../assets/Images/Team/${formattedName}.png`, import.meta.url).href;
 
   return (
-    <img 
-      src={imgUrl} 
-      alt={name} 
-      onError={() => setHasError(true)} 
-      style={{
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
-        borderRadius: "50%"
-      }}
-    />
+    <a href={imgUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', height: '100%' }}>
+      <img 
+        src={imgUrl} 
+        alt={name} 
+        onError={() => setHasError(true)} 
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          borderRadius: "50%"
+        }}
+      />
+    </a>
   );
 };
 
@@ -64,46 +66,8 @@ const defaultOpsTeam = [
 ];
 
 const AboutTeam = () => {
-  const [board, setBoard] = useState(() => {
-    const saved = localStorage.getItem("kei_board_members");
-    return saved ? JSON.parse(saved) : defaultBoardMembers;
-  });
-
-  const [ops, setOps] = useState(() => {
-    const saved = localStorage.getItem("kei_ops_team");
-    return saved ? JSON.parse(saved) : defaultOpsTeam;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("kei_board_members", JSON.stringify(board));
-  }, [board]);
-
-  useEffect(() => {
-    localStorage.setItem("kei_ops_team", JSON.stringify(ops));
-  }, [ops]);
-
-  const handleBoardNameChange = (index, newName) => {
-    const updated = [...board];
-    updated[index].name = newName;
-    setBoard(updated);
-  };
-
-  const handleOpsNameChange = (index, newName) => {
-    const updated = [...ops];
-    updated[index].name = newName;
-    setOps(updated);
-  };
-
-  const hasEdits =
-    JSON.stringify(board) !== JSON.stringify(defaultBoardMembers) ||
-    JSON.stringify(ops) !== JSON.stringify(defaultOpsTeam);
-
-  const handleReset = () => {
-    if (window.confirm("Are you sure you want to reset all names to default?")) {
-      setBoard(defaultBoardMembers);
-      setOps(defaultOpsTeam);
-    }
-  };
+  const board = defaultBoardMembers;
+  const ops = defaultOpsTeam;
 
   return (
     <section className="section-about-team">
@@ -111,24 +75,6 @@ const AboutTeam = () => {
 
         <div className="about-team-header">
           <span className="about-label">THE PEOPLE BEHIND KEI</span>
-          {/* {hasEdits && (
-            // <button
-            //   onClick={handleReset}
-            //   style={{
-            //     background: "transparent",
-            //     border: "none",
-            //     color: "#47BFDA",
-            //     cursor: "pointer",
-            //     fontSize: "13px",
-            //     fontWeight: "600",
-            //     textDecoration: "underline",
-            //     marginTop: "12px",
-            //     padding: 0
-            //   }}
-            // >
-            //   Reset Names to Default
-            // </button>
-          )} */}
         </div>
 
         {/* Board of Directors */}
@@ -140,14 +86,9 @@ const AboutTeam = () => {
                 <div className="about-avatar-wrap">
                   <TeamMemberAvatar name={m.name} />
                 </div>
-                <input
-                  type="text"
-                  value={m.name}
-                  onChange={(e) => handleBoardNameChange(i, e.target.value)}
-                  className="about-team-name-input"
-                  placeholder="Enter name..."
-                  aria-label={`Name of ${m.title}`}
-                />
+                <h4 className="about-team-name" style={{ margin: "16px 0 4px", fontSize: "16px", color: "#0f1b24" }}>
+                  {m.name}
+                </h4>
                 <p className="about-team-role">{m.title}</p>
               </div>
             ))}
@@ -163,14 +104,9 @@ const AboutTeam = () => {
                 <div className="about-avatar-wrap">
                   <TeamMemberAvatar name={m.name} />
                 </div>
-                <input
-                  type="text"
-                  value={m.name}
-                  onChange={(e) => handleOpsNameChange(i, e.target.value)}
-                  className="about-team-name-input"
-                  placeholder="Enter name..."
-                  aria-label={`Name of ${m.title}`}
-                />
+                <h4 className="about-team-name" style={{ margin: "16px 0 4px", fontSize: "15px", color: "#0f1b24" }}>
+                  {m.name}
+                </h4>
                 <p className="about-team-role">{m.title}</p>
               </div>
             ))}

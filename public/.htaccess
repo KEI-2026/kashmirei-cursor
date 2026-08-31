@@ -1,50 +1,44 @@
 # ----------------------------------------------------------------------
-# Security & React Router Configuration for cPanel Hosting
+# Security & React Router Configuration for GoDaddy / cPanel
 # ----------------------------------------------------------------------
 
-# 1. Block Access to Hidden Files (like .env, .git, etc.)
+# 1. Block Access to Hidden Files (like .env)
 <FilesMatch "^\.">
     Order allow,deny
     Deny from all
 </FilesMatch>
 
-# Specifically deny direct access to .env file
-<Files ".env">
-    Order allow,deny
-    Deny from all
-</Files>
-
 # 2. Disable Directory Browsing
 Options -Indexes
 
-# 3. Security Headers
+# 3. Security Headers (Keeps your site safe from attacks)
 <IfModule mod_headers.c>
-    # Protect against MIME type sniffing
     Header set X-Content-Type-Options "nosniff"
-    # Protect against clickjacking
     Header set X-Frame-Options "SAMEORIGIN"
-    # XSS Protection
     Header set X-XSS-Protection "1; mode=block"
-    # Referrer Policy
     Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# 4. HTTPS Enforcement & React Router SPA Rewrite Rules
+# 4. Routing, HTTPS & WWW Enforcement
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Force WWW
-    RewriteCond %{HTTP_HOST} ^kashmirei\.org [NC]
+    # Force HTTPS
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Force exact WWW domain
+    RewriteCond %{HTTP_HOST} ^kashmirei\.org$ [NC]
     RewriteRule ^(.*)$ https://www.kashmirei.org/$1 [L,R=301]
 
-    # Force HTTPS
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Serve index.html for all non-file / non-directory requests (React Router 404 Fix)
-    RewriteCond %{REQUEST_URI} !^/api/
+    # React Router 404 Fix (Serve index.html)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule . /index.html [L]
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# 5. Enable GZIP Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript
 </IfModule>
