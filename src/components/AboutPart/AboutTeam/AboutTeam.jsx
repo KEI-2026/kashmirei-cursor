@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../../../styles/About/about.css";
 
 const PersonIcon = () => (
@@ -9,14 +9,11 @@ const PersonIcon = () => (
 );
 
 const TeamMemberAvatar = ({ name }) => {
-  const [hasError, setHasError] = useState(false);
+  const [errorName, setErrorName] = useState("");
 
   const formattedName = name ? name.trim().toLowerCase().replace(/\s+/g, "_") : "";
   const isPlaceholder = !name || name.trim() === "—" || name.toLowerCase().includes("coming soon");
-
-  useEffect(() => {
-    setHasError(false);
-  }, [name]);
+  const hasError = errorName === name;
 
   if (isPlaceholder || hasError) {
     return <PersonIcon />;
@@ -25,19 +22,17 @@ const TeamMemberAvatar = ({ name }) => {
   const imgUrl = new URL(`../../../assets/Images/Team/${formattedName}.png`, import.meta.url).href;
 
   return (
-    <a href={imgUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', height: '100%' }}>
-      <img 
-        src={imgUrl} 
-        alt={name} 
-        onError={() => setHasError(true)} 
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          borderRadius: "50%"
-        }}
-      />
-    </a>
+    <img 
+      src={imgUrl} 
+      alt={name} 
+      onError={() => setErrorName(name)} 
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        borderRadius: "50%"
+      }}
+    />
   );
 };
 
