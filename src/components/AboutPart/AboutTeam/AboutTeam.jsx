@@ -53,7 +53,6 @@ const defaultOpsTeam = [
   { name: "Firdous Hussain", title: "Program Officer" },
   { name: "Danish Munshi", title: "Program Officer" },
   { name: "Tayaba Khan", title: "Program Officer" },
-  { name: "Syed Uzma", title: "Assistant Program Officer" },
   { name: "Raja Adil", title: "Senior Field Officer" },
   { name: "Qamran Latief", title: "Field Officer" },
   { name: "Mir Amaan", title: "IT Admin" },
