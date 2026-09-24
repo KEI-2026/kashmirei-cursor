@@ -34,7 +34,7 @@ const ScholarStories = () => {
 
       <GalaxyOfSuperstars />
 
-      <section id="our-impact-section" className="section-ss-grid" style={{ backgroundColor: "#f2f3f5", padding: "60px 0 22px" }}>
+      <section id="our-impact-section" className="section-ss-grid" style={{ backgroundColor: "#f2f3f5", padding: "20px 0 22px" }}>
         <div className="container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 40px" }}>
           
           {/* Main layout */}
@@ -46,7 +46,7 @@ const ScholarStories = () => {
                 <span className="our-impact-hero-label">Real Journeys. Real Results.</span>
               </div>
 
-              <div className="ss-grid our-impact-ss-grid">
+              <div className="ss-grid our-impact-ss-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))" }}>
                 {storiesToShow.map((story) => {
                   const preview = story?.paragraphs?.join(" ") || "";
                   const truncatedPreview = preview.length > 200 ? preview.substring(0, 200) + "..." : preview;
