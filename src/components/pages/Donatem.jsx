@@ -34,6 +34,34 @@ const Donatem = () => {
         --clickie-type-btn-active-bg: #47BFDA !important;
         --clickie-type-btn-active-color: #ffffff !important;
         --cnp-primary: #47BFDA !important;
+        --cnp-spinner-color: #47BFDA !important;
+        --cnp-loader-color: #47BFDA !important;
+      }
+      
+      /* Teal Loader / Spinner Overrides */
+      .clickie-inline-loader {
+        color: #47BFDA !important;
+      }
+      .clickie-inline-loader:before,
+      .clickie-inline-loader::before {
+        border-color: rgba(71, 191, 218, 0.25) !important;
+        border-top-color: #47BFDA !important;
+      }
+      .loader,
+      .spinner,
+      .cnp-spinner,
+      .loading-spinner,
+      .chat-loading,
+      .chat-loading-spinner,
+      .cnp-loading,
+      [class*="spinner"],
+      [class*="loader"] {
+        border-top-color: #47BFDA !important;
+        border-right-color: #47BFDA !important;
+        color: #47BFDA !important;
+      }
+      svg circle, circle {
+        stroke: #47BFDA !important;
       }
       :host([data-resolved-btype="inline"]) {
         display: block !important;
@@ -342,6 +370,25 @@ const Donatem = () => {
         box-shadow: none !important;
       }
 
+      /* Hide unwanted Billing fields in Credit Card section */
+      .form-field:has(#cnp-cc-country),
+      .form-field:has(#cnp-cc-phone),
+      .form-field:has(#cnp-cc-addr),
+      .form-field:has(#cnp-cc-addr2),
+      .form-field:has(#cnp-cc-city),
+      .form-field:has(#cnp-cc-state) {
+        display: none !important;
+      }
+
+      .form-row--city {
+        display: block !important;
+      }
+
+      .form-row--city .form-field:has(#cnp-cc-zip) {
+        display: block !important;
+        width: 100% !important;
+      }
+
       @media (max-width: 650px) {
         .payment-info-form {
           grid-template-columns: 1fr !important;
@@ -356,47 +403,39 @@ const Donatem = () => {
     `;
 
     const arrangeFormFields = (root) => {
-      const form = root.querySelector(".payment-info-form");
-      if (!form) return;
+      const idsToHide = [
+        "cnp-cc-country",
+        "cnp-cc-phone",
+        "cnp-cc-addr",
+        "cnp-cc-addr2",
+        "cnp-cc-city",
+        "cnp-cc-state"
+      ];
 
-      Array.from(form.children).forEach((child) => {
-        const text = child.textContent.toLowerCase();
-
-        if (text.includes("card details")) {
-          child.style.gridColumn = "1 / 2";
-          child.style.order = "1";
-        } else if (text.includes("billing information")) {
-          child.style.gridColumn = "2 / 3";
-          child.style.order = "1";
-        } else if (text.includes("card number")) {
-          child.style.gridColumn = "1 / 2";
-          child.style.order = "2";
-        } else if (text.includes("expiry") || text.includes("cvv") || text.includes("mm/yy")) {
-          child.style.gridColumn = "1 / 2";
-          child.style.order = "3";
-        } else if (text.includes("first name") || text.includes("last name")) {
-          child.style.gridColumn = "2 / 3";
-          child.style.order = "2";
-        } else if (text.includes("email")) {
-          child.style.gridColumn = "2 / 3";
-          child.style.order = "3";
-        } else if (text.includes("phone")) {
-          child.style.gridColumn = "2 / 3";
-          child.style.order = "4";
-        } else if (text.includes("country")) {
-          child.style.gridColumn = "1 / 2";
-          child.style.order = "4";
-        } else if (text.includes("street address 1") || (text.includes("address 1") && !text.includes("address 2"))) {
-          child.style.gridColumn = "2 / 3";
-          child.style.order = "5";
-        } else if (text.includes("street address 2") || text.includes("address 2")) {
-          child.style.gridColumn = "1 / 2";
-          child.style.order = "5";
-        } else if (text.includes("city") || text.includes("state") || text.includes("zip") || child.classList.contains("form-row--city")) {
-          child.style.gridColumn = "1 / -1";
-          child.style.order = "6";
+      idsToHide.forEach((id) => {
+        const input = root.getElementById ? root.getElementById(id) : root.querySelector("#" + id);
+        if (input) {
+          const field = input.closest(".form-field");
+          if (field) {
+            field.style.setProperty("display", "none", "important");
+          } else {
+            input.style.setProperty("display", "none", "important");
+          }
         }
       });
+
+      const zipInput = root.getElementById ? root.getElementById("cnp-cc-zip") : root.querySelector("#cnp-cc-zip");
+      if (zipInput) {
+        const zipField = zipInput.closest(".form-field");
+        if (zipField) {
+          zipField.style.setProperty("display", "block", "important");
+          zipField.style.setProperty("width", "100%", "important");
+        }
+        const cityRow = zipInput.closest(".form-row--city");
+        if (cityRow) {
+          cityRow.style.setProperty("display", "block", "important");
+        }
+      }
     };
 
     const injectStylesIntoShadowRoot = () => {
@@ -442,6 +481,14 @@ const Donatem = () => {
           justify-content: center !important;
           margin: 0 auto !important;
           width: 100% !important;
+        }
+        .clickie-inline-loader {
+          color: #47BFDA !important;
+        }
+        .clickie-inline-loader:before,
+        .clickie-inline-loader::before {
+          border: 2px solid rgba(71, 191, 218, 0.25) !important;
+          border-top-color: #47BFDA !important;
         }
         clickandpledge-payquickly iframe {
           width: 100% !important;
