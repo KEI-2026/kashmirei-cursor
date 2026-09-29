@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const Donate3 = () => {
+const Donatem = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -467,4 +467,4 @@ const Donate3 = () => {
   );
 };
 
-export default Donate3;
+export default Donatem;
