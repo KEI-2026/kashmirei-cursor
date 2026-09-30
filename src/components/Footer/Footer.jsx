@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Footer/footer.css";
 import logo from "../../assets/Images/KEI-new-logo/Logos-03.svg";
-import { NEWSLETTER_API_ENDPOINT } from "../../config/newsletter";
+// import { NEWSLETTER_API_ENDPOINT } from "../../config/newsletter";
 
 const SITEMAP_LINKS = [
   { path: "/", label: "Home" },
@@ -22,6 +22,7 @@ const SOCIAL_LINKS = [
 ];
 
 const Footer = () => {
+  /*
   const [email, setEmail] = useState("");
   const [subscribeStatus, setSubscribeStatus] = useState(null);
 
@@ -59,6 +60,7 @@ const Footer = () => {
     setSubscribeStatus("success");
     setEmail("");
   };
+  */
 
   return (
     <footer className="site-footer">
@@ -119,51 +121,29 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4 - Stay Connected */}
+        {/* Column 4 - Get Involved */}
         <div className="footer-col footer-newsletter">
-          <h4>Stay Connected</h4>
+          <h4>Join Us</h4>
           <p className="footer-newsletter-copy">
-            Get updates on scholars, programs, and events.
+            Get involved as a Volunteer, Mentor, or Intern.
           </p>
-          {/* 
-          <form className="footer-newsletter-form" onSubmit={handleNewsletterSubmit}>
-            <label htmlFor="footer-newsletter-email" className="footer-newsletter-label">
-              Email address
-            </label>
-            <div className="footer-newsletter-fields">
-              <input
-                id="footer-newsletter-email"
-                type="email"
-                name="email"
-                value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                  if (subscribeStatus) {
-                    setSubscribeStatus(null);
-                  }
-                }}
-                placeholder="you@example.com"
-                autoComplete="email"
-                required
-              />
-              <button type="submit">Subscribe</button>
-            </div>
-          </form>
-          {subscribeStatus === "success" && (
-            <p className="footer-newsletter-message footer-newsletter-message-success">
-              Thanks for subscribing. We&apos;ll be in touch soon.
-            </p>
-          )}
-          {subscribeStatus === "error" && (
-            <p className="footer-newsletter-message footer-newsletter-message-error">
-              Something went wrong. Email{" "}
-              <a href="mailto:info@kashmirei.org?subject=Newsletter%20Signup">
-                info@kashmirei.org
-              </a>{" "}
-              to join our list.
-            </p>
-          )}
-          */}
+          <div style={{ marginTop: '1rem' }}>
+            <Link 
+              to="/signup" 
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#47BFDA',
+                color: '#fff',
+                padding: '10px 20px',
+                borderRadius: '5px',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                fontFamily: '"Franklin Gothic Demi", sans-serif'
+              }}
+            >
+              Sign Up
+            </Link>
+          </div>
         </div>
 
         {/* Column 5 - Contact */}
