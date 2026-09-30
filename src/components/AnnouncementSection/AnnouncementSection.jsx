@@ -3,7 +3,7 @@ import DOMPurify from "dompurify";
 import "../../styles/Announcement/announcement.css";
 
 /* Replace with your real sheet ID */
-const SHEET_ID = "1pkRPOAK3yRGemROpSIOAFQOozKZWQDM-ZiR24RNhKkc";
+const SHEET_ID = "1F7c2BGPfPTL1yyOzBhaMvr-2duLGBSEgkEKSCSPzIHI";
 
 /* GVIZ endpoint for public sheet JSON */
 const SHEET_JSON_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;

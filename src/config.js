@@ -21,4 +21,4 @@
  */
 
 // Replace this empty string with your published Google Sheet CSV link
-export const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1mGvNSaRb2enTd5YWTgaPJJ6d0RqlBysq2w5AcFU3sYk/export?format=csv";
+export const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1VLLM9O7fcVnCpcmvui8MQvr1tG29zwhSanX9BAqI38g/export?format=csv";
