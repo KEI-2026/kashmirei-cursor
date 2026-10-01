@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../GetInvolvedPart/GetInvolvedWays/MentorForm.css';
 import { countryCodes } from '../../utils/countryCodes';
 
 const SignupForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -22,27 +24,27 @@ const SignupForm = () => {
     e.preventDefault();
     setStatus('Submitting...');
     
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_Ew3cYGmja67i2tlacdRjI8AAjnSeZEn2Dst9PKwyyZh_d2k2m9f0-PZ4EAzp0hJ2bg/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysIJEKe08p1OQfV2eJ8q8EdaJsxR9b_sGzJD-xEa8b8dROz5ph71IpQaUzRFgWGIeOIw/exec';
     
     try {
-      const data = new FormData();
+      const searchParams = new URLSearchParams();
       Object.keys(formData).forEach(key => {
         if (key === 'phone') {
-          data.append(key, `${formData.countryCode} ${formData.phone}`);
+          // Prepend a single quote so Google Sheets treats it as text instead of a formula
+          searchParams.append(key, `'${formData.countryCode} ${formData.phone}`);
         } else if (key !== 'countryCode') {
-          data.append(key, formData[key]);
+          searchParams.append(key, formData[key]);
         }
       });
 
       await fetch(scriptURL, {
         method: 'POST',
         mode: 'no-cors',
-        body: data,
+        body: searchParams,
       });
 
       // With mode: 'no-cors', the response is opaque and response.ok will be false.
       // We assume success if the network request didn't throw an error.
-      setStatus('Success! Thank you for signing up.');
       setFormData({
         first_name: '',
         last_name: '',
@@ -51,6 +53,7 @@ const SignupForm = () => {
         phone: '',
         interest: 'Volunteer'
       });
+      navigate('/thank-you');
     } catch (error) {
       console.error('Error!', error.message);
       setStatus('Error submitting form.');

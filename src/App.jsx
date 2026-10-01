@@ -28,6 +28,7 @@ import ScholarStories from "./components/pages/ScholarStories";
 import ImpactByNumbers from "./components/pages/ImpactByNumbers";
 import MentorSignupPage from "./components/pages/MentorSignupPage";
 import SignupPage from "./components/pages/SignupPage";
+import ThankYou from "./components/pages/ThankYou";
 
 // Keep lazy loading only for very heavy/deep routes (like Stripe/Video players)
 const MentorshipStoryPage = lazy(() => import("./components/pages/GetInvolvedWays_Pages/MentorshipStoryPage"));
@@ -71,6 +72,7 @@ const App = () => {
             <Route path="/impact-by-numbers" element={<ImpactByNumbers />} />
             <Route path="/mentor-signup" element={<MentorSignupPage />} />
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="/thank-you" element={<ThankYou />} />
 
             {/* Redirects */}
             <Route path="/mentorship-success-stories" element={<Navigate to="/our-impact#mentorship-success" replace />} />
