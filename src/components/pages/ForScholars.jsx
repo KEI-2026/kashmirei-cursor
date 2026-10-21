@@ -36,7 +36,7 @@ const ForScholars = () => {
       timeline: [
         { label: "Applications Open", date: "August 14, 2026" },
         { label: "Application Submission Deadline", date: "October 30, 2026" },
-        { label: "Release of Admit Cards / Roll Numbers", date: "In Progress" },
+        { label: "Release of Admit Cards / Roll Numbers", date: "In Process" },
         { label: "KEI HSSP Test", date: "November 08, 2026" },
         
         // { label: "Results & Document Verification", date: "December 20, 2026" }
