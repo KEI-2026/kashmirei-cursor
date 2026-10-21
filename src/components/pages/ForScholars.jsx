@@ -35,9 +35,9 @@ const ForScholars = () => {
       statusColor: "#f39c12",
       timeline: [
         { label: "Applications Open", date: "August 14, 2026" },
-        { label: "Application Submission Deadline", date: "September 30, 2026" },
-        { label: "Release of Admit Cards / Roll Numbers", date: "November 25, 2026" },
-        { label: "KEI HSSP Test", date: "December 06, 2026" },
+        { label: "Application Submission Deadline", date: "October 30, 2026" },
+        { label: "Release of Admit Cards / Roll Numbers", date: "In Progress" },
+        { label: "KEI HSSP Test", date: "November 08, 2026" },
         
         // { label: "Results & Document Verification", date: "December 20, 2026" }
       ]
