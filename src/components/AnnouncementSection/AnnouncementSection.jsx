@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import DOMPurify from "dompurify";
 import "../../styles/Announcement/announcement.css";
 
@@ -10,6 +10,8 @@ const SHEET_JSON_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/
 
 const AnnouncementSection = () => {
   const [content, setContent] = useState("Loading announcements...");
+  const trackRef = useRef(null);
+  const firstItemRef = useRef(null);
 
   useEffect(() => {
     fetch(SHEET_JSON_URL)
@@ -21,14 +23,24 @@ const AnnouncementSection = () => {
         );
         if (jsonMatch) {
           const json = JSON.parse(jsonMatch[1]);
-          const rows = json.table.rows;
+          const rows = json.table?.rows || [];
 
-          if (rows.length > 0 && rows[0].c[0]?.v) {
-            const rawContent = rows[0].c[0].v;
-            // Sanitize the HTML before setting it
-            const cleanContent = DOMPurify.sanitize(rawContent);
-            // Repeat the text 10 times with a nice dot separator so it appears frequently in the ticker
-            const repeated = Array(10).fill(cleanContent).join(' &nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp; ');
+          // Extract all announcement rows if multiple exist
+          const items = rows
+            .map((r) => r.c?.[0]?.v)
+            .filter(Boolean)
+            .map((raw) => DOMPurify.sanitize(raw));
+
+          if (items.length > 0) {
+            const singleBlock = items.join(
+              " &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp; "
+            );
+            // Repeat to ensure continuous seamless coverage across any screen resolution
+            const repeated = `${Array(4)
+              .fill(singleBlock)
+              .join(
+                " &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp; "
+              )} &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;`;
             setContent(repeated);
           } else {
             setContent("No current announcements.");
@@ -41,17 +53,44 @@ const AnnouncementSection = () => {
       });
   }, []);
 
+  // Dynamically compute marquee duration so speed is brisk, consistent, and completes fully without cutting off
+  useEffect(() => {
+    const updateSpeed = () => {
+      if (!firstItemRef.current || !trackRef.current) return;
+      const itemWidth =
+        firstItemRef.current.offsetWidth || firstItemRef.current.scrollWidth;
+      if (itemWidth > 0) {
+        // ~55px/sec creates a comfortable, easily readable, and smooth ticker speed
+        const SPEED_PX_PER_SEC = 55;
+        const durationSec = Math.max(12, itemWidth / SPEED_PX_PER_SEC);
+        trackRef.current.style.setProperty(
+          "--marquee-duration",
+          `${durationSec.toFixed(2)}s`
+        );
+      }
+    };
+
+    updateSpeed();
+    window.addEventListener("resize", updateSpeed);
+    return () => window.removeEventListener("resize", updateSpeed);
+  }, [content]);
+
   return (
     <>
       {/* ANNOUNCEMENT BAR */}
-      <section className="section-announcement">
-        <div className="announcement-track">
+      <section
+        className="section-announcement"
+        aria-label="Announcements ticker"
+      >
+        <div className="announcement-track" ref={trackRef}>
           <div
+            ref={firstItemRef}
             className="announcement-item"
             dangerouslySetInnerHTML={{ __html: content }}
           />
           <div
             className="announcement-item"
+            aria-hidden="true"
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </div>

@@ -6,52 +6,91 @@
     width: 100%;
     overflow: hidden;
     background: #47BFDA;
-    padding: 14px 0;
-    cursor: pointer;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  .section-announcement:hover .announcement-track {
+    animation-play-state: paused;
   }
   
   .announcement-track {
     display: flex;
+    width: max-content;
     white-space: nowrap;
-    animation: scrollMarquee 28s linear infinite;
+    align-items: center;
+    will-change: transform;
+    animation: scrollMarquee var(--marquee-duration, 45s) linear infinite;
   }
   
   .announcement-item {
-    margin-right: 80px;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
     font-family: inherit;
     font-size: 15px;
     font-weight: 500;
     color: #ffffff;
+    line-height: 1.35;
+    padding: 0 10px;
   }
-  
-  /* Password field wrapper */
 
-.password-wrapper {
-    position: relative;
-    width: 100%;
+  /* Prevent any child tags (p, div, span, strong, a) from breaking layout or dropping down */
+  .announcement-item *,
+  .announcement-item p,
+  .announcement-item div,
+  .announcement-item span,
+  .announcement-item strong,
+  .announcement-item a {
+    display: inline !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: inherit !important;
+    vertical-align: baseline;
+    color: inherit;
   }
-  
-  .password-wrapper input {
-    width: 100%;
-    padding: 10px 40px 10px 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-family: inherit;
+
+  .announcement-item a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
   }
-  
-  .toggle-password {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
+
+  .announcement-item a:hover {
+    opacity: 0.85;
   }
-  
+
   @keyframes scrollMarquee {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Responsive styles for tablet and mobile */
+  @media (max-width: 768px) {
+    .section-announcement {
+      padding: 10px 0;
+    }
+
+    .announcement-item {
+      font-size: 14px;
+      padding: 0 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-announcement {
+      padding: 9px 0;
+    }
+
+    .announcement-item {
+      font-size: 13.5px;
+      padding: 0 6px;
+    }
   }
   
   /* =========================
